@@ -1,0 +1,2654 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>StickyMobile BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center">
+        <a href="index.html" class="header-title">Sticky Mobile</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="footer-bar" class="footer-bar-1">
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="index-components.html" class="active-nav"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index-pages.html"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="index-search.html"><i class="fa fa-search"></i><span>Search</span></a>
+        <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>
+    </div>
+
+    <div class="page-content header-clear-medium">
+        
+        <div class="card card-style preload-img" data-src="images/pictures/18w.jpg" data-card-height="130">
+            <div class="card-center ms-3">
+                <h1 class="color-white mb-0">Action Modals</h1>
+                <p class="color-white mt-n1 mb-0">Perfect for User Interactions </p>
+            </div>
+            <div class="card-center me-3">
+                <a href="#" data-back-button class="btn btn-m float-end rounded-xl shadow-xl text-uppercase font-800 bg-highlight">Back Home</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div>
+        
+        
+        <!--
+            How to find your prefered action sheet fast and easy in this large page: 
+
+            For example, if you want to use the data-menu="menu-call" actionsheet please use CTRL+F or CMD+F
+            and search for id="menu-call". This is the easiest way to locate your preferred action sheet.
+
+        -->
+
+
+        <div class="card card-style">
+            <p class="content">
+                Actions Modals are elements that appear in the cente of the page. These can be triggerd by any element, buttons, text, images, and can be used as menus as well.
+            </p>
+        </div>
+
+        <a href="component-action-modals-new.html" class="btn btn-margins rounded-sm btn-m btn-full text-uppercase font-900 bg-red-dark">Action Modals Available Here</a>
+
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Action Modals Styles</h2>
+                <p class="mb-3">
+                    Packed with gorgeous and unique Designs!.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-action-box-full"><i class="fa fa-plus color-green-dark"></i><span>Full Screen</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-action-box-square"><i class="fa fa-square-full color-blue-dark"></i><span>Box Squared</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Call to Actions</h2>
+                <p class="mb-3">
+                    Action sheets designed to prompt an immediate response and increase conversions or actions.  
+                </p>
+                <div class="list-group list-custom-small list-icon-0">                    
+                    <a href="#" data-menu="menu-call"><i class="fa fa-phone color-green-dark"></i><span>Call Button</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-subscribe"><i class="fa fa-at color-red-dark"></i><span>Subscribe</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-share-list"><i class="fa fa-list color-magenta-dark"></i><span>Share List</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-share-thumbs"><i class="fa fa-share-alt color-gray-dark"></i><span>Share Thumbs</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-tour-1"><i class="fa fa-heart color-red-dark"></i><span>Tour Boxes</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-cookies"><i class="fa fa-cookie color-brown-dark"></i><span>Cookie Policy</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-gdpr"><i class="fa fa-star color-yellow-dark"></i><span>GDPR Container</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-contact-1"><i class="fa fa-envelope color-blue-dark"></i><span>Contact Form</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-contact-2"><i class="fa fa-bullseye color-red-dark"></i><span>Contact Button</span><i class="fa fa-angle-right"></i></a>                
+                </div>      
+            </div>  
+        </div>   
+
+        
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Account</h2>
+                <p class="mb-3">
+                    Great for creating or managing your user accounts.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-login-1"><i class="fa fa-sign-in-alt color-green-dark"></i><span>Login - v1</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-login-2"><i class="fa fa-unlock color-teal-dark"></i><span>Login - v2</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-register-1"><i class="fa fa-lock color-brown-dark"></i><span>Register - v1</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-register-2"><i class="fa fa-code color-magenta-dark"></i><span>Register - v2</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-forgot-1"><i class="fa fa-question-circle color-red-dark"></i><span>Forgot - v1</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-forgot-2"><i class="fa fa-exclamation-circle color-pink-dark"></i><span>Forgot - v2</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-user-switch"><i class="fa fa-user color-blue-dark"></i><span>User Switcher</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-language"><i class="fa fa-flag color-green-dark"></i><span>Language Picker</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-age"><i class="fa fa-lock color-red-dark"></i><span>Age Cheker</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-contact-card"><i class="fa fa-credit-card color-brown-dark"></i><span>Contact Card</span><i class="fa fa-angle-right"></i></a>
+                </div>      
+            </div>  
+        </div>   
+
+
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Commerce</h2>
+                <p class="mb-3">
+                    Perfectly matched for your shopping elements.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-cart-1"><i class="fa fa-shopping-cart color-gray-dark"></i><span>Cart Items</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-wishlist"><i class="fa fa-gift color-orange-dark"></i><span>Item Wishlist</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-cart-item-1"><i class="fa fa-box color-green-dark"></i><span>Cart Single Item</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-review"><i class="fa fa-star color-yellow-dark"></i><span>Leave Review</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Finance</h2>
+                <p class="mb-3">
+                    A must have set for your financial elements.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-credit-card"><i class="fab fa-cc-visa color-yellow-dark"></i><span>Credit Card - v1</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-credit-card-2"><i class="fa fa-credit-card color-gray-dark"></i><span>Credit Card - v2</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-card-list"><i class="fa fa-wallet color-brown-dark"></i><span>Wallet Card List</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-wallet-info"><i class="fa fa-wallet color-brown-dark"></i><span>Wallet Information</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-payment-info"><i class="fa fa-tint color-blue-dark"></i><span>Payment Detail</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-subscription-info"><i class="fa fa-dollar-sign color-green-dark"></i><span>Subscription Detail</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-add-funds"><i class="fa fa-arrow-up color-blue-dark"></i><span>Add Funds</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-send-funds"><i class="fa fa-arrow-right color-yellow-dark"></i><span>Send Funds</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-request-funds"><i class="fa fa-arrow-down color-red-dark"></i><span>Request Funds</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-payment-status"><i class="fa fa-info-circle color-gray-dark"></i><span>Transaction Status</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Education</h2>
+                <p class="mb-3">
+                    A must have set for your financial elements.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-table-of-contents"><i class="fa fa-list color-blue-dark"></i><span>Table of Contents</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-subscription-required"><i class="fa fa-exclamation-triangle color-red-dark"></i><span>Subscription Required</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-buy-course"><i class="fa fa-credit-card color-blue-dark"></i><span>Course Buy Now</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-course-details"><i class="fa fa-info color-brown-dark"></i><span>Course Details</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-author-details"><i class="fa fa-user color-green-dark"></i><span>Author Details</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Task Management</h2>
+                <p class="mb-3">
+                    Great for keeping your tasks in  check.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-upload"><i class="fa fa-list color-blue-dark"></i><span>Upload Attachement</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-manage"><i class="fa fa-cog color-red-dark"></i><span>Project Management</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-team"><i class="fa fa-user color-blue-dark"></i><span>Manage Team</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-member"><i class="fa fa-lock color-brown-dark"></i><span>Member Permissions</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-dates"><i class="fa fa-calendar color-green-dark"></i><span>Project Deadlines </span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Restaurant and Orders</h2>
+                <p class="mb-3">
+                    For restaurants, food, orders and more.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-reservation"><i class="fa fa-calendar color-blue-dark"></i><span>Reservation</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-hours"><i class="fa fa-clock color-brown-dark"></i><span>Working Hours</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-cart"><i class="fa fa-shopping-bag color-green-dark"></i><span>Order Cart</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-cart-edit"><i class="fa fa-edit color-red-dark"></i><span>Edit Order</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-ingredients"><i class="fa fa-utensils color-gray-dark"></i><span>Edit Ingredients</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Content Sheets</h2>
+                <p class="mb-3">
+                    Manage your Content with Style.
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-bookmarks"><i class="fa fa-bookmark color-red-dark"></i><span>Bookmarks</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-author-1"><i class="fa fa-user color-blue-dark"></i><span>Author 1</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-author-2"><i class="fa fa-user color-green-dark"></i><span>Author 2</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-categories"><i class="fa fa-bars color-blue-dark"></i><span>Categories</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-tags"><i class="fa fa-list color-brown-dark"></i><span>Tags</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+<!--
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <h2>Media Embeds</h2>
+                <p class="mb-3">
+                    Embed your content. It's super simple!
+                </p>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-youtube"><i class="fab fa-youtube color-red-dark"></i><span>YouTube</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-maps"><i class="fa fa-map-marker color-green-dark"></i><span>Google Maps</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-soundcloud"><i class="fab fa-soundcloud color-orange-dark"></i><span>SoundCloud</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-apple-music"><i class="fab fa-apple font-15 color-gray-dark"></i><span>Apple Music</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+-->
+                
+        <div class="card card-style">
+            <div class="content mb-3">
+                <h4>Trigger by Tap or Programatically</h4>
+                <p class="mb-3">
+                    You've asked us to add the feature to simply call a function and trigger a sidebar. We've added this
+                    feature to all menus in our product. Action Sheets, Modals, Sidebars can all be triggered and dismissed programatically.
+                </p>
+                <code>menu('menu-settings', 'show', 250)</code><br>
+                <code>menu('menu-settings', 'hide', 250)</code>
+            </div>  
+        </div>
+        
+        <div class="footer card card-style">
+            <a href="#" class="footer-title"><span class="color-highlight">StickyMobile</span></a>
+            <p class="footer-text"><span>Made with <i class="fa fa-heart color-highlight font-16 ps-2 pe-2"></i> by Enabled</span><br><br>Powered by the best Mobile Website Developer on Envato Market. Elite Quality. Elite Products.</p>
+            <div class="text-center mb-3">
+                <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-phone"><i class="fa fa-phone"></i></a>
+                <a href="#" data-menu="menu-share" class="icon icon-xs rounded-sm me-1 shadow-l bg-red-dark"><i class="fa fa-share-alt"></i></a>
+                <a href="#" class="back-to-top icon icon-xs rounded-sm shadow-l bg-dark-light"><i class="fa fa-angle-up"></i></a>
+            </div>
+            <p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
+            <p class="footer-links"><a href="#" class="color-highlight">Privacy Policy</a> | <a href="#" class="color-highlight">Terms and Conditions</a> | <a href="#" class="back-to-top color-highlight"> Back to Top</a></p>
+            <div class="clear"></div>
+        </div>  
+        
+    </div>
+    
+
+
+    <!-- End of Page Content--> 
+    <!-- All Menus, Action Sheets, Modals, Notifications, Toasts get Placed outside the <div class="page-content"> -->
+    <div id="menu-settings" class="menu menu-box-modal menu-box-detached">
+        <div class="menu-title mt-0 pt-0"><h1>Settings</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="list-group list-custom-small">
+                <a href="#" data-toggle-theme data-trigger-switch="switch-dark-mode" class="pb-2 ms-n1">
+                    <i class="fa font-12 fa-moon rounded-s bg-highlight color-white me-3"></i>
+                    <span>Dark Mode</span>
+                    <div class="custom-control scale-switch ios-switch">
+                        <input data-toggle-theme type="checkbox" class="ios-input" id="switch-dark-mode">
+                        <label class="custom-control-label" for="switch-dark-mode"></label>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </a>    
+            </div>
+            <div class="list-group list-custom-large">
+                <a data-menu="menu-highlights" href="#">
+                    <i class="fa font-14 fa-tint bg-green-dark rounded-s"></i>
+                    <span>Page Highlight</span>
+                    <strong>16 Colors Highlights Included</strong>
+                    <span class="badge bg-highlight color-white">HOT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a data-menu="menu-backgrounds" href="#" class="border-0">
+                    <i class="fa font-14 fa-cog bg-blue-dark rounded-s"></i>
+                    <span>Background Color</span>
+                    <strong>10 Page Gradients Included</strong>
+                    <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>
+    </div>
+    <!-- Menu Settings Highlights-->
+    <div id="menu-highlights" class="menu menu-box-modal menu-box-detached">
+        <div class="menu-title"><h1>Highlights</h1><p class="color-highlight">Any Element can have a Highlight Color</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="highlight-changer">
+                <a href="#" data-change-highlight="blue"><i class="fa fa-circle color-blue-dark"></i><span class="color-blue-light">Default</span></a>
+                <a href="#" data-change-highlight="red"><i class="fa fa-circle color-red-dark"></i><span class="color-red-light">Red</span></a>    
+                <a href="#" data-change-highlight="orange"><i class="fa fa-circle color-orange-dark"></i><span class="color-orange-light">Orange</span></a>    
+                <a href="#" data-change-highlight="pink2"><i class="fa fa-circle color-pink2-dark"></i><span class="color-pink-dark">Pink</span></a>    
+                <a href="#" data-change-highlight="magenta"><i class="fa fa-circle color-magenta-dark"></i><span class="color-magenta-light">Purple</span></a>    
+                <a href="#" data-change-highlight="aqua"><i class="fa fa-circle color-aqua-dark"></i><span class="color-aqua-light">Aqua</span></a>      
+                <a href="#" data-change-highlight="teal"><i class="fa fa-circle color-teal-dark"></i><span class="color-teal-light">Teal</span></a>      
+                <a href="#" data-change-highlight="mint"><i class="fa fa-circle color-mint-dark"></i><span class="color-mint-light">Mint</span></a>      
+                <a href="#" data-change-highlight="green"><i class="fa fa-circle color-green-light"></i><span class="color-green-light">Green</span></a>    
+                <a href="#" data-change-highlight="grass"><i class="fa fa-circle color-green-dark"></i><span class="color-green-dark">Grass</span></a>       
+                <a href="#" data-change-highlight="sunny"><i class="fa fa-circle color-yellow-light"></i><span class="color-yellow-light">Sunny</span></a>    
+                <a href="#" data-change-highlight="yellow"><i class="fa fa-circle color-yellow-dark"></i><span class="color-yellow-light">Goldish</span></a>
+                <a href="#" data-change-highlight="brown"><i class="fa fa-circle color-brown-dark"></i><span class="color-brown-light">Wood</span></a>    
+                <a href="#" data-change-highlight="night"><i class="fa fa-circle color-dark-dark"></i><span class="color-dark-light">Night</span></a>
+                <a href="#" data-change-highlight="dark"><i class="fa fa-circle color-dark-light"></i><span class="color-dark-light">Dark</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>    
+    <!-- Menu Settings Backgrounds-->
+    <div id="menu-backgrounds" class="menu menu-box-modal menu-box-detached">
+        <div class="menu-title"><h1>Backgrounds</h1><p class="color-highlight">Change Page Color Behind Content Boxes</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="background-changer">
+                <a href="#" data-change-background="default"><i class="bg-theme"></i><span class="color-dark-dark">Default</span></a>
+                <a href="#" data-change-background="plum"><i class="body-plum"></i><span class="color-plum-dark">Plum</span></a>
+                <a href="#" data-change-background="magenta"><i class="body-magenta"></i><span class="color-dark-dark">Magenta</span></a>
+                <a href="#" data-change-background="dark"><i class="body-dark"></i><span class="color-dark-dark">Dark</span></a>
+                <a href="#" data-change-background="violet"><i class="body-violet"></i><span class="color-violet-dark">Violet</span></a>
+                <a href="#" data-change-background="red"><i class="body-red"></i><span class="color-red-dark">Red</span></a>
+                <a href="#" data-change-background="green"><i class="body-green"></i><span class="color-green-dark">Green</span></a>
+                <a href="#" data-change-background="sky"><i class="body-sky"></i><span class="color-sky-dark">Sky</span></a>
+                <a href="#" data-change-background="orange"><i class="body-orange"></i><span class="color-orange-dark">Orange</span></a>
+                <a href="#" data-change-background="yellow"><i class="body-yellow"></i><span class="color-yellow-dark">Yellow</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>
+    <!-- Menu Share -->
+    <div id="menu-share" class="menu menu-box-modal menu-box-detached">
+        <div class="menu-title mt-n1"><h1>Share the Love</h1><p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="content mb-0">
+            <div class="divider mb-0"></div>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="auto_generated" class="shareToFacebook external-link">
+                    <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                    <span class="font-13">Facebook</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToTwitter external-link">
+                    <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                    <span class="font-13">Twitter</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToLinkedIn external-link">
+                    <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                    <span class="font-13">LinkedIn</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="auto_generated" class="shareToWhatsApp external-link">
+                    <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                    <span class="font-13">WhatsApp</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>   
+                <a href="auto_generated" class="shareToMail external-link border-0">
+                    <i class="font-18 fa fa-envelope-square color-mail"></i>
+                    <span class="font-13">Email</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!---------------------------------------------------------------------------------------------->
+    <!-- Place all Action Elements and Menus Outside of the page-content class. Starting from here-->
+    <!---------------------------------------------------------------------------------------------->
+    
+    <!------------------->
+    <!-- Action Styles -->
+    <!------------------->
+    
+    
+    <!-- menu-action-box-full -->
+    <div id="menu-action-box-full" class="menu menu-box-modal menu-box-modal-full rounded-0" data-menu-width="cover" data-menu-height="cover">
+        <div class="card" data-card-height="cover">
+        
+            <div class="card-center text-center">
+                <div class="content boxed-text-xl mb-0 mt-0">
+                    <h1>Full Screen Modal</h1>
+                    <p>
+                        This sheet has a parallax effect. When activated the page will move up by a bit as well.
+                    </p>
+                    <a href="#" class="close-menu btn btn-l rounded-sm btn-full bg-green-dark text-uppercase font-800">AWESOME</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- menu-action-box-square -->
+    <div id="menu-action-box-square" class="menu menu-box-modal rounded-0" data-menu-width="320" data-menu-height="240">
+        <div class="menu-title mt-n1">
+            <h1>Square Edges</h1>
+            <p class="color-highlight">This sheet has squared edges</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="content mb-0 mt-2">
+            <div class="divider mb-3"></div>
+            <p>
+                The default boxes are rounded, but you can create square edges as well.
+            </p>
+            <a href="#" class="close-menu btn btn-l rounded-0 btn-full bg-green-dark text-uppercase font-800">AWESOME</a>
+        </div>
+    </div>
+            
+    
+    <!--------------------->
+    <!-- General Actions -->
+    <!--------------------->
+    
+    <!-- menu-call -->
+    <div id="menu-call" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="250">
+        <div class="menu-title mt-n1">
+            <h1>Call Now</h1>
+            <p class="color-highlight">Tap to Start a Call Now</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="content mb-0 mt-2">
+            <div class="divider mb-3"></div>
+            <p>
+                We're always here to help. Give us a Call Today. Just tap the button and get in touch with us.
+            </p>
+            <a href="tel:+1 234 567 890" class="default-link btn btn-l  rounded-sm btn-full bg-green-dark text-uppercase font-800 btn-icon"><i class="fa fa-phone"></i>Call Now +1 234 567 890</a>
+        </div>
+    </div>
+    
+    <!-- menu-subscribe -->
+    <div id="menu-subscribe" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="300">
+        <div class="menu-title mt-n1">
+            <h1>Subscribe</h1>
+            <p class="color-theme opacity-50">Join our Newsletter</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="content mb-0 mt-2">
+            <div class="divider mb-3"></div>
+            <p class="mb-3">
+                Join the newsletter and get the latest and hottest news from us directly in your mailbox.
+            </p>
+            <div class="input-style no-borders no-icon validate-field">
+                <input type="email" class="form-control validate-text" id="form2a" placeholder="Email">
+                <label for="form2a" class="color-highlight">Email</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <a href="#" data-menu="menu-subscribe-confirm" class="btn btn-l mt-4 rounded-sm btn-full bg-blue-dark text-uppercase font-800">Subscribe Now</a>
+        </div>
+    </div>
+    
+    <!-- menu-subscribe-confirm -->
+    <div id="menu-subscribe-confirm" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="320">
+        <div class="content text-center">
+            <i class="fa fa-check-circle color-green-dark fa-5x pt-2"></i>
+            <h1 class="pt-3 font-30">Thank You</h1>
+            <p class="boxed-text-xl">
+                We've sent a confirmation email to your inbox. Be sure you click the link to confirm.
+            </p>
+            <a href="#" class="close-menu btn btn-full btn-m bg-green-dark font-800 text-uppercase rounded-m">Awesome</a>
+            <p class="font-10 opacity-50 pt-2">This is a dummy message. This form requires integration.</p>
+        </div>
+    </div>
+        
+    <!--menu-share-list -->
+    <div id="menu-share-list" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="305">
+        <div class="list-group list-custom-small ps-1 pe-3">
+            <a href="#" class="shareToFacebook">
+                <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                <span class="font-13">Facebook</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#" class="shareToTwitter">
+                <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                <span class="font-13">Twitter</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#" class="shareToLinkedIn">
+                <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                <span class="font-13">LinkedIn</span>
+                <i class="fa fa-angle-right"></i>
+            </a>  
+            <a href="#" class="shareToGooglePlus">
+                <i class="font-18 fab fa-google-plus-square color-google"></i>
+                <span class="font-13">Google +</span>
+                <i class="fa fa-angle-right"></i>
+            </a>      
+            <a href="#" class="shareToWhatsApp">
+                <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                <span class="font-13">WhatsApp</span>
+                <i class="fa fa-angle-right"></i>
+            </a>   
+            <a href="#" class="shareToMail border-0">
+                <i class="font-18 fa fa-envelope-square color-mail"></i>
+                <span class="font-13">Email</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
+    </div>    
+    
+    <!--menu-share-thumbs -->
+    <div id="menu-share-thumbs" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="420">
+        <h1 class="text-center text-uppercase font-900 mt-3 pt-2">Share the Love</h1>
+        <p class="boxed-text-xl under-heading">
+            Share our page with the world, increase <br>
+            your page exposure with the world.
+        </p>
+        <div class="divider divider-margins"></div>
+        
+        <div class="row text-center me-4 ms-4 mb-0">
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-facebook rounded-s shadow-l"><i class="fab fa-facebook-f font-22"></i><br></a>
+                <p class="font-11 opacity-70">Facebook</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-twitter rounded-s shadow-l"><i class="fab fa-twitter font-22"></i><br></a>
+                <p class="font-11 opacity-70">Twitter</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-linkedin rounded-s shadow-l"><i class="fab fa-linkedin-in font-22"></i><br></a>
+                <p class="font-11 opacity-70">LinkedIn</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-mail rounded-s shadow-l"><i class="fa fa-envelope font-22"></i><br></a>
+                <p class="font-11 opacity-70">Email</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="icon icon-l bg-whatsapp rounded-s shadow-l"><i class="fab fa-whatsapp font-22"></i><br></a>
+                <p class="font-11 opacity-70">WhatsApp</p>
+            </div>
+            <div class="col-4 mb-n2">
+                <a href="#" class="close-menu icon icon-l bg-red-dark rounded-s shadow-l"><i class="fa fa-arrow-down font-22"></i><br></a>
+                <p class="font-11 opacity-70">Close</p>
+            </div>
+        </div>
+
+        <div class="divider divider-margins mt-n1 mb-3"></div>
+        <p class="text-center font-10 mb-0">Copyright <span class="copyright-year"></span> - Enabled. All rights reserved.</p>
+    </div>
+
+    <!--menu-tour-1 -->
+    <div id="menu-tour-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="240">
+        <div class="text-center">
+            <h1 class="mt-4 font-700 font-22">Hi, I'm an Action Sheet</h1>
+            <p class="boxed-text-xl pt-2">
+                I can show your users different boxes, or multiple boxes, have different styles, and even complex content. Let me show you.
+            </p>
+            <a href="#" data-menu="menu-tour-2" class="btn btn-m rounded-sm shadow-l bg-highlight btn-center-m text-uppercase font-900">Show me more</a>
+        </div>
+    </div> 
+    
+    <!--menu-tour-2 -->
+    <div id="menu-tour-2" class="menu menu-box-top menu-box-detached rounded-m" data-menu-height="200">
+        <div class="text-center top-30">
+            <h1 class="mt-4 font-700 font-22">Top? No problem!</h1>
+            <p class="boxed-text-xl">
+                You can use action sheets here as well, it's really easy to add them wherever you want.
+            </p>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-tour-1" class="ms-3 btn btn-sm rounded-sm btn-full text-uppercase font-900 bg-red-dark">Back</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-menu="menu-tour-3" class="me-3 btn btn-sm rounded-sm btn-full text-uppercase font-900 bg-green-dark">Proceed</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>    
+    
+    <!--menu-tour-3 -->
+    <div id="menu-tour-3" class="menu menu-box-modal rounded-m" data-menu-height="220" data-menu-width="320">
+        <div class="text-center top-30">
+            <h3 class="mt-4 font-700 font-22">Modal Sheets Too</h3>
+            <p class="boxed-text-xl">
+                You can use action sheets in any position. Fast, easy and add any content you need. Check out other examples.
+            </p>
+            <a href="#" class="close-menu btn btn-sm rounded-s shadow-l bg-green-dark btn-center-m font-900">AWESOME</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- menu-cookies -->
+    <div id="menu-cookies" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="290">
+        <div class="content text-center">
+            <i class="fa fa-cookie color-brown-dark fa-5x pt-2"></i>
+            <h1 class="pt-3 font-30">Cookies</h1>
+            <p class="boxed-text-xl">
+                We use cookies to make your experience of our products smoother and better.
+            </p>
+            <div class="row mb-0">
+                <div class="col-7">
+                    <a href="#" class="close-menu btn btn-full btn-m btn-border color-green-dark border-green-dark font-700 text-uppercase rounded-sm">Privacy Policy</a>
+                </div>
+                <div class="col-5">
+                    <a href="#" class="close-menu btn btn-full btn-m bg-green-dark font-700 text-uppercase rounded-sm">Okay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- menu-gdpr -->
+    <div id="menu-gdpr" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="450">
+        <div class="menu-title mt-n1">
+            <h1>Data Collection </h1>
+            <p class="color-highlight">Information we collect from you.</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="content mt-2">
+            <div class="divider mb-3"></div>
+            <div class="d-flex pt-1">
+                <div class="align-self-center"><a href="#" class="icon font-12 color-theme  pe-3 ms-2"><i class="fa fa-user"></i></a></div>
+                <div class="align-self-center"><h5 class="mb-1">Personal Information</h5></div>
+            </div>
+            <ul class="px-5 mx-2 line-height-s pt-2 pb-2">
+                <li>Favorite Songs</li>
+                <li>Favorite Albums</li>
+            </ul>
+            <div class="d-flex">
+                <div class="align-self-center"><a href="#" class="icon font-12 color-theme  pe-3 ms-2"><i class="fa fa-chart-pie"></i></a></div>
+                <div class="align-self-center"><h5 class="mb-1">App Usage and Analytics</h5></div>
+            </div>
+            <ul class="px-5 mx-2 line-height-s pt-2 pb-2">
+                <li>Hours Listened</li>
+            </ul>
+            <div class="d-flex">
+                <div class="align-self-center"><a href="#" class="icon font-12 color-theme  pe-3 ms-2"><i class="fa fa-bullseye"></i></a></div>
+                <div class="align-self-center"><h5 class="mb-1">Identifiers</h5></div>
+            </div>
+            <ul class="px-5 mx-2 line-height-s pt-2 pb-3">
+                <li>Hours Listened</li>
+                <li>Media Types Liked</li>
+            </ul>
+            <a href="#" data-menu="menu-gdpe-confirm" class="btn btn-m btn-full bg-blue-dark text-uppercase rounded-sm font-800">I accept</a>
+            <p class="text-center pt-2 mb-0 font-10">
+                <a href="#" data-menu="menu-gdpe-reject" class="text-center color-theme opacity-50 px-2 pb-2 mt-3">Cancel. I don't consent.</a>
+            </p>
+        </div>
+    </div> 
+    
+    <!-- menu-gdpe-confirm -->
+    <div id="menu-gdpr-confirm" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="340">
+        <div class="content text-center">
+            <i class="fa fa-check-circle color-green-dark fa-5x pt-2"></i>
+            <h1 class="pt-3 font-30">Thank You</h1>
+            <p class="boxed-text-xl">
+                Your data is always safe and we will never use direct identifiers to track you or use your real information in any way.
+            </p>
+            <a href="#" class="close-menu btn btn-full btn-m bg-green-dark font-800 text-uppercase rounded-m">Awesome</a>
+            <p class="font-10 opacity-50 pt-2 color-red-dark font-800">THIS IS A DUMMY BOX. THERE IS NO DATA COLLECTED.</p>
+        </div>
+    </div>   
+    
+    <!-- menu-gdpe-confirm -->
+    <div id="menu-gdpr-reject" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="340">
+        <div class="content text-center">
+            <i class="fa fa-times-circle color-red-dark fa-5x pt-2"></i>
+            <h1 class="pt-3 font-30">We're Sorry</h1>
+            <p class="boxed-text-xl">
+                Without data collection  our services may lack the appropriate experience you want. You can change your mind and re-enable tracking.
+            </p>
+            <a href="#" class="close-menu btn btn-full btn-m bg-red-dark font-800 text-uppercase rounded-m">Okay</a>
+            <p class="font-10 opacity-50 pt-2 color-red-dark font-800">THIS IS A DUMMY BOX. THERE IS NO DATA COLLECTED.</p>
+        </div>
+    </div>
+  
+    <!--menu-contact-1 -->
+    <div id="menu-contact-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="460">
+        <div class="menu-title mt-n1">
+            <h1>Get in Touch</h1>
+            <p class="color-highlight">Send us a message and let's chat!</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="form-sent disabled">
+            <div class="card card-style">
+                <div class="shadow-l rounded-m gradient-green me-n1 ms-n1 mb-n1 ">
+                    <h1 class="color-white text-center pt-4"><i class="fa fa-check-circle fa-3x shadow-s scale-box rounded-circle"></i></h1>
+                    <h2 class="color-white bold text-center pt-3">Message Sent</h2>
+                    <p class="color-white pb-4 text-center mt-n2 mb-0">We'll get back to you shortly.</p>
+                </div>
+            </div>
+
+            <div class="card card-style">
+                <div class="content text-center">
+                    <h2>Meanwhile, let's get social!</h2>
+                    <p class="boxed-text-xl">
+                        Here are our social media platforms! Follow us for the latest updates or just say hello! 
+                    </p>
+                    <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-instagram ms-3 me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon icon-xl shadow-xl rounded-xl bg-twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="validator-name" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Name is required!</div>
+        <div id="validator-mail1" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Email Address is required!</div>
+        <div id="validator-mail2" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Invalid email Address!</div>
+        <div id="validator-text" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Please enter your message!</div>
+        
+        <div class="card contact-form">
+            <div class="content mb-0 mt-2">
+                <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                    <fieldset>
+                        <div class="form-field form-name">
+                            <label class="contactNameField color-theme" for="contactNameField">Name:<span>(required)</span></label>
+                            <input type="text" name="contactNameField" value="" class="round-small" id="contactNameField" />
+                        </div>
+                        <div class="form-field form-email">
+                            <label class="contactEmailField color-theme" for="contactEmailField">Email:<span>(required)</span></label>
+                            <input type="text" name="contactEmailField" value="" class="round-small" id="contactEmailField" />
+                        </div>
+                        <div class="form-field form-text">
+                            <label class="contactMessageTextarea color-theme" for="contactMessageTextarea">Message:<span>(required)</span></label>
+                            <textarea name="contactMessageTextarea" class="round-small" id="contactMessageTextarea" style="height:80px;"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <input type="submit" class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-sm  shadow-xl contactSubmitButton" value="Send Message" data-formId="contactForm" />
+                        </div>
+                    </fieldset>
+                </form>			
+            </div>
+        </div>    
+    </div>
+    
+    <!-- menu-contact-2 -->
+    <div id="menu-contact-2" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="290">
+        <div class="content text-center">
+            <i class="fa fa-handshake color-gray-dark fa-5x pt-2"></i>
+            <h1 class="pt-3 font-30">Get in Touch</h1>
+            <p class="boxed-text-xl">
+                We're always here to help. Send us an email or contact us via phone. We're happy to help.
+            </p>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-contact-1" class="btn btn-full btn-m bg-blue-dark font-800 text-uppercase rounded-sm">Email</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-menu="menu-call" class="btn btn-full btn-m bg-green-dark font-800 text-uppercase rounded-sm">Call</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!--------------------->
+    <!-- Account Actions -->
+    <!--------------------->
+    
+    <!-- menu-login-1 -->
+    <div id="menu-login-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="320">
+        <div class="menu-title mt-n1">
+            <h1>Login</h1>
+            <p class="color-theme opacity-50">Please enter your credentials below</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+
+        <div class="content mb-0">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-user"></i>
+                <input type="name" class="form-control validate-name" id="form1a" placeholder="Name">
+                <label for="form1a" class="color-blue-dark">Name</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>                
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control validate-text" id="form3a" placeholder="Password">
+                <label for="form3a" class="color-blue-dark">Password</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-forgot-1" class="font-10">Forgot Password?</a>
+                </div>
+                <div class="col-6">
+                    <a data-menu="menu-register-1" href="#" class="float-end font-10">Create Account</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-full btn-m shadow-l rounded-s text-uppercase font-900 bg-green-dark mt-n2">LOGIN</a>
+        </div>
+    </div>
+    
+    <!-- menu-login-2 -->
+    <div id="menu-login-2" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="320">
+        <div class="card m-0 bg-18 theme-dark" data-card-height="320">
+            <div class="card-body mx-0">
+                <h1>Login</h1>
+                <p class="font-11 mb-0 mt-n2">
+                    Please enter your credentials bellow to continue.
+                </p>
+                <div class="input-style no-borders has-icon validate-field mb-4 mt-3">
+                    <i class="fa fa-user"></i>
+                    <input type="name" class="form-control validate-name" id="form1ab" placeholder="Name">
+                    <label for="form1ab" class="color-blue-dark">Name</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>                
+                <div class="input-style no-borders has-icon validate-field mb-4">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="form-control validate-text" id="form3ab" placeholder="Password">
+                    <label for="form3ab" class="color-blue-dark">Password</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#" data-menu="menu-forgot-2" class="font-10">Forgot Password?</a>
+                    </div>
+                    <div class="col-6">
+                        <a data-menu="menu-register-2" href="#" class="float-end font-10">Create Account</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-full btn-m shadow-l rounded-s text-uppercase font-900 bg-green-dark mt-n2">LOGIN</a>
+            </div>
+            <div class="card-overlay bg-black opacity-90"></div>
+        </div>
+    </div>     
+     
+    <!-- menu-register-1 -->
+    <div id="menu-register-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="430">
+        <div class="menu-title mt-n1">
+            <h1>Register</h1>
+            <p class="color-theme opacity-50">Create an Account</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+
+        <div class="content mb-0 mt-0">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-user"></i>
+                <input type="name" class="form-control validate-name" id="form1ac" placeholder="Your User">
+                <label for="form1ac" class="color-blue-dark font-10">Your User</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-at"></i>
+                <input type="email" class="form-control validate-text" id="form2ac" placeholder="Your Email">
+                <label for="form2ac" class="color-blue-dark font-10">Your Email</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control validate-text" id="form3ac" placeholder="Choose Password">
+                <label for="form3ac" class="color-blue-dark font-10">Choose Password</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control validate-text" id="form4ac" placeholder="Confirm Password">
+                <label for="form4ac" class="color-blue-dark font-10">Confirm Password</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-forgot-1" class="font-10">Forgot Password?</a>
+                </div>
+                <div class="col-6">
+                    <a data-menu="menu-login-1" href="#" class="float-end font-10">Login Here</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-full btn-m shadow-l rounded-s text-uppercase font-900 bg-blue-dark mt-n2">Create account</a>
+        </div>
+    </div>
+    
+    <!-- menu-register-2 -->
+    <div id="menu-register-2" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="380">
+        <div class="card m-0 bg-18 theme-dark" data-card-height="380">
+            <div class="card-body mx-0">
+                <div class="input-style no-borders has-icon validate-field mb-4 mt-2">
+                    <i class="fa fa-user"></i>
+                    <input type="name" class="form-control validate-name" id="form1acd" placeholder="Your User">
+                    <label for="form1acd" class="color-blue-dark font-10">Your User</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+
+                <div class="input-style no-borders has-icon validate-field mb-4">
+                    <i class="fa fa-at"></i>
+                    <input type="email" class="form-control validate-text" id="form2acd" placeholder="Your Email">
+                    <label for="form2acd" class="color-blue-dark font-10">Your Email</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+
+                <div class="input-style no-borders has-icon validate-field mb-4">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="form-control validate-text" id="form3acd" placeholder="Choose Password">
+                    <label for="form3acd" class="color-blue-dark font-10">Choose Password</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style no-borders has-icon validate-field mb-4">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="form-control validate-text" id="form4acd" placeholder="Confirm Password">
+                    <label for="form4acd" class="color-blue-dark font-10">Confirm Password</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#" data-menu="menu-login-2" class="font-10">Login Here</a>
+                    </div>
+                    <div class="col-6">
+                        <a data-menu="menu-forgot-2" href="#" class="float-end font-10">Forgot Password</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            <a href="#" class="btn btn-full btn-m shadow-l rounded-s text-uppercase font-900 bg-blue-dark mt-n2">Create account</a>
+            </div>
+            <div class="card-overlay bg-black opacity-90"></div>
+        </div>
+    </div>     
+
+    <!-- menu-forgot-1 -->
+    <div id="menu-forgot-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="240">
+        <div class="menu-title mt-n1">
+            <h1>Forgot</h1>
+            <p class="color-theme opacity-50">Recover your account</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+
+        <div class="content mb-0 mt-n2">
+            <div class="input-style no-borders has-icon validate-field mb-4">
+                <i class="fa fa-at"></i>
+                <input type="email" class="form-control validate-text" id="form24a" placeholder="Email">
+                <label for="form24a" class="color-blue-dark">Email</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-login-1" class="font-10">Login Here</a>
+                </div>
+                <div class="col-6">
+                    <a data-menu="menu-register-1" href="#" class="float-end font-10">Create Account</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-full btn-m shadow-l rounded-s text-uppercase font-900 bg-red-dark mt-n2">Reset Password</a>
+        </div>
+    </div>
+    
+    <!-- menu-forgot-2 -->
+    <div id="menu-forgot-2" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="260">
+        <div class="card m-0 bg-18 theme-dark" data-card-height="260">
+            <div class="card-body mx-0">
+                <h1>Forgot</h1>
+                <p class="font-11 mb-0 mt-n2">
+                    Recover your Account.
+                </p>
+                <div class="input-style no-borders has-icon validate-field mb-4 mt-3">
+                    <i class="fa fa-at"></i>
+                    <input type="email" class="form-control validate-text" id="form124a" placeholder="Email">
+                    <label for="form124a" class="color-blue-dark">Email</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#" data-menu="menu-login-2" class="font-10">Login Here</a>
+                    </div>
+                    <div class="col-6">
+                        <a data-menu="menu-register-2" href="#" class="float-end font-10">Create Account</a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-full btn-m shadow-l rounded-s text-uppercase font-900 bg-red-dark mt-n2">Reset Password</a>
+            </div>
+            <div class="card-overlay bg-black opacity-90"></div>
+        </div>
+    </div>     
+     
+    <!-- menu-user-switcher-1 -->
+    <div id="menu-user-switch" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="340">
+        <div class="menu-title mt-n1">
+            <h1>Accounts</h1>
+            <p class="color-theme opacity-50">Switch or Login to another User</p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+
+        <div class="content mb-0 mt-1">
+            <div class="divider mb-3"></div>
+            <div class="d-flex mb-4">
+                <div class="align-self-center">
+                    <img src="images/splash/apple-touch-icon-120x120.png" width="60" class="rounded-xl shadow-xl border me-3">
+                </div>
+                <div class="align-self-center">
+                    <a href="#">
+                    <h4 class="font-700">Enabled</h4>
+                    <h5 class="font-400 font-12 mt-n1 mb-0 opacity-50">name@domain.com</h5>
+                    </a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <a href="#" class="icon icon-l rounded-l mb-1"><i class="fa fa-check-circle color-blue-dark font-18 me-n3 pe-1"></i></a>
+                </div>
+            </div>
+            <div class="d-flex mb-4">
+                <div class="align-self-center">
+                    <img src="images/pictures/faces/2s.png" width="60" class="rounded-xl shadow-0 border me-3">
+                </div>
+                <div class="align-self-center">
+                    <a href="#">
+                    <h4 class="font-700">John Doe</h4>
+                    <h5 class="font-400 font-12 mt-n1 mb-0 opacity-50">name@domain.com</h5>
+                    </a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <a href="#" class="icon icon-l rounded-l mb-1"></a>
+                </div>
+            </div>
+
+            <div class="d-flex mb-4">
+                <div class="align-self-center">
+                    <i class="icon icon-xl bg-gray-light rounded-xl me-2"><i class="fa fa-plus color-gray-dark"></i></i>
+                </div>
+                <div class="align-self-center">
+                    <a href="#">
+                        <h4 class="font-500 mb-0 ps-2 font-14">Log in or create new account</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- menu-language -->
+    <div id="menu-language" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="330">
+        <div class="menu-title mt-n1">
+            <h1>Site Language</h1>
+            <p class="color-theme opacity-50">Just a Demo Action Sheet </p>
+            <a href="#" class="close-menu"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="content mb-0 mt-0">
+            <div class="divider mt-2 mb-0"></div>
+            <div class="list-group list-custom-small ps-1">
+                <a href="#"><img class="me-3 mt-n1" width="20" src="images/flags/United-States.png"><span>English</span><i class="fa fa-angle-right"></i></a>
+                <a href="#"><img class="me-3 mt-n1" width="20" src="images/flags/India.png"><span>Indian</span><i class="fa fa-angle-right"></i></a>
+                <a href="#"><img class="me-3 mt-n1" width="20" src="images/flags/Germany.png"><span>German</span><i class="fa fa-angle-right"></i></a>
+                <a href="#"><img class="me-3 mt-n1" width="20" src="images/flags/Italy.png"><span>Italian</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="border-0"><img class="me-3 mt-n1" width="20"  src="images/flags/Spain.png"><span>Spanish</span><i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>     
+    
+    <!-- menu age-->
+    <div id="menu-age" class="menu menu-box-modal menu-box-detached rounded-m"
+         data-menu-height="250" 
+        >
+        <div class="me-3 ms-3 mt-3">
+            <h1 class="text-uppercase font-900 mb-0">Verify your age</h1>
+            <p class="font-11 mb-2">
+                This menu can be automatically activated on page load. The date format must be 31/12/1986.
+            </p>
+            
+            <div class="row mb-0">
+                <div class="col-4">
+                    <div class="input-style input-style-always-active no-borders no-icon validate-field mb-4">
+                        <input type="number" min="1" max="31" class="form-control validate-number" id="date-birth-day" placeholder="Day" required>
+                        <label for="date-birth-day" class="color-theme opacity-50 text-uppercase font-700 font-10 disabled">Last Name</label>
+                        <i class="disabled invalid color-red-dark"></i>
+                        <i class="disabled valid color-green-dark"></i>
+                        <em>*</em>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="input-style input-style-always-active no-borders no-icon validate-field mb-4">
+                        <input type="number" min="1" max="12" class="form-control validate-number" id="date-birth-month" placeholder="Month" required>
+                        <label for="date-birth-month" class="color-theme opacity-50 text-uppercase font-700 font-10 disabled">Last Name</label>
+                        <i class="disabled invalid color-red-dark"></i>
+                        <i class="disabled valid color-green-dark"></i>
+                        <em>*</em>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="input-style input-style-always-active no-borders no-icon validate-field mb-4">
+                        <input type="number" min="2020" max="2021" class="form-control validate-number" id="date-birth-year" placeholder="Month" required>
+                        <label for="date-birth-year" class="color-theme opacity-50 text-uppercase font-700 font-10 disabled">Last Name</label>
+                        <i class="disabled invalid color-red-dark"></i>
+                        <i class="disabled valid color-green-dark"></i>
+                        <em>*</em>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="check-age mb-3 btn btn-full btn-m shadow-l rounded-s bg-blue-dark mt-3 text-uppercase font-900">Verify Age</a>
+        </div>
+    </div>     
+    
+    <!-- menu age okay-->
+    <div id="menu-age-okay" class="menu menu-box-modal menu-box-detached rounded-m" 
+         data-menu-height="315" 
+        >
+        <h1 class="text-center mt-4"><i class="fa fa-3x fa-check-circle color-green-dark"></i></h1>
+        <h1 class="text-center text-uppercase font-900">Age Verified</h1>
+        <p class="boxed-text-l mt-4">
+             Thank you for confirming your age.<br> You can now continue browsing our page.
+        </p>
+        <a href="#" class="close-menu mb-3 btn btn-m btn-center-m button-s shadow-l rounded-s text-uppercase font-900 bg-green-light">Great</a>
+    </div>      
+    
+    <!-- menu age fail-->
+    <div id="menu-age-fail" class="menu menu-box-modal menu-box-detached rounded-m" 
+         data-menu-height="315" 
+        >
+        <h1 class="text-center mt-4"><i class="fa fa-3x fa-times-circle color-red-dark"></i></h1>
+        <h1 class="text-center text-uppercase font-900">Age verification Failed</h1>
+        <p class="boxed-text-l mt-4">
+             Sorry, you are not old enough to view this content.<br> Tturn back now and visit safer pages.
+        </p>
+        <a href="#" class="close-menu mb-3 btn btn-m btn-center-m button-s shadow-l rounded-s text-uppercase font-900 bg-red-light">Go Back</a>
+    </div>   
+    
+    <!-- menu contact card-->
+    <div id="menu-contact-card" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="400">
+        <div data-card-height="400" class="card mb-3 preload-img" data-src="images/pictures/14w.jpg">
+            <div class="card-center text-center">
+                <h1 class="fa-4x color-white pt-3">Enabled</h1>
+                <p class="color-highlight mb-3">The Best Mobile Developer on Envato</p>
+                <a href="scripts/vcard.vcf" class="default-link mb-5 btn btn-m rounded-s btn-center-xl bg-red-dark font-900 text-uppercase"> DOWNLOAD V-CARD</a>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white text-center mb-0 font-11">Scroll Down For More Contact Details</p>
+                <h1 class="color-white text-center scale-icon font-14 pb-3"><i class="fa fa-arrow-down color-white"></i></h1>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+
+        <div class="content mt-0 mb-2">
+            <h1 class="font-20 font-700 color-highlight">Phone</h1>
+            <div class="vcard-field"><strong>Mobile</strong><a href="tel:+1 234 567 890">+1 234 567 890</a><i class="fa fa-phone"></i></div>
+            <div class="vcard-field"><strong>Office</strong><a href="tel:+2 234 567 890">+2 234 567 890</a><i class="fa fa-suitcase"></i></div>
+            <div class="vcard-field border-0"><strong>Personal</strong><a href="tel:+3 234 567 890">+3 234 567 890</a><i class="fa fa-user"></i></div>
+            <div class="pt-4"></div>
+            <h1 class="font-20 font-700 color-highlight pb-3">Address</h1>
+            <div class="vcard-field line-height-l pb-3"><strong>Work</strong><a href="tel:+1 234 567 890">Milky Way, Planet Earth, <br> 2134 UltraMobile Street</a><i class="fa fa-map-marker mt-n2"></i></div>
+            <div class="vcard-field line-height-l pb-3 pt-4 border-0"><strong>Home</strong><a href="tel:+1 234 567 890">Milky Way, Planet Earth, <br> 1234 Enabled Avenue</a><i class="fa fa-map-marker mt-3"></i></div>
+            <div class="pt-4"></div>
+            <h1 class="font-20 font-700 color-highlight">Email</h1>
+            <div class="vcard-field"><strong>Home</strong><a href="mailto:home@domain.com">home@domain.com</a><i class="fa fa-home"></i></div>
+            <div class="vcard-field"><strong>Office</strong><a href="mailto:office@domain.com">office@domain.com</a><i class="fa fa-suitcase"></i></div>
+            <div class="vcard-field border-0"><strong>Personal</strong><a href="mailto:personal@domain.com">personal@domain.com</a><i class="fa fa-user"></i></div>
+            <div class="pt-4"></div>
+            <h1 class="font-20 font-700 color-highlight">Website</h1>
+            <div class="vcard-field border-0"><strong>URL</strong><a href="www.enableds.com">www.domain.com</a><i class="fa fa-globe"></i></div>
+            <div class="pt-4"></div>
+            <h1 class="vcard-title color-highlight">Social</h1>
+            <div class="vcard-field"><strong>Facebook</strong><a href="www.enableds.com">karla.black</a><i class="fab fa-facebook"></i></div>
+            <div class="vcard-field"><strong>Twitter</strong><a href="www.enableds.com">@karla.black</a><i class="fab fa-twitter"></i></div>
+            <div class="vcard-field border-0"><strong>Google Plus</strong><a href="www.enableds.com">@karla.black</a><i class="fab fa-google-plus"></i></div>
+            <div class="divider"></div>
+            <div class="row mb-0">
+                <div class="col-4">
+                    <a href="#" class="close-menu mb-4 btn btn-m rounded-s btn-full color-red-dark border-red-dark font-900 text-uppercase"> Close</a>
+                </div>
+                <div class="col-8">
+                    <a href="scripts/vcard.vcf" class="default-link mb-4 btn btn-m rounded-s btn-full bg-red-dark font-900 text-uppercase">DOWNLOAD V-CARD</a>
+                </div>
+            </div>
+        </div>
+
+    </div>   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!---------------------->
+    <!-- Commerce Actions -->
+    <!---------------------->
+    
+    <!-- menu-cart-1 -->
+    <div id="menu-cart-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="420">
+        <div class="menu-title"><h1>Shopping Cart</h1><p class="color-highlight">Your Current Cart Products</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div><img src="images/pictures/9s.jpg" class="rounded-m shadow-xl" width="80"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Your awesome long or short product title</h5>
+                        <h1 class="font-20 color-highlight">$99.<sup>99</sup></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div><img src="images/pictures/13s.jpg" class="rounded-m shadow-xl" width="80"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Macbook Pro 13" Core i7, 16GB, 512 SSD</h5>
+                        <h1 class="font-20 color-highlight">$1499.<sup>99</sup></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-5"><a href="#" class="btn btn-full btn-m font-800 rounded-sm text-uppercase bg-green-dark">Checkout</a></div>
+                <div class="col-7"><a href="#" class="btn btn-full btn-m font-800 rounded-sm text-uppercase bg-blue-dark">Continue Shopping</a></div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- menu-cart-item-1 -->
+    <div id="menu-cart-item-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="400">
+        <div class="menu-title"><h1>Edit Product</h1><p class="color-highlight">Choose your Preferences</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins"></div>  
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4 pb-2">
+                    <div><img src="images/pictures/9s.jpg" class="rounded-m shadow-xl" width="120"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Your awesome long or short product title</h5>
+                        <h1 class="color-green-dark">$99.<sup>99</sup></h1>
+                        <a href="#" class="color-theme opacity-50 font-10"><i class="fa fa-times color-red-dark pe-2 pt-3"></i>Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-8">
+                    <div class="input-style input-style-always-active no-borders no-icon mb-4">
+                        <label for="form5a" class="color-blue-dark">Select A Value</label>
+                        <select id="form5a">
+                            <option value="1" disabled selected>Select a Size</option>
+                            <option value="2">Extra Small Size</option>
+                            <option value="3">Small Size</option>
+                            <option value="4">Medium Size</option>
+                            <option value="5">Large Size</option>
+                            <option value="6">Extra Large Size</option>
+                        </select>
+                        <span><i class="fa fa-chevron-down"></i></span>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <i class="fa fa-check disabled invalid color-red-dark"></i>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="input-style input-style-always-active no-borders no-icon validate-field mb-4">
+                        <input type="number" class="form-control validate-number" id="form1a" placeholder="1">
+                        <label for="form1a" class="color-blue-dark">Qty</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn  btn-m font-800 rounded-sm btn-full text-uppercase bg-green-dark">CLose product Edit</a>
+        </div>
+
+    </div>    
+
+    <!-- menu-review -->
+    <div id="menu-review" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="425">
+        <div class="menu-title"><h1>Leave a Review</h1><p class="color-theme opacity-50">Choose your Preferences</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins"></div>  
+        <div class="content mb-0">
+            <div class="input-style input-style-2">
+                <span class="color-highlight input-style-1-active">Name</span>
+                <em>(required)</em>
+                <input class="form-control" type="name" placeholder="John Doe">
+            </div> 
+            <div class="input-style input-style-2">
+                <span class="input-style-1-active">Would you recommend this product?</span>
+                <em><i class="fa fa-angle-down"></i></em>
+                <select class="form-control">
+                    <option value="default" selected>Maybe</option>
+                    <option value="default">Yes</option>
+                    <option value="default">No</option>
+                </select>
+            </div>
+            <div class="input-style input-style-2">
+                <span class="input-style-1-active">Give us your Feedback</span>
+                <em>(required)</em>
+                <textarea  class="form-control" placeholder=""></textarea>
+            </div>
+            <div class="form-check icon-check mt-3 mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="check1" >
+                <label class="form-check-label" for="check1">I have read and accept the review <br> <a href="#">Terms and Conditions</a> </label>
+                <i class="icon-check-1 far fa-square color-blue-dark font-16"></i>
+                <i class="icon-check-2 fa fa-check-square font-16 color-blue-dark"></i>
+            </div>
+            <a href="#" class="close-menu btn btn-m font-800 rounded-sm btn-full text-uppercase bg-blue-dark">Post Review</a>
+        </div>
+
+    </div>    
+
+    <!-- menu-wishlist -->
+    <div id="menu-wishlist" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="420">
+        <div class="menu-title"><h1>Wishlist</h1><p class="color-theme opacity-50">Your Current Cart Products</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div><img src="images/pictures/9s.jpg" class="rounded-m shadow-xl" width="80"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Your awesome long or short product title</h5>
+                        <h1 class="font-14 color-blue-dark">$99.<sup>99</sup></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div><img src="images/pictures/13s.jpg" class="rounded-m shadow-xl" width="80"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Macbook Pro 13" Core i7, 16GB, 512 SSD</h5>
+                        <h1 class="font-14 color-blue-dark">$1499.<sup>99</sup></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="content">
+            <a href="#" class="close-menu btn btn-full btn-m font-800 rounded-sm text-uppercase bg-green-dark">View and Edit Wishlist</a>
+        </div>
+    </div>    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!--------------------->
+    <!-- Finance Actions -->
+    <!--------------------->
+    
+    <!-- menu-credit-card -->
+    <div id="menu-credit-card" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="420">
+        <div class="menu-title"><h1>Credit Card</h1><p class="color-highlight">Your Current Credit Card</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3"></div>
+        
+        <div data-card-height="210" class="card card-style rounded-m shadow-xl">
+            <div class="card-top text-start mt-4 ms-3">
+                <h1 class="color-white text-shadow-l font-24">Enabled</h1>
+            </div>
+            <div class="card-center text-center">
+                <p class="color-white font-20 bold uppercase line-height-small text-uppercase text-shadow-l font-10 mb-0 pb-0 mt-n2">1234 5678 9012 3456</p>
+            </div>
+            <div class="card-top mt-4 me-3">
+                <i class="fab fa-cc-amex text-shadow-l color-white font-30 mb-1 float-end"></i>
+            </div>
+            <div class="card-bottom mb-4 me-3">
+                <div class="text-end text-shadow-l">
+                    <p class="color-white font-10 font-800 text-uppercase text-shadow-large font-10 opacity-50 text-uppercase mb-n2">Valid Thru</p>
+                    <p class="color-white font-10 font-700 text-uppercase text-shadow-large font-16 mb-0 pb-0">03/2023</p>
+                </div>
+            </div>       
+            <div class="card-bottom line-height-small">
+                <div class="text-start ms-3 mb-4 text-shadow-l">
+                    <p class="color-white font-10 font-800 text-uppercase text-shadow-large font-10 opacity-50 text-uppercase mb-n2">Card Holder</p>
+                    <p class="color-white font-10 font-700 text-uppercase text-shadow-large font-16 mb-0 pb-0">John Doe</p>
+                </div>
+            </div>
+            <div class="card-overlay bg-highlight"></div>
+            <div class="card-overlay bg-black opacity-20"></div>
+            <div class="card-overlay bg-gradient opacity-70"></div>
+        </div>          
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full rounded-sm border-highlight color-highlight font-700 text-uppercase">Remove Card</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-blue-dark font-700 text-uppercase">Add Funds</a>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="#" class="py-3 d-block opacity-30 color-theme opacity-50 font-10">Report Stolen Credit Card</a>
+                </div>
+            </div>
+        </div>
+    </div>      
+    
+    <!-- menu-credit-card-2 -->
+    <div id="menu-credit-card-2" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="360">
+    
+        <div data-card-height="210" class="card card-style rounded-m shadow-xl mt-4">
+            <div class="card-top text-start mt-4 ms-3">
+                <h1 class="color-white text-shadow-l font-24">Enabled</h1>
+            </div>
+            <div class="card-center text-center">
+                <p class="color-white font-20 bold uppercase line-height-small text-uppercase text-shadow-l font-10 mb-0 pb-0 mt-n2">1234 5678 9012 3456</p>
+            </div>
+            <div class="card-top mt-4 me-3">
+                <i class="fab fa-cc-amex text-shadow-l color-white font-30 mb-1 float-end"></i>
+            </div>
+            <div class="card-bottom mb-4 me-3">
+                <div class="text-end text-shadow-l">
+                    <p class="color-white font-10 font-800 text-uppercase text-shadow-large font-10 opacity-50 text-uppercase mb-n2">Valid Thru</p>
+                    <p class="color-white font-10 font-700 text-uppercase text-shadow-large font-16 mb-0 pb-0">03/2023</p>
+                </div>
+            </div>       
+            <div class="card-bottom line-height-small">
+                <div class="text-start ms-3 mb-4 text-shadow-l">
+                    <p class="color-white font-10 font-800 text-uppercase text-shadow-large font-10 opacity-50 text-uppercase mb-n2">Card Holder</p>
+                    <p class="color-white font-10 font-700 text-uppercase text-shadow-large font-16 mb-0 pb-0">John Doe</p>
+                </div>
+            </div>
+            <div class="card-overlay bg-blue-dark"></div>
+            <div class="card-overlay bg-black opacity-20"></div>
+            <div class="card-overlay bg-gradient opacity-70"></div>
+        </div>          
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full rounded-sm border-highlight color-highlight font-700 text-uppercase">Remove Card</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-blue-dark font-700 text-uppercase">Add Funds</a>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="#" class="py-3 d-block opacity-50 color-theme font-10">Report Stolen Credit Card</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- menu-card-list -->
+    <div id="menu-card-list" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="380">
+        <div class="menu-title"><h1>Your Cards</h1><p class="color-highlight">Verifier Credit Cards Added</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3"></div>
+        
+        <div class="content mt-0">
+                <a href="#" data-menu="menu-credit-card" class="d-flex">
+                    <div class="align-self-center">
+                        <img src="images/framework/pay-2.png" width="50">
+                    </div>
+                    <div class="align-self-center ps-3">
+                        <h5 class="mb-n2">MasterCard</h5>
+                        <p class="mt-n1 mb-0 font-10">**** 1535</p>
+                    </div>
+                    <div class="align-self-center ms-auto ps-3">
+                        <h5 class="mb-0">$1553,12</h5>
+                    </div>
+                </a>
+                
+                <div class="divider mt-2 mb-2"></div>
+                
+                <a href="#" data-menu="menu-credit-card" class="d-flex">
+                    <div class="align-self-center">
+                        <img src="images/framework/pay-4.png" width="50">
+                    </div>
+                    <div class="align-self-center ps-3">
+                        <h5 class="mb-n2">Visa Electron</h5>
+                        <p class="mt-n1 mb-0 font-10">**** 3516</p>
+                    </div>
+                    <div class="align-self-center ms-auto ps-3">
+                        <h5 class="mb-0">$4125,35</h5>
+                    </div>
+                </a>
+                <div class="divider mt-2 mb-2"></div>
+                
+                <a href="#" data-menu="menu-credit-card" class="d-flex">
+                    <div class="align-self-center">
+                        <img src="images/framework/pay-1.png" width="50">
+                    </div>
+                    <div class="align-self-center ps-3">
+                        <h5 class="mb-n2">Visa Cards</h5>
+                        <p class="mt-n1 mb-0 font-10">Default Card</p>
+                    </div>
+                    <div class="align-self-center ms-auto ps-3">
+                        <h5 class="mb-0">$8178,15</h5>
+                    </div>
+                </a>
+            <div class="divider mt-3"></div>
+            <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-highlight font-700 text-uppercase">Close Menu</a>
+        </div>
+    </div>       
+        
+    <!-- menu-card-list -->
+    <div id="menu-wallet-info" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="280">
+        <div data-card-height="280" class="card mb-0 rounded-m shadow-xl preload-img" data-src="images/pictures/18w.jpg">
+            <div class="card-top mt-4 ms-3">
+                <h1 class="color-white mb-0 mb-n2">Karla Black</h1>
+                <p class="bottom-0 color-white opacity-50 under-heading font-12">1234 5678 9012 3456</p>
+            </div>
+            <div class="card-top mt-4 me-3">
+                <a href="#" class="mt-1 float-end text-uppercase font-900 font-11 btn btn-s rounded-s shadow-l bg-highlight">Add Funds</a>
+            </div>
+            <div class="card-center pt-5 mt-2 text-center">
+                <h1 class="color-white fa-4x">$8.178</h1>
+                <p class="color-white opacity-70 font-11">Remaining Account Ballance</p>
+            </div>
+            <div class="card-bottom">
+                <p class="ms-3 mb-2 font-8 font-500 opacity-50 color-white">Exp: 10/22</p>
+            </div>       
+            <div class="card-bottom">
+                <p class="text-end me-3 mb-2 font-8 font-500 opacity-50 color-white"><i class="fa fa-wifi font-10 rotate-90"></i></p>
+            </div>
+            <div class="card-overlay bg-black opacity-70 rounded-m"></div>
+        </div>   
+
+    </div>    
+    
+    <!-- menu-payment-info -->
+    <div id="menu-payment-info" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="405">
+        <div class="menu-title"><h1>Water Bill</h1><p class="color-highlight">Transaction Details for Payment</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-1 mt-3"></div>
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-2">
+                    <span class="icon icon-xl rounded-xl bg-blue-dark"><i class="fa fa-tint font-30"></i></span>
+                </div>
+                <div class="col-10 ps-4">
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme ps-2">Service</p></div>
+                        <div class="ms-auto"><p>Utility Expenses</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme ps-2">Date</p></div>
+                        <div class="ms-auto"><p>15th July 2025</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider mt-3 mb-3"></div>
+            <div class="row mb-0">
+                <div class="col-6"><h4 class="font-14">Details</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end">Monthly Subscription</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Amount</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1">$9.99 / month</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Transaction ID</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1">#987-456-165</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
+                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-blue-dark rounded-sm text-uppercase font-800">Download Invoice</a></div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- menu-subscription-info -->
+    <div id="menu-subscription-info" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="405">
+        <div class="menu-title"><h1>Apple Music</h1><p class="color-theme opacity-50">Monthly Renewal Service</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-1 mt-3"></div>
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-2">
+                    <span class="icon icon-xl rounded-xl bg-gray-dark"><i class="fab fa-apple font-30"></i></span>
+                </div>
+                <div class="col-10 ps-4">
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme ps-2">Service</p></div>
+                        <div class="ms-auto"><p>Apple Music</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme ps-2">Date</p></div>
+                        <div class="ms-auto"><p>15th July 2025</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider mt-3 mb-3"></div>
+            <div class="row mb-0">
+                <div class="col-6"><h4 class="font-14">Details</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end">Monthly Subscription</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Amount</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1">$9.99 / month</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Transaction ID</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1">#987-456-165</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
+                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-red-dark rounded-sm text-uppercase font-800">Cancel Subscription</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu-add-funds-->
+    <div id="menu-add-funds" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="395">
+        <div class="menu-title"><h1>Add Funds</h1><p class="color-green-dark">Top off your Account</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-1 mt-3"></div>
+        <div class="content px-1">
+            
+            <div class="input-style input-style-always-active no-borders no-icon">
+                <label for="form5a6a" class="color-theme opacity-30 font-10 text-uppercase font-600">Add Funds To</label>
+                <select id="form5a6a">
+                    <option value="a1" selected>Main Account</option>
+                    <option value="a2">Savings Account</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>       
+            <div class="pb-3"></div>
+            <div class="input-style input-style-always-active no-borders no-icon">
+                <label for="form5a5a" class="color-theme opacity-30 font-10 text-uppercase font-600">Add Funds From</label>
+                <select id="form5a5a">
+                    <option value="a1a" selected>Visa Credit Card</option>
+                    <option value="a2a">Mastercard Credit Card</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+            <div class="pb-3"></div>
+            <div class="input-style input-style-always-active no-borders no-icon validate-field">
+                <input type="number" class="form-control validate-text" id="form5a1234" placeholder="1000">
+                <label for="form5a1234" class="color-theme opacity-30 font-10 text-uppercase font-600">Enter Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(USD)</em>
+            </div>
+
+            <a href="#" class="close-menu btn btn-full btn-m bg-green-dark rounded-sm text-uppercase font-800 mt-4">Add Funds</a>
+        </div>
+    </div>    
+    
+    <!-- menu-send-funds -->
+    <div id="menu-send-funds" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="330">
+        <div class="menu-title"><h1>Send Funds</h1><p class="color-blue-dark">Enter Transaction Details</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-3"></div>
+        <div class="content px-1">     
+            <div class="pb-3"></div>
+            <div class="input-style input-style-always-active no-borders no-icon validate-field">
+                <input type="email" class="form-control validate-email" id="form5a7abc" placeholder="name@domain.com">
+                <label for="form5a7abc" class="color-theme opacity-30 font-10 text-uppercase font-600">Receiver Email</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="pb-3"></div>
+            <div class="input-style input-style-always-active no-borders no-icon validate-field">
+                <input type="number" class="form-control validate-text" id="form6a1234" placeholder="1000">
+                <label for="form6a1234" class="color-theme opacity-30 font-10 text-uppercase font-600">Amount in USD</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(USD)</em>
+            </div>
+            <a href="#" class="close-menu btn btn-full btn-m bg-blue-dark rounded-sm text-uppercase font-800 mt-4">Send Funds</a>
+        </div>
+    </div>
+    
+    <!-- menu-request-funds -->
+    <div id="menu-request-funds" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="320">
+        <div class="menu-title"><h1>Request Funds</h1><p class="color-highlight">Enter Transaction Details</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-2"></div>
+        <div class="content px-1">
+            
+            <div class="input-style input-style-always-active no-borders no-icon validate-field">
+                <input type="number" class="form-control validate-text" id="form6a1234ab" placeholder="1000">
+                <label for="form6a1234ab" class="color-theme opacity-30 font-10 text-uppercase font-600">Amount in USD</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(USD)</em>
+            </div>
+            <div class="pb-3"></div>
+            <div class="input-style input-style-always-active no-borders no-icon validate-field">
+                <input type="email" class="form-control validate-email" id="form5a7abcde" placeholder="name@domain.com">
+                <label for="form5a7abcde" class="color-theme opacity-30 font-10 text-uppercase font-600">Request From</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="pb-3"></div>
+            <a href="#" class="close-menu btn btn-full btn-m bg-red-dark rounded-sm text-uppercase font-800">Request Funds</a>
+        </div>
+    </div>
+
+    <!-- menu-payment-status -->
+    <div id="menu-payment-status" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="480">
+        <div class="menu-title"><h1>Payment Sent</h1><p class="color-theme opacity-40">Transaction Details for Payment</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-1 mt-3"></div>
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-3">
+                    <img src="images/pictures/faces/1s.png" width="80" class="rounded-xl">
+                </div>
+                <div class="col-9 ps-4">
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">To</p></div>
+                        <div class="ms-auto"><p>John Doe</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">From</p></div>
+                        <div class="ms-auto"><p> Card **** 9431</p></div>
+                    </div>
+                    <div class="d-flex">
+                        <div><p class="font-700 color-theme">Date</p></div>
+                        <div class="ms-auto"><p>15th July 2025</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider mt-3 mb-3"></div>
+            <div class="row mb-0">
+                <div class="col-6"><h4 class="font-14">Type</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end">Payment Sent</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Amount</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1">$530.24</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Transaction ID</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1">#123-456-165</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-2"></div>
+                <div class="col-6"><h4 class="font-14 mt-1">Status</h4></div>
+                <div class="col-6"><h4 class="font-14 text-end mt-1 color-green-dark">Completed</h4></div>
+                <div class="divider divider-margins w-100 mt-2 mb-3"></div>
+                <div class="col-12"><a href="#" class="close-menu btn btn-full btn-m bg-blue-dark rounded-sm text-uppercase font-800">Download PDF</a></div>
+            </div>
+        </div>
+    </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!----------------------->
+    <!-- Education Actions -->
+    <!----------------------->    
+    
+    <!-- menu-table-of-contents -->
+    <div id="menu-table-of-contents" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="370">
+        <div class="menu-title"><h1>Table of Contents</h1><p class="color-highlight">Select the Chapter you wisht to View</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content mt-2">
+            <div class="list-group list-custom-small ps-1">
+                <a data-menu="menu-chapter-1" href="#">
+                    <span>Chapter 1: Introduction</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#">
+                    <span>Chapter 2: Ingredients</span>
+                    <i class="fa fa-link"></i>
+                </a>        
+                <a href="#">
+                    <span>Chapter 3: Preparation</span>
+                    <i class="fa fa-link"></i>
+                </a>        
+                <a href="#">
+                    <span>Chapter 4: Conclusion</span>
+                    <i class="fa fa-link"></i>
+                </a>        
+            </div>
+            <a href="#" class="close-menu btn btn-full btn-m rounded-sm bg-highlight font-800 text-uppercase mt-4">Close Menu</a>
+        </div>        
+    </div>
+    
+    <!-- menu-chapter-1 -->
+    <div id="menu-chapter-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="370">
+        <div class="menu-title"><h1>Chapter 1: Introduction</h1><p class="color-highlight">5 Lectures - 2 Hours 50 Minutes </p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="d-flex mb-3">
+                <div class="align-self-center">
+                    <a href="#" class="mb-0 color-theme opacity-60 font-14"><i class="fa color-green-dark fa-check-circle pe-2 "></i>Welcome</a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <h6 class="mb-0 font-11 badge bg-green-dark">COMPLETE</h6>
+                </div>
+            </div>              
+            <div class="d-flex mb-3">
+                <div class="align-self-center">
+                    <a href="#" class="mb-0 color-theme opacity-60 font-14"><i class="fa color-green-dark fa-check-circle pe-2 "></i>Tools Required</a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <h6 class="mb-0 font-11 badge bg-green-dark">COMPLETE</h6>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <div class="align-self-center">
+                    <a href="#" class="mb-0 color-theme opacity-60 font-14"><i class="fa color-blue-dark fa-clock pe-2 "></i>Ingredients Required</a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <h6 class="mb-0 font-11 badge bg-blue-dark">IN PROGRESS</h6>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <div class="align-self-center">
+                    <a href="#" class="mb-0 color-theme opacity-60 font-14"><i class="fa fa-play-circle pe-2 "></i>Tools Required</a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <h6 class="mb-0 font-11 opacity-50">34 Minutes</h6>
+                </div>
+            </div>
+            <div class="d-flex mb-3">
+                <div class="align-self-center">
+                    <a href="#" class="mb-0 color-theme opacity-60 font-14"><i class="fa fa-play-circle pe-2 "></i>Start Mixing Ingedients</a>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <h6 class="mb-0 font-11 opacity-50">1 Hour 34 Minutes</h6>
+                </div>
+            </div>
+            <a href="#" data-menu="menu-table-of-contents" class="btn btn-full btn-m rounded-sm bg-highlight font-800 text-uppercase mt-4">Back to Table of Contents</a>
+        </div>        
+    </div>
+    
+    <!-- menu-subscription-required -->
+    <div id="menu-subscription-required" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="385">
+        <div class="menu-title"><h1>Premium Required</h1><p class="color-highlight">Go Unlimited and Unlock this Content</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="card card-style mx-0 rounded-0 bg-14 mt-3 mb-0" data-card-height="300">
+            <div class="card-center ps-3">
+                <h1 class="color-white font-28 mb-0">Subscribe for</h1>
+                <h1 class="color-white font-31">to Unlimted</h1>
+                <h1 class="color-white font-20 mt-n2">Books and Courses</h1>
+                <a href="#" class="btn btn-m rounded-sm bg-highlight color-white mt-3 text-uppercase font-800">Start your Trial Now</a>
+                <p class="mb-0 color-white opacity-60 font-11 mt-2">30 Day Free Trial then 9.99 / month</p>
+            </div>
+            <div class="card-overlay bg-black opacity-60"></div>
+        </div>
+    </div>
+    
+    <!-- menu-buy-course -->
+    <div id="menu-buy-course" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="510">
+        <div class='responsive-iframe'><iframe src='https://www.youtube.com/embed/c9MnSeYYtYY' allowfullscreen></iframe></div>
+        <div class="content">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h3 class="pe-4 font-15">Create videos <br> using your smartphone.</h3>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <h1 class="font-32 font-800">$13.99</h1>
+                    <h5 class="font-13"><del>$27.98</del> - 50% OFF</h5>
+                </div>
+            </div>
+            <div class="divider mt-2 mb-4"></div>
+            
+            <ul class="icon-list">
+                <li><i class="fa fa-star" style="width:25px;"></i> 13 Articles with Downloadable Content</li>
+                <li><i class="fa fa-cloud" style="width:25px;"></i> 30 Day Money-Back Guarantee</li>
+            </ul>
+
+            <div class="divider mt-4"></div>
+            <div class="row mb-0">
+                <div class="col-7">
+                    <a href="#" class="btn btn-full btn-m rounded-sm border-highlight color-highlight font-800 text-uppercase">Add to Cart</a>
+                </div>
+                <div class="col-5">
+                    <a href="#" class="btn btn-full btn-m rounded-sm bg-highlight font-800 text-uppercase">Buy NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- menu-course-details -->
+    <div id="menu-course-details" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="425">
+        <div class="menu-title"><h1>Course Details</h1><p class="color-highlight">Full Information About Our Course</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-4"></div>
+        <div class="content">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <img src="images/pictures/6s.jpg" class="img-fluid">
+                </div>
+                <div class="ms-auto align-self-center">
+                    <h3 class="ps-3 pe-4">Create videos using your smartphone.</h3>
+                    <h5 class="ps-3 font-12 opacity-30">15 Courses - 2 hours 25 Minutes</h5>
+                </div>
+            </div>
+            <div class="divider mt-4 mb-4"></div>
+            
+            <ul class="icon-list">
+                <li><i class="fa fa-play-circle" style="width:25px;"></i> 3 Hour Video + 30 PDF Articles</li>
+                <li><i class="fa fa-star" style="width:25px;"></i> 13 Articles with Downloadable Content</li>
+                <li><i class="fa fa-cloud" style="width:25px;"></i> 30 Day Money-Back Guarantee</li>
+            </ul>
+            <div class="divider"></div>
+            <a href="#" class="close-menu btn btn-full btn-m rounded-sm bg-highlight font-800 text-uppercase">Close Menu</a>
+        </div>
+    </div>
+    
+    <!-- menu-author-details -->
+    <div id="menu-author-details" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="370">
+        <div class="menu-title"><h1>Author Details</h1><p class="color-highlight">Premium Verified Author Account</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-4"></div>
+        <div class="content">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <img src="images/pictures/faces/2s.png" width="50">
+                </div>
+                <div class="align-self-center">
+                    <h3 class="ps-3 pe-4 mb-0">John Doe</h3>
+                    <h5 class="ps-3 font-12 font-400"><i class="fa fa-check-circle color-blue-dark"></i> Verified Writer</h5>
+                </div>
+            </div>
+            <div class="divider mt-4 mb-4"></div>
+                <div class="d-flex text-center mx-3">
+                    <div class="me-auto">
+                        <h1 class="font-24">34</h1>
+                        <p class="font-11 line-height-xs">Published</p>
+                    </div>
+                    <div class="me-auto ms-auto">
+                        <h1 class="font-24">134</h1>
+                        <p class="font-11 line-height-xs">Thesis</p>
+                    </div>
+                    <div class="ms-auto">
+                        <h1 class="font-24">321</h1>
+                        <p class="font-11 line-height-xs">Followers</p>
+                    </div>
+                </div>
+            <div class="divider mt-4"></div>
+            <a href="#" class="btn btn-full btn-m rounded-sm bg-highlight font-800 text-uppercase">View full Profile</a>
+        </div>
+    </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!------------------>
+    <!-- Task Actions -->
+    <!------------------>
+    
+    <!-- menu-upload -->
+    <div id="menu-upload" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="255">
+        <div class="list-group list-custom-small ps-2 me-4">
+            <a href="#">
+                <i class="font-14 fa fa-file color-gray-dark"></i>
+                <span class="font-13">File</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#">
+                <i class="font-14 fa fa-image color-gray-dark"></i>
+                <span class="font-13">Photo</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#">
+                <i class="font-14 fa fa-video color-gray-dark"></i>
+                <span class="font-13">Video</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+            <a href="#">
+                <i class="font-14 fa fa-user color-gray-dark"></i>
+                <span class="font-13">Camera</span>
+                <i class="fa fa-angle-right"></i>
+            </a>  
+            <a href="#">
+                <i class="font-14 fa fa-map-marker color-gray-dark"></i>
+                <span class="font-13">Location</span>
+                <i class="fa fa-angle-right"></i>
+            </a>  
+        </div>
+    </div>    
+    
+    <!-- menu-manage -->
+    <div id="menu-manage" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="230">
+        <div class="menu-title"><h1>Manage Project </h1><p class="color-theme opacity-40">Manage your Project Details</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content mt-2">
+            <div class="list-group list-custom-large">
+                <a href="#" data-menu="menu-team">
+                    <i class="fa font-14 fa-user bg-green-dark rounded-s"></i>
+                    <span>Team</span>
+                    <strong>Assign Members</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="menu-dates" class="border-0">
+                    <i class="fa font-14 fa-cog bg-blue-dark rounded-s"></i>
+                    <span>Dates</span>
+                    <strong>Project Timeframe</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>
+    </div>
+
+    <!-- menu-team -->
+    <div id="menu-team" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="360">
+        <div class="menu-title"><h1>Manage Team </h1><p class="color-theme opacity-40">Manage your Project Details</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content mt-2">
+            <div class="list-group list-custom-small">
+                <a href="#" data-menu="menu-member">
+                    <img src="images/pictures/faces/1small.png" width="35" class="rounded-sm me-2">
+                    <span>John Doe</span>
+                    <strong class="badge bg-green-dark">YOU</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="menu-member">
+                    <img src="images/pictures/faces/2small.png" width="35" class="rounded-sm me-2">
+                    <span>James Bond</span>
+                    <strong class="badge bg-yellow-dark">FRONT END</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="menu-member">
+                    <img src="images/pictures/faces/4small.png" width="35" class="rounded-sm me-2">
+                    <span>Jack Sir</span>
+                    <strong class="badge bg-blue-dark">GRAPHIC DESIGN</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="menu-member">
+                    <img src="images/pictures/faces/3small.png" width="35" class="rounded-sm me-2">
+                    <span>Jack Son</span>
+                    <strong class="badge bg-red-dark">SERVER LANGUAGE</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+            <a href="#" data-menu="menu-manage" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-3">Back to Settings</a>
+        </div>
+    </div>
+    
+    <!-- menu-member -->
+    <div id="menu-member" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="360">
+        <div class="menu-title"><h1>John Doe </h1><p class="color-theme opacity-40">Manage Permissions</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content mt-2">
+            <div class="list-group list-custom-small">
+                <a href="#" data-trigger-switch="switch-1">
+                    <i class="fa fa-upload bg-gray-dark rounded-sm ms-0"></i>
+                    <span>Upload Files</span>
+                    <div class="custom-control small-switch ios-switch">
+                        <input type="checkbox" class="ios-input" id="switch-1" checked>
+                        <label class="custom-control-label" for="switch-1"></label>
+                    </div>
+                </a>        
+                <a href="#" data-trigger-switch="switch-1">
+                    <i class="fa fa-download bg-blue-dark rounded-sm ms-0"></i>
+                    <span>Download Files</span>
+                    <div class="custom-control small-switch ios-switch">
+                        <input type="checkbox" class="ios-input" id="switch-1" checked>
+                        <label class="custom-control-label" for="switch-1"></label>
+                    </div>
+                </a>        
+                <a href="#" data-trigger-switch="switch-2">
+                    <i class="fa fa-check bg-green-dark rounded-sm ms-0"></i>
+                    <span>Complete Task</span>
+                    <div class="custom-control small-switch ios-switch">
+                        <input type="checkbox" class="ios-input" id="switch-2">
+                        <label class="custom-control-label" for="switch-2"></label>
+                    </div>
+                </a>        
+                <a href="#" data-trigger-switch="switch-2">
+                    <i class="fa fa-plus bg-brown-dark rounded-sm ms-0"></i>
+                    <span>Add New Members</span>
+                    <div class="custom-control small-switch ios-switch">
+                        <input type="checkbox" class="ios-input" id="switch-2">
+                        <label class="custom-control-label" for="switch-2"></label>
+                    </div>
+                </a>        
+            </div>
+            <a href="#" data-menu="menu-team" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-3">Back to Members</a>
+        </div>
+    </div>
+
+    <!-- menu-dates -->
+    <div id="menu-dates" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="370">
+        <div class="menu-title"><h1>Dates </h1><p class="color-theme opacity-40">Project Deadlines</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-4"></div>
+        <div class="content mt-2">
+        <div class="input-style input-style-always-active has-borders no-icon mb-4">
+            <input type="date" value="2030-12-31" value="2030-12-31" max="2030-01-01" min="2021-01-01" class="form-control validate-text" id="form612345" placeholder="Phone">
+            <label for="form612345" class="color-blue-dark">Select Date</label>
+            <i class="fa fa-check disabled valid me-4 pe-3 font-12 color-green-dark"></i>
+            <i class="fa fa-check disabled invalid me-4 pe-3 font-12 color-red-dark"></i>
+        </div>
+        <div class="input-style input-style-always-active has-borders no-icon mb-4">
+            <label for="form59876" class="color-blue-dark">Select A Value</label>
+            <select id="form59876">
+                <option value="1g" selected>Low</option>
+                <option value="2g">Medium</option>
+                <option value="3g">High</option>
+                <option value="4g">Critical</option>
+            </select>
+            <span><i class="fa fa-chevron-down"></i></span>
+            <i class="fa fa-check disabled valid color-green-dark"></i>
+            <i class="fa fa-check disabled invalid color-red-dark"></i>
+            <em></em>
+        </div>      
+        <div class="input-style input-style-always-active has-borders no-icon mb-4">
+            <label for="form598761" class="color-blue-dark">Select A Value</label>
+            <select id="form598761">
+                <option value="1ag" selected>Planing</option>
+                <option value="2ag">Developing</option>
+                <option value="3ag">Complete</option>
+            </select>
+            <span><i class="fa fa-chevron-down"></i></span>
+            <i class="fa fa-check disabled valid color-green-dark"></i>
+            <i class="fa fa-check disabled invalid color-red-dark"></i>
+            <em></em>
+        </div>
+         <a href="#" data-menu="menu-manage" class="btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-3">Back to Members</a>
+        </div>
+    </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!------------------>
+    <!-- Food Actions -->
+    <!------------------>
+    
+    <!-- menu-reservation -->    
+    <div id="menu-reservation" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="443">
+        <div class="menu-title"><h1>Make a Reservation</h1><p class="color-highlight">We'll make the preparations.</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-1"></div>
+        <div class="content">
+            <div class="input-style has-borders no-icon validate-field mb-4">
+                <input type="name" class="form-control validate-name" id="formres1" placeholder="Name">
+                <label for="formres1" class="color-highlight">Name</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style has-borders no-icon validate-field mb-4">
+                <input type="tel" class="form-control validate-text" id="formres2" placeholder="Phone">
+                <label for="formres2" class="color-highlight">Phone</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style has-borders no-icon mb-4">
+                <input type="date" value="2030-12-31" value="2030-12-31" max="2030-01-01" min="2021-01-01" class="form-control validate-text" id="formres3" placeholder="Phone">
+                <label for="formres3" class="color-highlight">Select Date</label>
+                <i class="fa fa-check disabled valid me-4 pe-3 font-12 color-green-dark"></i>
+                <i class="fa fa-check disabled invalid me-4 pe-3 font-12 color-red-dark"></i>
+            </div>
+            <div class="input-style has-borders no-icon mb-4">
+                <label for="formres4" class="color-highlight">Select A Value</label>
+                <select id="formres4">
+                    <option value="default" disabled selected>Size of Party</option>
+                    <option value="iOS">1</option>
+                    <option value="Linux">2</option>
+                    <option value="MacOS">3</option>
+                    <option value="Android">4</option>
+                    <option value="Windows">5</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+            <a href="#" class="btn btn-m btn-full rounded-sm shadow-xl text-uppercase font-700 bg-red-dark mt-4">Submit Reservation</a>
+        </div>
+    </div>
+    
+    <!-- menu-hours -->
+    <div id="menu-hours" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="460">
+        <div class="menu-title"><h1>Working Hours</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-2 mt-3"></div>
+            <div class="content mt-0">
+            <!-- To set open and Close Hours Open custom.js and search for "SET OPENING HOURS BELOW" -->
+            <!-- Only setting the code below will not make the system work automatically-->
+
+            <div data-day="Monday" class="working-hours"><p>Monday</p>    <p>09:00 AM</p> <p>05:00 PM</p></div>
+            <div data-day="Tuesday" class="working-hours"><p>Tuesday</p>   <p>09:00 AM</p> <p>05:00 PM</p></div>
+            <div data-day="Wednesday" class="working-hours"><p>Wednesday</p> <p>09:00 AM</p> <p>05:00 PM</p></div>
+            <div data-day="Thursday" class="working-hours"><p>Thursday</p>  <p>09:00 AM</p> <p>05:00 PM</p></div>
+            <div data-day="Friday" class="working-hours"><p>Friday</p>    <p>09:00 AM</p> <p>05:00 PM</p></div>
+            <div data-day="Saturday" class="working-hours"><p>Saturday</p>  <p>09:00 AM</p> <p>01:00 PM</p></div>
+            <div data-day="Sunday" class="working-hours"><p>Sunday</p>    <p class="opacity-00">-</p> <p>We're Closed</p></div>
+        </div>
+    </div>
+    
+    <!-- menu-cart -->
+    <div id="menu-cart" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="420">
+        <div class="menu-title"><h1>Your Order</h1><p class="color-highlight">Your Current Cart Products</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins"></div>
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div><img src="images/food/full/1s.jpg" class="rounded-m shadow-xl" width="80"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Royal Hamburger with Extra Sauce and Onion Rings</h5>
+                        <h1 class="font-20 color-highlight">29.<sup>99</sup></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div><img src="images/food/full/2s.jpg" class="rounded-m shadow-xl" width="80"></div>
+                    <div class="ms-3">
+                        <h5 class="font-600">House Speciality Pizza with Mozzarella and Mushrooms</h5>
+                        <h1 class="font-20 color-highlight">$29.<sup>99</sup></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row mb-0">
+                <div class="col-6"><a href="#" class="btn btn-full btn-m font-800 rounded-sm text-uppercase bg-green-dark">Cart Page</a></div>
+                <div class="col-6"><a href="#" class="btn btn-full btn-m font-800 rounded-sm text-uppercase bg-blue-dark">Checkout</a></div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- menu-cart-edit -->
+    <div id="menu-cart-edit" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="420">
+        <div class="menu-title"><h1>Edit Product</h1><p class="color-highlight">Choose your Preferences</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <div>
+                <div class="d-flex mb-4">
+                    <div>
+                        <img src="images/food/full/1s.jpg" class="rounded-m shadow-xl" width="120">
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="font-600">Royal Burger With King Size Onion Extras</h5>
+                        <h1 class="color-highlight">$29.<sup>99</sup></h1>
+                        <a href="#" class="color-theme opacity-50 font-10"><i class="fa fa-times color-red-dark pe-2 pt-3"></i>Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 pt-2">
+                <div class="col-8">
+                    <div class="input-style input-style-always-active has-borders no-icon mb-4">
+                        <label for="aform5" class="color-blue-dark">Select a Size</label>
+                        <select id="aform5">
+                            <option value="a1">Extra Small Size</option>
+                            <option value="a2">Small Size</option>
+                            <option value="adefault" selected>Medium Size</option>
+                            <option value="a4">Large Size</option>
+                            <option value="a5">Extra Large Size</option>
+                        </select>
+                        <span><i class="fa fa-chevron-down"></i></span>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <i class="fa fa-check disabled invalid color-red-dark"></i>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="input-style input-style-always-active has-borders no-icon mb-4">
+                        <input type="number" class="form-control" id="form1" placeholder="1">
+                        <label for="form1" class="color-blue-dark">Qty</label>
+                    </div>
+                </div>
+            </div>
+            <div class="divider mb-4"></div>
+            <div class="row mb-0">
+                <div class="col-5">
+                    <a href="#" class="close-menu btn  btn-m font-800 rounded-sm btn-full text-uppercase bg-red-dark">Close</a>
+                </div>
+                <div class="col-7">
+                    <a href="#" data-menu="menu-ingredients" class="btn  btn-m font-800 rounded-sm btn-full text-uppercase bg-blue-dark">Edit Ingredients</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- menu-ingredients -->    
+    <div id="menu-ingredients" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="475">
+        <div class="content">
+            <img src="images/food/full/1w.jpg" class="img-fluid rounded-m mb-4">
+            <h3>Add or Remove Ingredients</h3>
+            <p class="mt-n1">
+                Customise your burger just the way you like it! 
+            </p>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check1" checked>
+                        <label class="form-check-label" for="check1" class="font-15">Lettuce</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+                        <label class="form-check-label" for="check2" class="font-15">Onion Rings</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check3" checked>
+                        <label class="form-check-label" for="check3" class="font-15">Bacon Slices</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check1a">
+                        <label class="form-check-label" for="check1a" class="font-15">Fries</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check4" checked>
+                        <label class="form-check-label" for="check4" class="font-15">Cheese</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check5" checked>
+                        <label class="form-check-label" for="check5" class="font-15">Salad</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check6" checked>
+                        <label class="form-check-label" for="check6" class="font-15">Tomato</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                    <div class="form-check icon-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check4a">
+                        <label class="form-check-label" for="check4a" class="font-15">Ham</label>
+                        <i class="icon-check-1 fa fa-square color-gray-dark font-18"></i>
+                        <i class="icon-check-2 fa fa-check-square font-18 color-highlight"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="divider mt-n2"></div>
+            <a href="#" data-menu="menu-cart-edit" class="btn btn-m bg-green-dark btn-full rounded-sm shadow-xl text-uppercase font-700 mb-3">Apply Changes</a>
+        </div>        
+    </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!--------------------->
+    <!-- Content Actions -->
+    <!--------------------->
+    
+    <!-- menu-bookmarks -->
+    <div id="menu-bookmarks" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="445">
+        <div class="menu-title"><h1>Bookmarks</h1><p class="color-highlight">Your Saved Articles</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        <div class="content">
+        <a href="#" class="d-block pb-4">
+            <div class="d-flex">
+                <div>
+                    <img src="images/pictures/28t.jpg" class="me-3 rounded-m" width="110">
+                </div>
+                <div>
+                    <span class="badge bg-red-dark text-uppercase px-2 py-1">NEws</span>
+                    <h1 class="font-700 font-15 line-height-m pb-2">Privacy rules make it impossible to track you.</h1>
+                    <span class="color-theme opacity-30 font-400 font-10"><i class="far fa-clock pe-2"></i>2 hours ago</span>
+                    <span class="color-theme opacity-30 font-400 font-10 px-2"><i class="far fa-comment pe-2"></i>26 Comments</span>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="d-block pb-4">
+            <div class="d-flex">
+                <div>
+                    <img src="images/pictures/21t.jpg" class="me-3 rounded-m" width="110">
+                </div>
+                <div>
+                    <span class="badge bg-blue-dark text-uppercase px-2 py-1">NEws</span>
+                    <h1 class="font-700 font-15 line-height-m pb-2">Technology now is in every part of our life.</h1>
+                    <span class="color-theme opacity-30 font-400 font-10"><i class="far fa-clock pe-2"></i>3 Days ago</span>
+                    <span class="color-theme opacity-30 font-400 font-10 px-2"><i class="far fa-comment pe-2"></i>26 Comments</span>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-highlight font-700 text-uppercase">Close Menu</a>
+        </div>        
+    </div>       
+    
+    <!-- menu-author-1 -->
+    <div id="menu-author-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="240">
+        <div class="menu-title"><h1>Alex Doeson</h1><p class="color-highlight">Senior Content Writer</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        <div class="content">
+            <div class="d-flex">
+                <div>
+                    <img src="images/pictures/14t.jpg" class="rounded-m" width="110">
+                </div>
+                <div class="px-3 ms-auto w-100">
+                    <div class="d-flex">
+                        <div class="me-auto">
+                            <a href="#" class="color-theme opacity-50">
+                                <span class="font-11 d-block mb-n1">Articles</span>
+                                <strong class="font-24">55</strong>
+                            </a>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="#" class="color-theme opacity-50">
+                                <span class="font-11 d-block mb-n1">Followers</span>
+                                <strong class="font-24">95k</strong>
+                            </a>
+                        </div>
+                        <div class="ms-auto">
+                            <a href="#" class="color-theme opacity-50">
+                                <span class="font-11 d-block mb-n1">Rating</span>
+                                <strong class="font-24">4.9</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-sm text-uppercase font-700 rounded-sm btn-full bg-blue-dark mt-3">Follow</a>
+                </div>
+            </div>
+        </div>
+    </div>       
+    
+    <!-- menu-author-2 -->
+    <div id="menu-author-2" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="540">
+        <div class="menu-title"><h1>About Author</h1><p class="color-highlight">Who wrote this post.</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        
+        <img src="images/pictures/faces/2s.png" class="mx-auto shadow-xl rounded-circle over-card mt-3" width="150">
+        <div class="content">
+            <h1 class="text-center font-32">John Doe</h1>
+            <a href="#" class="color-highlight text-center d-block mt-n2 font-11 pb-3">Editor and Content Reviewer</a>
+            <div class="text-center">
+                <a href="#" class="icon icon-s mx-2 mb-4 rounded-circle bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon icon-s mx-2 mb-4 rounded-circle bg-instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon icon-s mx-2 mb-4 rounded-circle bg-twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <em class="text-center font-20 font-300 d-block color-theme opacity-60 mb-3">I love everything that's sweet and sour in large portions with a heavy dose of exercise afterwards.</em>
+            <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-highlight font-700 text-uppercase mt-4">Close Menu</a>
+        </div>
+    </div>       
+    
+    <!-- menu-author-1 -->
+    <div id="menu-author-1" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="240">
+        <div class="menu-title"><h1>Alex Doeson</h1><p class="color-highlight">Senior Content Writer</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        <div class="content">
+            <div class="d-flex">
+                <div>
+                    <img src="images/pictures/14t.jpg" class="rounded-m" width="110">
+                </div>
+                <div class="px-3 ms-auto w-100">
+                    <div class="d-flex">
+                        <div class="me-auto">
+                            <a href="#" class="color-theme opacity-50">
+                                <span class="font-11 d-block mb-n1">Articles</span>
+                                <strong class="font-24">55</strong>
+                            </a>
+                        </div>
+                        <div class="mx-auto">
+                            <a href="#" class="color-theme opacity-50">
+                                <span class="font-11 d-block mb-n1">Followers</span>
+                                <strong class="font-24">95k</strong>
+                            </a>
+                        </div>
+                        <div class="ms-auto">
+                            <a href="#" class="color-theme opacity-50">
+                                <span class="font-11 d-block mb-n1">Rating</span>
+                                <strong class="font-24">4.9</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-sm text-uppercase font-700 rounded-sm btn-full bg-blue-dark mt-3">Follow</a>
+                </div>
+            </div>
+        </div>
+    </div>       
+    
+    <!-- menu-categories -->
+    <div id="menu-categories" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="375">
+        <div class="menu-title"><h1>Categories</h1><p class="color-highlight">Associated Tags</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        
+        <div class="content mt-0">
+            <div class="list-group list-custom-small mb-4">
+                <a href="#">
+                    <i class="fa font-12 fa-shopping-bag bg-highlight color-white rounded-s"></i>
+                    <span class="font-800 color-highlight">Web Design</span>
+                    <span class="badge bg-dark1-light font-11">15</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>     
+                <a href="#">
+                    <i class="fa font-12 fa-cog bg-blue-dark color-white rounded-s"></i>
+                    <span>Technology</span>
+                    <span class="badge bg-dark1-light font-11">21</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#">
+                    <i class="fa font-12 fa-car bg-brown-dark color-white rounded-s"></i>
+                    <span>Automotive</span>
+                    <span class="badge bg-dark1-light font-11">46</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#">
+                    <i class="fa font-12 fa-bolt bg-yellow-dark color-white rounded-s"></i>
+                    <span>Latest Trends</span>
+                    <span class="badge bg-dark1-light font-11">17</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+            <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-highlight font-700 text-uppercase">Close Menu</a>
+        </div>
+    </div>       
+    
+    <!-- menu-tags -->
+    <div id="menu-tags" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="340">
+        <div class="menu-title"><h1>Tag Cloud</h1><p class="color-highlight">Associated Tags</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mt-3"></div>
+        
+        <div class="content mt-0">
+            <a href="#" class="badge bg-red-dark mb-2 mx-1 px-3 py-2 text-uppercase rounded-s font-11"><i class="fa fa-cog pe-2"></i>Tech</a>
+            <a href="#" class="badge bg-green-dark mb-2 mx-1 px-3 py-2 text-uppercase rounded-s font-11"><i class="fa fa-globe pe-2"></i>Web</a>
+            <a href="#" class="badge bg-yellow-dark mb-2 mx-1 px-3 py-2 text-uppercase rounded-s font-11"><i class="fa fa-star pe-2"></i>Reviews</a>
+            <div class="divider mt-2 mb-3"></div>
+            <a href="#" class="badge bg-blue-dark mb-2 mx-1 px-3 py-3 text-uppercase rounded-s font-12"><i class="fa fa-cog pe-2"></i>Tech</a>
+            <a href="#" class="badge bg-teal-dark mb-2 mx-1 px-3 py-3 text-uppercase rounded-s font-12"><i class="fa fa-globe pe-2"></i>Web</a>
+            <a href="#" class="badge bg-brown-dark mb-2 mx-1 px-3 py-3 text-uppercase rounded-s font-12"><i class="fa fa-star pe-2"></i>Reviews</a>
+            <div class="divider mt-3"></div>
+            <a href="#" class="close-menu btn btn-m btn-full rounded-sm bg-highlight font-700 text-uppercase">Close Menu</a>
+        </div>
+    </div>       
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <!------------------->
+    <!-- Media Actions -->
+    <!------------------->
+
+    <!-- menu-youtube-->
+<!--
+    <div id="menu-youtube" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="390">
+        <div class='responsive-iframe max-iframe'><iframe src='https://www.youtube.com/embed/c9MnSeYYtYY' frameborder='0' allowfullscreen></iframe></div>
+        <h3 class="text-center text-uppercase mt-3">Video Embeds</h3>
+        <p class="boxed-text-l">
+            Embed any video from any media service. Just copy the iframe and we'll handle the rest.
+        </p>
+        <a href="#" class="close-menu btn btn-center-m btn-sm shadow-l rounded-s text-uppercase font-900 bg-green-dark">Awesome</a>
+    </div>        
+    
+-->
+    <!-- menu maps -->
+<!--
+    <div id="menu-maps" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="390">
+        <div class='responsive-iframe max-iframe'><iframe src='https://www.google.com/maps/embed/v1/view?key=AIzaSyAM3nxDVrkjyKwdIZp8QOplmBKLRVI5S_Y&center=-33.8569,151.2152&zoom=16&maptype=satellite' frameborder='0' allowfullscreen></iframe></div>
+        <h3 class="text-center text-uppercase mt-3">Maps Embeds</h3>
+        <p class="boxed-text-l">
+            Embed maps with great ease. Just copy the iframe and we'll handle the rest.
+        </p>
+        <a href="#" class="close-menu btn btn-center-m btn-sm shadow-l rounded-s text-uppercase font-900 bg-green-dark">Awesome</a>
+    </div>       
+    
+-->
+    <!-- menu soundcloud -->
+<!--
+    <div id="menu-soundcloud" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="390">
+        <div class='responsive-iframe max-iframe'>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/118951508&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/envato" title="Envato" target="_blank" style="color: #cccccc; text-decoration: none;">Envato</a> · <a href="https://soundcloud.com/envato/audiojungle-watermark" title="AudioJungle Watermark" target="_blank" style="color: #cccccc; text-decoration: none;">AudioJungle Watermark</a></div>        </div>
+        <h3 class="text-center text-uppercase mt-3">Sound Cloud Embeds</h3>
+        <p class="boxed-text-l">
+            Embed maps with great ease. Just copy the iframe and we'll handle the rest.
+        </p>
+        <a href="#" class="close-menu btn btn-center-m btn-sm shadow-l rounded-s text-uppercase font-900 bg-green-dark">Awesome</a>
+    </div>   
+-->
+
+    <!-- menu apple-music -->
+<!--
+    <div id="menu-apple-music" class="menu menu-box-modal menu-box-detached rounded-m" data-menu-height="390">
+        <div class='responsive-iframe max-iframe'>
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/bohemian-rhapsody-the-original-soundtrack/1434899831"></iframe>
+        </div>
+        <h3 class="text-center text-uppercase mt-3 pt-2">Apple Music embeds</h3>
+        <p class="boxed-text-l">
+            Embed maps with great ease. Just copy the iframe and we'll handle the rest.
+        </p>
+        <a href="#" class="close-menu btn btn-center-m btn-sm shadow-l rounded-s text-uppercase font-900 bg-green-dark">Awesome</a>
+    </div>   
+-->
+
+
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

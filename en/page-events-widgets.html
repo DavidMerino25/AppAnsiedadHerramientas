@@ -1,0 +1,706 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>StickyMobile BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center">
+        <a href="index.html" class="header-title">Sticky Mobile</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="footer-bar" class="footer-bar-1">
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="index-components.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="index-search.html"><i class="fa fa-search"></i><span>Search</span></a>
+        <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>
+    </div>
+        
+    <div class="page-content header-clear-medium">
+        
+        <div class="card card-style">
+            <div class="content">
+                <h3>Event Widgets</h3>
+                <p>
+                    These widgets can be copy pasted and used everywhere to improve your event elements even more!
+                </p>
+            </div>
+        </div>
+                
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Follow Organizer</h5>
+        <div class="card card-style">
+            <div class="d-flex px-3 py-3">
+                <div class="align-self-center">
+                    <img src="images/splash/apple-touch-icon-72x72.png" width="60" class="rounded-m me-3">
+                </div>
+                <div class="align-self-center">
+                    <h5>Enabled Studio</h5>
+                    <p class="mb-0 mt-n2 opacity-50 font-11">35.000 Followers</p>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="btn btn-xxs bg-blue-dark text-uppercase font-800">Follow</a>
+                </div>
+            </div>
+        </div>
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event Interests</h5>
+        <div class="card card-style">
+            <div class="content mb-0">
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check1">
+                      <label class="form-check-label rounded-m" for="check1">Technology</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-mobile-alt font-17 color-red-dark"></i>
+                </div>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check1a">
+                      <label class="form-check-label rounded-m" for="check1a">Pets</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-paw font-17 color-brown-dark"></i>
+                </div>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check3" checked>
+                      <label class="form-check-label rounded-sm" for="check3">Food</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-utensils font-17 color-gray-dark"></i>
+                </div>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check4" checked>
+                      <label class="form-check-label rounded-m" for="check4">Biking</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-bicycle font-17 color-blue-dark"></i>
+                </div>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check5">
+                      <label class="form-check-label rounded-m" for="check5">Sports</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-basketball-ball color-brown-dark font-17"></i>
+                </div>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check6">
+                      <label class="form-check-label rounded-m" for="check6">Comedy</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="far fa-smile font-17 color-yellow-dark"></i>
+                </div>
+                <a href="#" class="btn btn-l text-uppercase font-700 bg-highlight btn-full mt-2 mx-n3 mb-0 shadow-xxl">Save Interests</a>
+            </div>
+        </div>
+        
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event List Style 1</h5>
+        <div class="card card-style p-2">
+            <a href="#" class="d-flex">
+                <div class="align-self-center">
+                    <img src="images/pictures/18s.jpg" class="rounded-sm me-3" width="70">
+                </div>
+                <div class="align-self-center">
+                    <span class="color-highlight font-300 d-block pt-0 text-uppercase font-10">28 August 2025</span>
+                    <strong class="color-theme font-16 d-block mt-n2">Paintball Park</strong>
+                    <span class="font-11 d-block mb-n1 color-theme opacity-30"><i class="fa fa-map-marker pe-2"></i>Texas State Park County</span>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right font-24 opacity-30 mt-2 color-gray-dark"></i>
+                </div>
+            </a>
+            <a href="#" class="d-flex pt-3">
+                <div class="align-self-center">
+                    <img src="images/pictures/14s.jpg" class="rounded-sm me-3" width="70">
+                </div>
+                <div class="align-self-center">
+                    <span class="color-highlight font-300 d-block pt-0 text-uppercase font-10">28 August 2025</span>
+                    <strong class="color-theme font-16 d-block mt-n2">Typography Day</strong>
+                    <span class="font-11 d-block mb-n1 color-theme opacity-30"><i class="fa fa-map-marker pe-2"></i>Texas State Park County</span>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right font-24 opacity-30 mt-2 color-gray-dark"></i>
+                </div>
+            </a>
+        </div>
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event List Style 2</h5>
+        <div class="card card-style p-2">
+            <a href="#" class="d-flex mb-3">
+                <div>
+                    <img src="images/pictures/18l.jpg" class="rounded-sm me-3" width="70">
+                </div>
+                <div>
+                    <span class="color-highlight font-300 d-block text-uppercase font-10">28 August 2025 - 09:00 AM</span>
+                    <strong class="color-theme font-16 d-block mt-n2 mb-n2">Paintball at the Park</strong>
+                    <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>Area 51, Nevada</span>
+
+                    <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                    <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                    <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                    <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                    <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                    <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others going</span>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right font-12 color-theme opacity-20"></i>
+                </div>
+            </a>
+            <a href="#" class="d-flex mb-1">
+                <div>
+                    <img src="images/pictures/14l.jpg" class="rounded-sm me-3" width="70">
+                </div>
+                <div>
+                    <span class="color-highlight font-300 d-block text-uppercase font-10">28 August 2025 - 09:00 AM</span>
+                    <strong class="color-theme font-16 d-block mt-n2 mb-n2">Typography Day</strong>
+                    <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>Area 51, Nevada</span>
+
+                    <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                    <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                    <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                    <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                    <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                    <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others going</span>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right font-12 color-theme opacity-20"></i>
+                </div>
+            </a>
+        </div>
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event Card Style 1</h5>
+        <a href="#" class="card card-style bg-14" data-card-height="220">
+            <div class="card-top mt-4 mx-3">
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n3" width="35">
+                <img src="images/avatars/2s.png" class="float-start border border-white bg-blue-dark rounded-circle me-n3" width="35">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n3" width="35">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n3" width="35">
+                <span href="#" class="float-start color-white pt-1 ps-4 font-12">+135 others</span>
+            </div>
+            <div class="card-top m-3">
+                <div class="bg-white color-black float-end rounded-sm px-3 pt-1 pb-2 text-center shadow-xl">
+                    <strong class="d-block font-11">AUG</strong>
+                    <strong class="d-block font-22 mt-n2">27</strong>
+                </div>
+            </div>
+            <div class="card-bottom mb-3 px-3">
+                <span class="badge bg-highlight text-uppercase color-white px-2 py-1">INTERNATIONAL EVENT</span>
+                <h1 class="color-white font-24">Typography Day</h1>
+                <p class="mb-0 line-height-s color-white opacity-50">
+                    Join the event that celebrates what we see on our screen each day. The beauty of letters.
+                </p>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </a>
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event Card Style 2</h5>
+        <a href="#" class="d-block card-style card p-2">
+            <img src="images/pictures/18w.jpg" class="rounded-sm img-fluid">
+            <div>
+                <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">28 August 2025 - 09:00 AM</span>
+                <strong class="color-theme font-20 d-block mt-n2 mb-n2">Paintball at the Park</strong>
+                <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>Area 51, Nevada</span>
+
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others going</span>
+                <div class="clearfix"></div>
+            </div>
+        </a>
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Notification</h5>
+        <div class="card card-style mb-2">
+            <div class="d-flex px-3 py-3">
+                <div class="align-self-center">
+                    <i class="fa fa-trophy color-yellow-dark fa-3x pe-3"></i>
+                </div>
+                <div class="align-self-center">
+                    <h5>YOU WON</h5>
+                    <p class="mb-0 mt-n2 opacity-50 font-11">1 Free Event Invite</p>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="btn btn-xxs bg-highlight scale-box text-uppercase font-800">Claim</a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-style mb-2">
+            <div class="d-flex px-3 py-3">
+                <div class="align-self-center">
+                    <i class="fa fa-cog color-blue-dark fa-3x pe-3"></i>
+                </div>
+                <div class="align-self-center">
+                    <h5>Please Login</h5>
+                    <p class="mb-0 mt-n2 opacity-50 font-11">Login to Continue</p>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="btn btn-xxs bg-blue-dark text-uppercase font-800">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="card card-style mb-2">
+            <div class="d-flex px-3 py-3">
+                <div class="align-self-center">
+                    <i class="fa fa-check-circle color-green-dark fa-3x pe-3"></i>
+                </div>
+                <div class="align-self-center">
+                    <h5>Invite Accepted</h5>
+                    <p class="mb-0 mt-n2 opacity-50 font-11">You accepted the Event Invitation! See you there!</p>
+                </div>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="d-flex px-3 py-3">
+                <div class="align-self-center">
+                    <i class="fa fa-times-circle color-red-dark fa-3x pe-3"></i>
+                </div>
+                <div class="align-self-center">
+                    <h5>Invite Declined</h5>
+                    <p class="mb-0 mt-n2 opacity-50 font-11">You Declined the Event Invitation! See you there!</p>
+                </div>
+            </div>
+        </div>
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Your Friends</h5>
+        <div class="card card-style">
+            <div class="content mb-0">
+                <div class="row text-center mb-0">
+                    <div class="col-6">
+                        <span class="badge bg-red-dark position-absolute font-8 font-400 py-2 px-2 mt-n1">ORGANIZER</span>
+                        <img src="images/avatars/12s.png" class="rounded-circle bg-green-dark" width="120">
+                        <h5 class="font-14 mb-3">Daniele</h5>
+                    </div>
+                    <div class="col-6">
+                        <span class="badge bg-red-dark position-absolute font-8 font-400 py-2 px-2 mt-n1">HOSTER</span>
+                        <img src="images/avatars/2s.png" class="rounded-circle bg-dark-dark" width="120">
+                        <h5 class="font-14 mb-3">David</h5>
+                    </div>
+                    <div class="col-12"><div class="divider mb-3"></div></div>
+                    <div class="col-4">
+                        <span class="badge bg-red-dark position-absolute font-8 font-400 pt-1">NEW POST</span>
+                        <img src="images/avatars/10s.png" class="rounded-xl bg-green-dark" width="80">
+                        <h5 class="font-14 mb-3">Ashley</h5>
+                    </div>
+                    <div class="col-4">
+                        <span class="badge bg-red-dark position-absolute font-8 font-400 pt-1">PENDING</span>
+                        <img src="images/avatars/1s.png" class="rounded-xl bg-blue-dark" width="80">
+                        <h5 class="font-14 mb-3">Jane</h5>
+                    </div>
+                    <div class="col-4">
+                        <span class="badge bg-red-dark position-absolute font-8 font-400 pt-1">MISSED CALL</span>
+                        <img src="images/avatars/2s.png" class="rounded-xl bg-magenta-dark" width="80">
+                        <h5 class="font-14 mb-3">Jackson</h5>
+                    </div>
+                    <div class="col-12"><div class="divider mb-3"></div></div>
+                    <div class="col-3">
+                        <img src="images/avatars/4s.png" class="rounded-xl bg-yellow-dark" width="60">
+                        <h5 class="font-14 mb-3">David</h5>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/avatars/5s.png" class="rounded-xl bg-orange-dark" width="60">
+                        <h5 class="font-14 mb-3">Joey</h5>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/avatars/7s.png" class="rounded-xl bg-mint-dark" width="60">
+                        <h5 class="font-14 mb-3">Michelle</h5>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/avatars/8s.png" class="rounded-xl bg-teal-dark" width="60">
+                        <h5 class="font-14 mb-3">Ariana</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Join Event</h5>
+        <div class="card card-style">
+            <div class="content">
+                <a href="#" class="btn btn-icon btn-m rounded-sm text-uppercase font-700 bg-facebook btn-full"><i class="fab fa-facebook-f bg-transparent font-13"></i> Facebook Account</a>
+                <a href="#" class="btn btn-icon btn-m rounded-sm text-uppercase font-700 bg-twitter btn-full mt-2"><i class="fab fa-twitter bg-transparent font-13"></i> Twitter Account</a>
+                <a href="#" class="btn btn-icon btn-m rounded-sm text-uppercase font-700 bg-gray-light color-black btn-full mt-2"><i class="fab fa-google color-google bg-transparent font-13"></i> Google account</a>
+                <p class="text-center font-11 font-300 pt-2 mb-0 opacity-30">or</p>
+                <a href="#" class="btn btn-m rounded-sm text-uppercase font-700 bg-green-dark btn-full mt-2">Create Account</a>
+            </div>
+        </div>
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event Invitation - 1</h5>
+        <div class="card card-style">
+            <div class="d-flex px-3 py-3">
+                <div class="align-self-center pe-4 me-3">
+                    <h5>Invigation Received</h5>
+                    <p class="mb-0 opacity-50 font-11 line-height-s">Jack invited you to join the Envato Event as a guest. You get a free pass.</p>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="btn btn-xxs bg-gray-dark text-uppercase font-800">REspond</a>
+                </div>
+            </div>
+        </div>
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Event Invitation - 2</h5>
+        <div class="card card-style p-3">
+            <img src="images/pictures/14w.jpg" class="rounded-sm img-fluid">
+            <div>
+                <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">28 August 2025 - 09:00 AM</span>
+                <strong class="color-theme font-20 d-block mt-n2 mb-n2">International Typography Event</strong>
+                <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>Area 51, Nevada</span>
+
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others going</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="content mb-0 mx-0">
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <a href="#" class="btn btn-full btn-icon rounded-sm btn-m bg-green-dark text-uppercase font-700"><i class="fa fa-check bg-transparent"></i> Accept</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="btn btn-full btn-icon rounded-sm btn-m bg-red-dark text-uppercase font-700"><i class="fa fa-times bg-transparent"></i> Reject</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Confirm Invite</h5>
+        <div class="card card-style">
+            <div class="content">
+                <div class="input-style has-borders has-icon validate-field mb-4">
+                    <i class="fa fa-user"></i>
+                    <input type="text" class="form-control validate-text" id="form4" placeholder="Name">
+                    <label for="form4" class="color-highlight">Name</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style has-borders has-icon validate-field mb-4">
+                    <i class="fa fa-at"></i>
+                    <input type="email" class="form-control validate-email" id="form41" placeholder="Email">
+                    <label for="form41" class="color-highlight">Email</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style has-borders has-icon validate-field mb-4">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" class="form-control validate-tel" id="form42" placeholder="Phone">
+                    <label for="form42" class="color-highlight">Phone</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style has-borders has-icon mb-4">
+                    <i class="fa fa-plus font-11"></i>
+                    <label for="form5" class="color-highlight">Total Participants</label>
+                    <select id="form5">
+                        <option value="default" disabled selected>Total Participants</option>
+                        <option value="1a">One</option>
+                        <option value="2s">Two</option>
+                        <option value="3s">Three</option>
+                        <option value="4s">Four</option>
+                        <option value="5s">Five</option>
+                    </select>
+                    <span><i class="fa fa-chevron-down ms-n4 mt-2"></i></span>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <i class="fa fa-check disabled invalid color-red-dark"></i>
+                    <em></em>
+                </div>
+                <div class="form-check icon-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+                    <label class="form-check-label" for="check2">I accept the Event Terms and Conditions</label>
+                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                    <i class="icon-check-2 fa fa-check-square font-16 color-blue-dark"></i>
+                </div>
+                <a href="#" class="btn btn-m rounded-sm text-uppercase font-700 bg-blue-dark btn-full mt-3">Join Event</a>
+            </div>
+        </div>
+
+        <h5 class="text-uppercase font-800 font-14 opacity-60 px-3">Create Event</h5>
+        <div class="card card-style">
+            <div class="content">
+                <div class="input-style has-borders no-icon validate-field mb-4">
+                    <input type="text" class="form-control validate-text" id="form4" placeholder="Event Title">
+                    <label for="form4" class="color-highlight">Event Title</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <div class="input-style has-borders no-icon mb-4">
+                            <label for="form51" class="color-highlight">Month</label>
+                            <select id="form51">
+                                <option value="default" disabled selected>Month</option>
+                                <option value="Jan">January</option>
+                                <option value="Feb">February</option>
+                                <option value="Mar">March</option>
+                                <option value="Apr">April</option>
+                                <option value="May">May</option>
+                                <option value="Jun">June</option>
+                                <option value="Jul">July</option>
+                                <option value="Aug">August</option>
+                                <option value="Sep">September</option>
+                                <option value="Oct">October</option>
+                                <option value="Nov">November</option>
+                                <option value="Dec">December</option>
+                            </select>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-style has-borders no-icon mb-4">
+                            <label for="form5" class="color-highlight">Day</label>
+                            <select id="form5">
+                                <option value="default" disabled selected>Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                    
+                    </div>
+                </div>
+                <div class="input-style has-borders no-icon validate-field mb-4">
+                    <input type="email" class="form-control validate-email" id="form41" placeholder="Organizer Email">
+                    <label for="form41" class="color-highlight">Organizer Email</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style has-borders no-icon validate-field mb-4">
+                    <input type="tel" class="form-control validate-tel" id="form42" placeholder="Organizer Phone">
+                    <label for="form42" class="color-highlight">Organizer Phone</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <label for="form5" class="color-highlight">Total Participants</label>
+                    <select id="form5">
+                        <option value="default" disabled selected>Total Participants</option>
+                        <option value="1a">1 - 10</option>
+                        <option value="2s">10 - 20</option>
+                        <option value="3s">20 - 30</option>
+                        <option value="4s">30 - 50</option>
+                        <option value="5s">50 - 100</option>
+                    </select>
+                    <span><i class="fa fa-chevron-down ms-n4 mt-2"></i></span>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <i class="fa fa-check disabled invalid color-red-dark"></i>
+                    <em></em>
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <textarea id="form7" placeholder="Enter your message"></textarea>
+                    <label for="form7" class="color-highlight">Describe your Event</label>
+                    <em class="mt-n3">(required)</em>
+                </div>
+                <div class="form-check icon-check">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="check2ab" checked>
+                    <label class="form-check-label" for="check2ab">Public Event - Anyone can Join</label>
+                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                    <i class="icon-check-2 fa fa-check-square font-16 color-red-dark"></i>
+                </div>
+                <div class="form-check icon-check">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="check2abc">
+                    <label class="form-check-label" for="check2abc">Private Event - Invites Require Approval</label>
+                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                    <i class="icon-check-2 fa fa-check-square font-16 color-red-dark"></i>
+                </div>
+                <div class="divider mb-2 mt-2"></div>
+                <div class="form-check icon-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check2ca" checked>
+                    <label class="form-check-label" for="check2ca">I accept the Event Terms and Conditions</label>
+                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                    <i class="icon-check-2 fa fa-check-square font-16 color-blue-dark"></i>
+                </div>
+                <a href="#" class="btn btn-m rounded-sm text-uppercase font-700 bg-blue-dark btn-full mt-3">Create Event</a>
+            </div>
+        </div>
+
+
+        <div class="footer card card-style">
+            <a href="#" class="footer-title"><span class="color-highlight">StickyMobile</span></a>
+            <p class="footer-text"><span>Made with <i class="fa fa-heart color-highlight font-16 ps-2 pe-2"></i> by Enabled</span><br><br>Powered by the best Mobile Website Developer on Envato Market. Elite Quality. Elite Products.</p>
+            <div class="text-center mb-3">
+                <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-phone"><i class="fa fa-phone"></i></a>
+                <a href="#" data-menu="menu-share" class="icon icon-xs rounded-sm me-1 shadow-l bg-red-dark"><i class="fa fa-share-alt"></i></a>
+                <a href="#" class="back-to-top icon icon-xs rounded-sm shadow-l bg-dark-light"><i class="fa fa-angle-up"></i></a>
+            </div>
+            <p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
+            <p class="footer-links"><a href="#" class="color-highlight">Privacy Policy</a> | <a href="#" class="color-highlight">Terms and Conditions</a> | <a href="#" class="back-to-top color-highlight"> Back to Top</a></p>
+            <div class="clear"></div>
+        </div>    
+        
+    </div>
+    <!-- End of Page Content--> 
+    
+    <!-- All Menus, Action Sheets, Modals, Notifications, Toasts, Snackbars get Placed outside the <div class="page-content"> -->
+    <div id="menu-settings" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-0 pt-0"><h1>Settings</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="list-group list-custom-small">
+                <a href="#" data-toggle-theme data-trigger-switch="switch-dark-mode" class="pb-2 ms-n1">
+                    <i class="fa font-12 fa-moon rounded-s bg-highlight color-white me-3"></i>
+                    <span>Dark Mode</span>
+                    <div class="custom-control scale-switch ios-switch">
+                        <input data-toggle-theme type="checkbox" class="ios-input" id="switch-dark-mode">
+                        <label class="custom-control-label" for="switch-dark-mode"></label>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </a>    
+            </div>
+            <div class="list-group list-custom-large">
+                <a data-menu="menu-highlights" href="#">
+                    <i class="fa font-14 fa-tint bg-green-dark rounded-s"></i>
+                    <span>Page Highlight</span>
+                    <strong>16 Colors Highlights Included</strong>
+                    <span class="badge bg-highlight color-white">HOT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a data-menu="menu-backgrounds" href="#" class="border-0">
+                    <i class="fa font-14 fa-cog bg-blue-dark rounded-s"></i>
+                    <span>Background Color</span>
+                    <strong>10 Page Gradients Included</strong>
+                    <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>
+    </div>
+    <!-- Menu Settings Highlights-->
+    <div id="menu-highlights" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title"><h1>Highlights</h1><p class="color-highlight">Any Element can have a Highlight Color</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="highlight-changer">
+                <a href="#" data-change-highlight="blue"><i class="fa fa-circle color-blue-dark"></i><span class="color-blue-light">Default</span></a>
+                <a href="#" data-change-highlight="red"><i class="fa fa-circle color-red-dark"></i><span class="color-red-light">Red</span></a>    
+                <a href="#" data-change-highlight="orange"><i class="fa fa-circle color-orange-dark"></i><span class="color-orange-light">Orange</span></a>    
+                <a href="#" data-change-highlight="pink2"><i class="fa fa-circle color-pink2-dark"></i><span class="color-pink-dark">Pink</span></a>    
+                <a href="#" data-change-highlight="magenta"><i class="fa fa-circle color-magenta-dark"></i><span class="color-magenta-light">Purple</span></a>    
+                <a href="#" data-change-highlight="aqua"><i class="fa fa-circle color-aqua-dark"></i><span class="color-aqua-light">Aqua</span></a>      
+                <a href="#" data-change-highlight="teal"><i class="fa fa-circle color-teal-dark"></i><span class="color-teal-light">Teal</span></a>      
+                <a href="#" data-change-highlight="mint"><i class="fa fa-circle color-mint-dark"></i><span class="color-mint-light">Mint</span></a>      
+                <a href="#" data-change-highlight="green"><i class="fa fa-circle color-green-light"></i><span class="color-green-light">Green</span></a>    
+                <a href="#" data-change-highlight="grass"><i class="fa fa-circle color-green-dark"></i><span class="color-green-dark">Grass</span></a>       
+                <a href="#" data-change-highlight="sunny"><i class="fa fa-circle color-yellow-light"></i><span class="color-yellow-light">Sunny</span></a>    
+                <a href="#" data-change-highlight="yellow"><i class="fa fa-circle color-yellow-dark"></i><span class="color-yellow-light">Goldish</span></a>
+                <a href="#" data-change-highlight="brown"><i class="fa fa-circle color-brown-dark"></i><span class="color-brown-light">Wood</span></a>    
+                <a href="#" data-change-highlight="night"><i class="fa fa-circle color-dark-dark"></i><span class="color-dark-light">Night</span></a>
+                <a href="#" data-change-highlight="dark"><i class="fa fa-circle color-dark-light"></i><span class="color-dark-light">Dark</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>    
+    <!-- Menu Settings Backgrounds-->
+    <div id="menu-backgrounds" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title"><h1>Backgrounds</h1><p class="color-highlight">Change Page Color Behind Content Boxes</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="background-changer">
+                <a href="#" data-change-background="default"><i class="bg-theme"></i><span class="color-dark-dark">Default</span></a>
+                <a href="#" data-change-background="plum"><i class="body-plum"></i><span class="color-plum-dark">Plum</span></a>
+                <a href="#" data-change-background="magenta"><i class="body-magenta"></i><span class="color-dark-dark">Magenta</span></a>
+                <a href="#" data-change-background="dark"><i class="body-dark"></i><span class="color-dark-dark">Dark</span></a>
+                <a href="#" data-change-background="violet"><i class="body-violet"></i><span class="color-violet-dark">Violet</span></a>
+                <a href="#" data-change-background="red"><i class="body-red"></i><span class="color-red-dark">Red</span></a>
+                <a href="#" data-change-background="green"><i class="body-green"></i><span class="color-green-dark">Green</span></a>
+                <a href="#" data-change-background="sky"><i class="body-sky"></i><span class="color-sky-dark">Sky</span></a>
+                <a href="#" data-change-background="orange"><i class="body-orange"></i><span class="color-orange-dark">Orange</span></a>
+                <a href="#" data-change-background="yellow"><i class="body-yellow"></i><span class="color-yellow-dark">Yellow</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>
+    <!-- Menu Share -->
+    <div id="menu-share" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-n1"><h1>Share the Love</h1><p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="content mb-0">
+            <div class="divider mb-0"></div>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="auto_generated" class="shareToFacebook external-link">
+                    <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                    <span class="font-13">Facebook</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToTwitter external-link">
+                    <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                    <span class="font-13">Twitter</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToLinkedIn external-link">
+                    <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                    <span class="font-13">LinkedIn</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="auto_generated" class="shareToWhatsApp external-link">
+                    <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                    <span class="font-13">WhatsApp</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>   
+                <a href="auto_generated" class="shareToMail external-link border-0">
+                    <i class="font-18 fa fa-envelope-square color-mail"></i>
+                    <span class="font-13">Email</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

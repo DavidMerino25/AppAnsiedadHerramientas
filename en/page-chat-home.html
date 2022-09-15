@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>StickyMobile BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-app">
+        <a href="index.html" class="header-title">Sticky Mobile</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-user" class="header-icon header-icon-2"><img src="images/pictures/0s.png" width="24" class="rounded-xl shadow-xl border-gray-dark border"></a>
+        <a href="#" data-menu="menu-new-message" class="header-icon header-icon-3"><i class="fas fa-edit font-14"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-1">
+        <a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="index-components.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+        <a href="index-search.html"><i class="fa fa-search"></i><span>Search</span></a>
+        <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>
+    </div>
+
+
+    <div class="page-content header-clear-medium">
+
+        <div class="me-3 ms-3">
+            <div class="search-box bg-theme rounded-m shadow-l border-0">
+                <i class="fa fa-search"></i>
+                <input type="text" class="border-0" placeholder="Search here.. - try the word demo " data-search>
+				<a href="#" class="clear-search disabled mt-0"><i class="fa fa-times color-red-dark"></i></a>
+            </div>   
+        </div>
+
+        <!-- Search Area -->
+        <div class="card card-style search-results disabled-search-list mt-3">
+            <div class="content mt-0 mb-0 pb-0 mx-2">
+                <div>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all john wick">
+                        <div class="align-self-center">
+                            <i class="fa fa-circle color-green-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                            <img src="images/pictures/17s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">John Wick</p>
+                            <p class="font-11 mb-0 line-height-s">I'm out walking the dog.</p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">20 min ago</span><br>
+                            <span class="float-end mt-n1 pt-1 badge rounded-pill bg-blue-dark font-9 font-400 scale-switch">5</span>
+                        </div>
+                    </a>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all tyler durden">
+                        <div class="align-self-center">
+                            <i class="fa fa-circle color-green-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                            <img src="images/pictures/12s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">Tyler Durden <i class="fa fa-bell-slash ps-1 pb-1 font-10 opacity-30"></i></p>
+                            <p class="font-11 mb-0 line-height-s">Don't forget about rule number one.</p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">2 hours ago</span><br>
+                            <span class="float-end mt-n1 pt-1 badge rounded-pill bg-blue-dark font-9 font-400 scale-switch px-1">14</span>
+                        </div>
+                    </a>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all harry callahan">
+                        <div class="align-self-center">
+                            <i class="fa fa-circle color-yellow-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                            <img src="images/pictures/30s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">Harry Callahan</p>
+                            <p class="font-11 mb-0 line-height-s"><i>Sent 5 images and 1 Video.</i></p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">2 hours ago</span><br>
+                            <span class="float-end mt-n1 pt-1 badge rounded-pill bg-green-dark font-9 font-400 scale-switch px-1"><i class="fa fa-image"></i></span>
+                            <span class="float-end mt-n1 pt-1 badge rounded-pill bg-red-dark font-9 font-400 scale-switch px-1"><i class="fa fa-video"></i></span>
+                        </div>
+                    </a>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all tony montana">
+                        <div class="align-self-center">
+                            <i class="fa fa-circle color-yellow-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                            <img src="images/pictures/8s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">Tony Montana <i class="fa fa-bell-slash ps-1 pb-1 font-10 opacity-30"></i></p>
+                            <p class="font-11 mb-0 line-height-s">Say hello to my little friend! 😅 </p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">3 days ago</span><br>
+                        </div>
+                    </a>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all the godfather">
+                        <div class="align-self-center">
+                            <i class="fa fa-circle color-yellow-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                            <img src="images/pictures/24s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">The Godfather</p>
+                            <p class="font-11 mb-0 line-height-s">I'm have an offer you can't refuse. </p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">Yesterday</span><br>
+                        </div>
+                    </a>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all sherlock holms">
+                        <div class="align-self-center">
+                            <img src="images/pictures/28s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">Sherlock Holmes</p>
+                            <p class="font-11 mb-0 line-height-s">It's elementary, my dear Watson.  </p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">Last week</span><br>
+                        </div>
+                    </a>
+                    <a href="page-chat-bubbles-2.html" class="d-flex py-2" data-filter-item data-filter-name="all bob marley">
+                        <div class="align-self-center">
+                            <img src="images/pictures/15s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                        </div>
+                        <div class="align-self-center">
+                            <p class="font-14 font-600 color-theme mb-0 line-height-s">Bob Marley</p>
+                            <p class="font-11 mb-0 line-height-s">Love the life you live. Live the life you love.  </p>
+                        </div>
+                        <div class="position-absolute end-0 pe-3">
+                            <span class="font-9 opacity-40 color-theme">24th March</span><br>
+                        </div>
+                    </a>
+                    <div class="search-no-results"><!-- use component-search for no results page --></div>
+                </div>
+            </div>
+        </div>	
+
+        <!-- List of Favorites -->
+        <div class="content">
+            <div class="row mb-0">
+                <a href="page-chat-bubbles-2.html" class="col-3 text-center">
+                    <img src="images/pictures/faces/1s.png" width="60" class="rounded-xl" alt="img">
+                    <p class="font-600 color-theme">John</p>
+                </a>
+                <a href="page-chat-bubbles-2.html" class="col-3 text-center">
+                    <img src="images/pictures/faces/2s.png" width="60" class="rounded-xl" alt="img">
+                    <p class="font-600 color-theme">Dean</p>
+                </a>
+                <a href="page-chat-bubbles-2.html" class="col-3 text-center">
+                    <img src="images/pictures/faces/3s.png" width="60" class="rounded-xl" alt="img">
+                    <p class="font-600 color-theme">David</p>
+                </a>
+                <a href="page-chat-bubbles-2.html" class="col-3 text-center">
+                    <img src="images/pictures/faces/4s.png" width="60" class="rounded-xl" alt="img">
+                    <p class="font-600 color-theme">Nixon</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Chat Bubble List -->
+        <div class="card card-style mb-0">
+            <div class="content mb-0">
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <i class="fa fa-circle color-green-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                        <img src="images/pictures/17s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">John Wick</p>
+                        <p class="font-11 mb-0 line-height-s">I'm out walking the dog.</p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">20 min ago</span><br>
+                        <span class="float-end mt-n1 pt-1 badge rounded-pill bg-blue-dark font-9 font-400 scale-switch">5</span>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <i class="fa fa-circle color-green-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                        <img src="images/pictures/12s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">Tyler Durden <i class="fa fa-bell-slash ps-1 pb-1 font-10 opacity-30"></i></p>
+                        <p class="font-11 mb-0 line-height-s">Don't forget about rule number one.</p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">2 hours ago</span><br>
+                        <span class="float-end mt-n1 pt-1 badge rounded-pill bg-blue-dark font-9 font-400 scale-switch px-1">14</span>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <i class="fa fa-circle color-yellow-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                        <img src="images/pictures/30s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">Harry Callahan</p>
+                        <p class="font-11 mb-0 line-height-s"><i>Sent 5 images and 1 Video.</i></p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">2 hours ago</span><br>
+                        <span class="float-end mt-n1 pt-1 badge rounded-pill bg-green-dark font-9 font-400 scale-switch px-1"><i class="fa fa-image"></i></span>
+                        <span class="float-end mt-n1 pt-1 badge rounded-pill bg-red-dark font-9 font-400 scale-switch px-1"><i class="fa fa-video"></i></span>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <i class="fa fa-circle color-yellow-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                        <img src="images/pictures/8s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">Tony Montana <i class="fa fa-bell-slash ps-1 pb-1 font-10 opacity-30"></i></p>
+                        <p class="font-11 mb-0 line-height-s">Say hello to my little friend! 😅 </p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">3 days ago</span><br>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <i class="fa fa-circle color-yellow-dark position-absolute ms-4 ps-2 pt-4 mt-2"></i>
+                        <img src="images/pictures/24s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">The Godfather</p>
+                        <p class="font-11 mb-0 line-height-s">I'm have an offer you can't refuse. </p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">Yesterday</span><br>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <img src="images/pictures/28s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">Sherlock Holmes</p>
+                        <p class="font-11 mb-0 line-height-s">It's elementary, my dear Watson.  </p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">Last week</span><br>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="page-chat-bubbles-2.html" class="d-flex pb-3">
+                    <div class="align-self-center">
+                        <img src="images/pictures/15s.jpg" width="45" class="rounded-xl me-3" alt="img">
+                    </div>
+                    <div class="align-self-center">
+                        <p class="font-14 font-600 color-theme mb-0 line-height-s">Bob Marley</p>
+                        <p class="font-11 mb-0 line-height-s">Love the life you live. Live the life you love.  </p>
+                    </div>
+                    <div class="position-absolute end-0 pe-3">
+                        <span class="font-9 opacity-40 color-theme">24th March</span><br>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End of Page Content--> 
+    <!-- All Menus, Action Sheets, Modals, Notifications, Toasts get Placed outside the <div class="page-content"> -->
+
+
+    <div id="menu-new-message" class="menu menu-box-modal" data-menu-width="320">
+        <div class="d-flex px-3 py-2">
+            <div class="align-self-center">
+                <h1 class="mb-0">New Message</h1>
+            </div>
+            <div class="align-self-center ms-auto">
+                <a href="#" class="icon icon-m me-n2"><i class="fa fa-times color-red-dark font-20"></i></a>
+            </div>
+        </div>
+        <div class="divider divider-margins"></div>
+        <div class="content">
+            <div class="input-style input-style-active has-borders no-icon validate-field mb-4">
+                <input type="text" class="form-control validate-name" id="form1" placeholder="John Wick">
+                <label for="form1" class="color-highlight font-600">Enter Contact Name</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style input-style-active has-borders no-icon mb-4 mt-4">
+                <textarea id="form7" placeholder="You have a beautiful puppy!"></textarea>
+                <label for="form7" class="color-highlight font-600">Enter your Message</label>
+                <em class="mt-n3">(required)</em>
+            </div>
+            <a href="#" class="btn btn-full btn-m rounded-sm bg-green-dark font-600 text-uppercase mb-3">Start Chat</a>
+        </div>
+    </div>
+     
+
+    <!-- Menu User Icon -->    
+    <div id="menu-user" class="menu menu-box-right" data-menu-width="cover" data-menu-effect="menu-over">   
+        <div class="content text-center">
+            <a href="#" class="close-menu icon icon-m mt-n2 notch-clear position-absolute start-0 color-theme"><i class="fa fa-chevron-left"></i></a>
+            <img src="images/pictures/0s.png" width="130" class="mx-auto rounded-circle shadow-xl" alt="img">
+            <i class="fa fa-circle color-green-dark mt-n3 d-block me-n5 ps-3 font-18"></i>
+            <h1 class="font-800 font-30 mt-3 mb-n1">Karla Black</h1>
+            <span class="d-block pb-3 font-11">Last Seen: Buying Sticky Mobile PWA</span>
+     
+            <div class="list-group list-custom-small text-start list-icon-0 pt-3">
+                <a href="#" data-trigger-switch="switch-2">
+                    <i class="font-14 fa fa-moon color-gray-dark"></i>
+                    <span class="font-13">Do not Disturb</span>
+                    <div class="custom-control ios-switch" style="transform:scale(0.8, 0.8)">
+                        <input type="checkbox" class="ios-input" id="switch-2">
+                        <label class="custom-control-label" for="switch-2"></label>
+                    </div>
+                </a>
+                <a href="#">
+                    <i class="font-14 fa fa-archive color-blue-dark"></i>
+                    <span class="font-13">Archived Chats</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#">
+                    <i class="font-14 fa fa-comment color-teal-dark"></i>
+                    <span class="font-13">Message Requests</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#">
+                    <i class="font-14 fa fa-bell color-blue-dark"></i>
+                    <span class="font-13">Notifications and Sounds</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" data-trigger-switch="switch-3">
+                    <i class="font-14 fa fa-map-marker color-green-dark"></i>
+                    <span class="font-13">Location Sharing</span>
+                    <div class="custom-control ios-switch" style="transform:scale(0.8, 0.8)">
+                        <input type="checkbox" class="ios-input" id="switch-3" checked>
+                        <label class="custom-control-label" for="switch-3"></label>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="close-menu btn btn-l btn-full shadow-l rounded-m bg-blue-dark text-uppercase font-800 mt-4">Back to Chat</a>
+        </div>   
+    </div>
+    
+    <!-- Menu Settings -->
+    <div id="menu-settings" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-0 pt-0"><h1>Settings</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="list-group list-custom-small">
+                <a href="#" data-toggle-theme data-trigger-switch="switch-dark-mode" class="pb-2 ms-n1">
+                    <i class="fa font-12 fa-moon rounded-s bg-highlight color-white me-3"></i>
+                    <span>Dark Mode</span>
+                    <div class="custom-control scale-switch ios-switch">
+                        <input data-toggle-theme type="checkbox" class="ios-input" id="switch-dark-mode">
+                        <label class="custom-control-label" for="switch-dark-mode"></label>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </a>    
+            </div>
+            <div class="list-group list-custom-large">
+                <a data-menu="menu-highlights" href="#">
+                    <i class="fa font-14 fa-tint bg-green-dark rounded-s"></i>
+                    <span>Page Highlight</span>
+                    <strong>16 Colors Highlights Included</strong>
+                    <span class="badge bg-highlight color-white">HOT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a data-menu="menu-backgrounds" href="#" class="border-0">
+                    <i class="fa font-14 fa-cog bg-blue-dark rounded-s"></i>
+                    <span>Background Color</span>
+                    <strong>10 Page Gradients Included</strong>
+                    <span class="badge bg-highlight color-white">NEW</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>
+    </div>
+    <!-- Menu Settings Highlights-->
+    <div id="menu-highlights" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title"><h1>Highlights</h1><p class="color-highlight">Any Element can have a Highlight Color</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="highlight-changer">
+                <a href="#" data-change-highlight="blue"><i class="fa fa-circle color-blue-dark"></i><span class="color-blue-light">Default</span></a>
+                <a href="#" data-change-highlight="red"><i class="fa fa-circle color-red-dark"></i><span class="color-red-light">Red</span></a>    
+                <a href="#" data-change-highlight="orange"><i class="fa fa-circle color-orange-dark"></i><span class="color-orange-light">Orange</span></a>    
+                <a href="#" data-change-highlight="pink2"><i class="fa fa-circle color-pink2-dark"></i><span class="color-pink-dark">Pink</span></a>    
+                <a href="#" data-change-highlight="magenta"><i class="fa fa-circle color-magenta-dark"></i><span class="color-magenta-light">Purple</span></a>    
+                <a href="#" data-change-highlight="aqua"><i class="fa fa-circle color-aqua-dark"></i><span class="color-aqua-light">Aqua</span></a>      
+                <a href="#" data-change-highlight="teal"><i class="fa fa-circle color-teal-dark"></i><span class="color-teal-light">Teal</span></a>      
+                <a href="#" data-change-highlight="mint"><i class="fa fa-circle color-mint-dark"></i><span class="color-mint-light">Mint</span></a>      
+                <a href="#" data-change-highlight="green"><i class="fa fa-circle color-green-light"></i><span class="color-green-light">Green</span></a>    
+                <a href="#" data-change-highlight="grass"><i class="fa fa-circle color-green-dark"></i><span class="color-green-dark">Grass</span></a>       
+                <a href="#" data-change-highlight="sunny"><i class="fa fa-circle color-yellow-light"></i><span class="color-yellow-light">Sunny</span></a>    
+                <a href="#" data-change-highlight="yellow"><i class="fa fa-circle color-yellow-dark"></i><span class="color-yellow-light">Goldish</span></a>
+                <a href="#" data-change-highlight="brown"><i class="fa fa-circle color-brown-dark"></i><span class="color-brown-light">Wood</span></a>    
+                <a href="#" data-change-highlight="night"><i class="fa fa-circle color-dark-dark"></i><span class="color-dark-light">Night</span></a>
+                <a href="#" data-change-highlight="dark"><i class="fa fa-circle color-dark-light"></i><span class="color-dark-light">Dark</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>    
+    <!-- Menu Settings Backgrounds-->
+    <div id="menu-backgrounds" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title"><h1>Backgrounds</h1><p class="color-highlight">Change Page Color Behind Content Boxes</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="background-changer">
+                <a href="#" data-change-background="default"><i class="bg-theme"></i><span class="color-dark-dark">Default</span></a>
+                <a href="#" data-change-background="plum"><i class="body-plum"></i><span class="color-plum-dark">Plum</span></a>
+                <a href="#" data-change-background="magenta"><i class="body-magenta"></i><span class="color-dark-dark">Magenta</span></a>
+                <a href="#" data-change-background="dark"><i class="body-dark"></i><span class="color-dark-dark">Dark</span></a>
+                <a href="#" data-change-background="violet"><i class="body-violet"></i><span class="color-violet-dark">Violet</span></a>
+                <a href="#" data-change-background="red"><i class="body-red"></i><span class="color-red-dark">Red</span></a>
+                <a href="#" data-change-background="green"><i class="body-green"></i><span class="color-green-dark">Green</span></a>
+                <a href="#" data-change-background="sky"><i class="body-sky"></i><span class="color-sky-dark">Sky</span></a>
+                <a href="#" data-change-background="orange"><i class="body-orange"></i><span class="color-orange-dark">Orange</span></a>
+                <a href="#" data-change-background="yellow"><i class="body-yellow"></i><span class="color-yellow-dark">Yellow</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Back to Settings</a>
+        </div>
+    </div>
+   
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

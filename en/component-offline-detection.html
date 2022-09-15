@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>StickyMobile BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center">
+        <a href="index.html" class="header-title">Offline Detection</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="footer-bar" class="footer-bar-1">
+        <a href="i-inicio.html" class="active-nav"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="i-escaneo.html"><i class="fab fa-cloudscale"></i><span>Escaneo</span></a> <!-- Se crea la clase en el index para el escaneo. Pero no es Active-nav -->
+        <a href="i-estadisticas.html"><i class="fas fa-chart-pie"></i><span>Estadísticas</span> </a> 
+        <a href="i-pronostico.html"><i class="far fa-calendar-alt"></i><span>Pronóstico</span></a>
+        <a href="i-informacion.html"><i class="fas fa-info-circle"></i><span>Información</span></a>      
+        <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Configuraciones</span></a> 
+    </div>
+        
+    <div class="page-content header-clear-medium">
+         
+        <!--<div class="card card-style preload-img" data-src="images/pictures/18w.jpg" data-card-height="130">
+            <div class="card-center ms-3">
+                <h1 class="color-white mb-0">Offline Detection</h1>
+                <p class="color-white mt-n1 mb-0">Detect if Conenction is Intrerupted.</p>
+            </div>
+            <div class="card-center me-3">
+                <a href="#" data-back-button class="btn btn-m float-end rounded-xl shadow-xl text-uppercase font-800 bg-highlight">Back Home</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div> -->       
+
+
+        <div class="card card-style">
+            <div class="content">
+                <h3>Cómo funciona?</h3>
+                <p>
+                    Sencillo. En esta página, desactive la conexión de datos / WiFi. Aparecerá un mensaje notificándole que ahora está desconectado. Además, el mensaje a continuación cambiará.
+                </p>    
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="row">
+                <div class="col-6">
+                    <a href="#" class="simulate-offline btn btn-m rounded-s btn-full bg-red-dark shadow-l text-uppercase font-900">Test Offline</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="simulate-online btn btn-m rounded-s btn-full bg-green-dark shadow-l text-uppercase font-900">Test Online</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content">
+                <h3>Página deshabilitada</h3>
+                <p>
+                    Puede haber casos en los que desee eliminar por completo el acceso a una página si esa página está fuera de línea. También puede hacerlo mostrando un mensaje que solicite al usuario que se conecte.
+                </p>    
+            </div>
+        </div>
+
+        <a href="#" data-menu="menu-offline" class="btn btn-margins btn-m rounded-s btn-full bg-red-dark shadow-l text-uppercase font-900">Simular pagina deshabilitada</a>
+
+
+        <div class="card card-style">
+            <div class="content">
+                <h3 class="mb-1">Donde se puede usar?</h3>
+                <p>
+                    Esta función está integrada de forma nativa en nuestro código. Todas las páginas detectarán si está en línea o fuera de línea y mostrarán este mensaje. Apague Internet en cualquier página y aparecerá el mensaje.
+                </p>    
+            </div>
+        </div>       
+        
+    </div>
+    <!-- End of Page Content--> 
+    
+    <div id="menu-offline" class="menu menu-box-modal rounded-m" 
+         data-menu-width="310"
+         data-menu-height="270">
+
+        <h1 class="text-center color-theme mt-4">Sin conexión</h1>
+        <p class="ps-3 pe-3 text-center color-theme opacity-60">
+            Esta página requiere una conexión a Internet para funcionar. Conéctese, encienda su WiFi o datos móviles para habilitar esta página.
+        </p>
+        <a href="#" class="close-menu btn btn-m font-900 text-uppercase bg-highlight rounded-sm btn-center-l">Cerrar mensaje</a>
+        <p class="text-center font-9 color-theme mt-3">En condiciones reales mover este botón</p>
+    </div>                    
+
+    
+    <!-- All Menus, Action Sheets, Modals, Notifications, Toasts, Snackbars get Placed outside the <div class="page-content"> -->
+    <div id="menu-settings" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-0 pt-0"><h1>Configuraciones</h1><p class="color-highlight">Fácil de usar</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="list-group list-custom-small">
+                <a href="#" data-toggle-theme data-trigger-switch="switch-dark-mode" class="pb-2 ms-n1">
+                    <i class="fa font-12 fa-moon rounded-s bg-highlight color-white me-3"></i>
+                    <span>Modo oscuro</span>
+                    <div class="custom-control scale-switch ios-switch">
+                        <input data-toggle-theme type="checkbox" class="ios-input" id="switch-dark-mode">
+                        <label class="custom-control-label" for="switch-dark-mode"></label>
+                    </div>
+                    <i class="fa fa-angle-right"></i>
+                </a>    
+            </div>
+            <div class="list-group list-custom-large">
+                <a data-menu="menu-highlights" href="#">
+                    <i class="fa font-14 fa-tint bg-green-dark rounded-s"></i>
+                    <span>Colores de letras y botones</span>
+                    <strong>16 Colores de resaltado para personalizar</strong>
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a data-menu="menu-backgrounds" href="#" class="border-0">
+                    <i class="fa font-14 fa-cog bg-blue-dark rounded-s"></i>
+                    <span>Colores de fondo</span>
+                    <strong>10 Colores de fondo que mas te gusten</strong>
+                    <span class="badge bg-highlight color-white"></span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>
+    </div>
+    <!-- Menu Settings Highlights-->
+    <!-- Menu de configuracion de colores para botones y letras-->
+    <div id="menu-highlights" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title"><h1>Letras y botones</h1><p class="color-highlight">Cualquier elemento puede tener un color de resaltado</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="highlight-changer">
+                <a href="#" data-change-highlight="blue"><i class="fa fa-circle color-blue-dark"></i><span class="color-blue-light">Pordefecto</span></a>
+                <a href="#" data-change-highlight="red"><i class="fa fa-circle color-red-dark"></i><span class="color-red-light">Rojo</span></a>    
+                <a href="#" data-change-highlight="orange"><i class="fa fa-circle color-orange-dark"></i><span class="color-orange-light">Naranja</span></a>    
+                <a href="#" data-change-highlight="pink2"><i class="fa fa-circle color-pink2-dark"></i><span class="color-pink-dark">Rosa</span></a>    
+                <a href="#" data-change-highlight="magenta"><i class="fa fa-circle color-magenta-dark"></i><span class="color-magenta-light">Purpura</span></a>    
+                <a href="#" data-change-highlight="aqua"><i class="fa fa-circle color-aqua-dark"></i><span class="color-aqua-light">Aqua</span></a>      
+                <a href="#" data-change-highlight="teal"><i class="fa fa-circle color-teal-dark"></i><span class="color-teal-light">VerdeAzulado</span></a>      
+                <a href="#" data-change-highlight="mint"><i class="fa fa-circle color-mint-dark"></i><span class="color-mint-light">Menta</span></a>      
+                <a href="#" data-change-highlight="green"><i class="fa fa-circle color-green-light"></i><span class="color-green-light">Verde</span></a>    
+                <a href="#" data-change-highlight="grass"><i class="fa fa-circle color-green-dark"></i><span class="color-green-dark">Césped</span></a>       
+                <a href="#" data-change-highlight="sunny"><i class="fa fa-circle color-yellow-light"></i><span class="color-yellow-light">Amarillo</span></a>    
+                <a href="#" data-change-highlight="yellow"><i class="fa fa-circle color-yellow-dark"></i><span class="color-yellow-light">Dorado</span></a>
+                <a href="#" data-change-highlight="brown"><i class="fa fa-circle color-brown-dark"></i><span class="color-brown-light">Madera</span></a>    
+                <a href="#" data-change-highlight="night"><i class="fa fa-circle color-dark-dark"></i><span class="color-dark-light">Noche</span></a>
+                <a href="#" data-change-highlight="dark"><i class="fa fa-circle color-dark-light"></i><span class="color-dark-light">Oscuro</span></a>
+                <a href="#" data-change-highlight="royalblue"><i class="fa fa-circle color-royalblue"></i><span class="color-royalblue-light">AzulRey</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Regresar a las configuraciones</a>
+        </div>
+    </div>    
+    <!-- Menu de configuraciones para fondos-->
+    <div id="menu-backgrounds" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title"><h1>Fondos</h1><p class="color-highlight">Cambia el color de fondo de tu app</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="divider divider-margins mb-n2"></div>
+        <div class="content">
+            <div class="background-changer">
+                <a href="#" data-change-background="default"><i class="bg-theme"></i><span class="color-dark-dark">Por defecto</span></a>
+                <a href="#" data-change-background="plum"><i class="body-plum"></i><span class="color-plum-dark">Ciruela</span></a>
+                <a href="#" data-change-background="magenta"><i class="body-magenta"></i><span class="color-dark-dark">Magenta</span></a>
+                <a href="#" data-change-background="dark"><i class="body-dark"></i><span class="color-dark-dark">Oscuro</span></a>
+                <a href="#" data-change-background="violet"><i class="body-violet"></i><span class="color-violet-dark">Violeta</span></a>
+                <a href="#" data-change-background="red"><i class="body-red"></i><span class="color-red-dark">Rojo</span></a>
+                <a href="#" data-change-background="green"><i class="body-green"></i><span class="color-green-dark">Verde</span></a>
+                <a href="#" data-change-background="sky"><i class="body-sky"></i><span class="color-sky-dark">Cielo</span></a>
+                <a href="#" data-change-background="orange"><i class="body-orange"></i><span class="color-orange-dark">Naranja</span></a>
+                <a href="#" data-change-background="yellow"><i class="body-yellow"></i><span class="color-yellow-dark">Amarillo</span></a>
+                <a href="#" data-change-background="royalblue"><i class="body-royalblue"></i><span class="color-royalblue-dark">AzulRey</span></a>
+                <div class="clearfix"></div>
+            </div>
+            <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Regresar a las configuraciones</a>
+        </div>
+    </div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
