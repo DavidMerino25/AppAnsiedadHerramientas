@@ -1,4 +1,6 @@
 <?php
+// Esta libreria es proporcionada por somosioticos.org
+
 $usuario_recibido   = $_SERVER['PHP_AUTH_USER'];
 $pass_recibido      = $_SERVER['PHP_AUTH_PW'];
 $inputJSON          = file_get_contents('php://input');
@@ -10,14 +12,9 @@ $respuesta_images[] = array();
 header('Content-Type: application/json;charset=utf-8');
 
 /*
-_______  _______  _______ _________ ______  _________ _______
-(  ____ )(  ____ \(  ____ \\__   __/(  ___ \ \__   __/(  ____ )
-| (    )|| (    \/| (    \/   ) (   | (   ) )   ) (   | (    )|
-| (____)|| (__    | |         | |   | (__/ /    | |   | (____)|
-|     __)|  __)   | |         | |   |  __ (     | |   |     __)
-| (\ (   | (      | |         | |   | (  \ \    | |   | (\ (
-| ) \ \__| (____/\| (____/\___) (___| )___) )___) (___| ) \ \__
-|/   \__/(_______/(_______/\_______/|/ \___/ \_______/|/   \__/
+    ////////////////////////////////////////
+    FUNCIONES PARA RECIBIR DATOS DE DIALOGFLOW
+    //////////////////////////////////////
 */
 //comprueba credenciales
 function credenciales($usuario, $pass)
@@ -166,14 +163,9 @@ function tipo_adjunto()
 }
 
 /*
-_______  _                _________ _______  _______
-(  ____ \( (    /||\     /|\__   __/(  ___  )(  ____ )
-| (    \/|  \  ( || )   ( |   ) (   | (   ) || (    )|
-| (__    |   \ | || |   | |   | |   | (___) || (____)|
-|  __)   | (\ \) |( (   ) )   | |   |  ___  ||     __)
-| (      | | \   | \ \_/ /    | |   | (   ) || (\ (
-| (____/\| )  \  |  \   /  ___) (___| )   ( || ) \ \__
-(_______/|/    )_)   \_/   \_______/|/     \||/   \__/
+    ////////////////////////////////////////
+    FUNCIONES PARA ENVIAR DATOS A DIALOGFLOW
+    //////////////////////////////////////
 */
 
 //a esta función se le debe pasar un array que contenga las urls de las imágenes y la plataforma a donde debe enviarse el mensaje
@@ -187,7 +179,7 @@ function enviar_imagenes($imagenes, $plataforma)
 }
 
 //a esta función se le debe pasar un array que contenga las tarjetas, con los índices titulo subtitulo y url, luego bajo el indice "botones" cargamos otro array con lo que debe indicar cada botón
-function enviar_tarjetas($tarjetas, $plataforma)
+function enviar_tarjetas($tarjetas)
 {
     echo '{"fulfillmentMessages": [';
     foreach ($tarjetas as $tarjeta) {
@@ -198,18 +190,41 @@ function enviar_tarjetas($tarjetas, $plataforma)
           "subtitle": "' . $tarjeta['subtitulo'] . '",
           "imageUri": "' . $tarjeta['url'] . '",
           "buttons": [';
-        $str = "";
-        foreach ($tarjeta['botones'] as $boton) {
-            $str = $str . '{"text":"' . $boton . '"},';
+             $str = "";
+            foreach ($tarjeta['botones'] as $boton) {
+                $str = $str . '{"text":"' . $boton . '"},';
+            }
+                echo rtrim($str, ',');
+            echo ']
         }
-        echo rtrim($str, ',');
-        echo ']
-        },
-        "platform": "' . $plataforma . '"
       },';
     }
     echo '{"payload":{}}]}' . PHP_EOL;
 }
+
+function enviar_tarjetasprueba($tarjetas)
+{
+    echo '{"richContent": [';
+    foreach ($tarjetas as $tarjeta) {
+        echo '
+      {
+        "card": {
+          "title": "' . $tarjeta['titulo'] . '",
+          "subtitle": "' . $tarjeta['subtitulo'] . '",
+          "imageUri": "' . $tarjeta['url'] . '",
+          "buttons": [';
+             $str = "";
+            foreach ($tarjeta['botones'] as $boton) {
+                $str = $str . '{"text":"' . $boton . '"},';
+            }
+                echo rtrim($str, ',');
+            echo ']
+        }
+      },';
+    }
+    echo '{"payload":{}}]}' . PHP_EOL;
+}
+
 
 
 //tan simple como pasarle el texto al devolver.
