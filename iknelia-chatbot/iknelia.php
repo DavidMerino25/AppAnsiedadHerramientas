@@ -23,6 +23,7 @@ require_once("classes/Engages.php");
 ##---------------------------VIEWS----------------------------------##
 # basicIntents
              #To make user intents Create User Intent, connect Webhook and test your Request/Response
+require_once("intents/test.php");                   # Basic Intents
 
-echo("hello world");
+
 ?>
