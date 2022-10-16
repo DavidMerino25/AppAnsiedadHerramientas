@@ -5,16 +5,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Inicio</title>
+<title>Inciar sesión</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
 <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-<link rel="shortcut icon" href="app/icons/favicon.ico" type="image/x-icon">
-<link rel="icon" href="app/icons/favicon.ico" type="image/x-icon">
 </head>
+
     
 <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
     
@@ -22,166 +21,55 @@
     
 <div id="page">
     
-    <div id="footer-bar" class="footer-bar-1">
-        <a href="i-inicio.html" class="active-nav"><i class="fa fa-home"></i><span>Inicio</span></a>
-        <a href="i-escaneo.html"><i class="fab fa-cloudscale"></i><span>Escaneo</span></a> <!-- Se crea la clase en el index para el escaneo. Pero no es Active-nav -->
-        <a href="i-estadisticas.html"><i class="fas fa-chart-pie"></i><span>Trastornos</span> </a> 
-        <a href="i-pronostico.html"><i class="far fa-calendar-alt"></i><span>Pronóstico</span></a>
-        <a href="i-informacion.html"><i class="fas fa-info-circle"></i><span>Información</span></a>  
-        <a href="i-herramientas.html"><i class="fa fa-spa"></i><span>Herramientas</span></a>    
-        <a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Configuraciones</span></a> 
+    <div class="header header-fixed header-logo-center">
+        <a href="index.html" class="header-title">Iniciar sesión</a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
     </div>
         
-    <div class="page-content header-clear-small">
-    
-        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-home">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                        <div class="card rounded-m shadow-l mx-3">
-                            <div class="card-bottom text-center mb-0">
-                                <h1 class="color-white font-700 mb-n1">Revisa tus estados de ánimo</h1>
-                                <p class="color-white opacity-80 mb-4">Escanea con tus publicaciones para darte un pronóstico.</p>
-                            </div>
-                            <div class="card-overlay bg-gradient"></div>
-                            <img class="img-fluid" src="images/pictures/13.jpg">
-                        </div>
-                    </div>
-                    <div class="splide__slide">
-                        <div class="card rounded-m shadow-l mx-3">
-                            <div class="card-bottom text-center mb-0">
-                                <h1 class="color-white font-700 mb-n1">LLeva un registro sobre tus reportes diarios</h1>
-                                <p class="color-white opacity-80 mb-4">Flexible, rápido y fáciales de usar.</p>
-                            </div>
-                            <div class="card-overlay bg-gradient"></div>
-                            <img class="img-fluid" src="images/pictures/28.jpg">
-                        </div>
-                    </div>
-                    <div class="splide__slide">
-                        <div class="card rounded-m shadow-l mx-3">
-                            <div class="card-bottom text-center mb-0">
-                                <h1 class="color-white font-700 mb-n1">Revisa información sobre como reducir tus niveles de estres y ansiedad</h1>
-                                <p class="color-white opacity-80 mb-4">Sigue nuestros consejos para poder sentirte mejor.</p>
-                            </div>
-                            <div class="card-overlay bg-gradient"></div>
-                            <img class="img-fluid" src="images/pictures/29.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    
+    <div class="page-content header-clear pb-0">
+        
+        <div data-card-height="cover" class="card">
+            <div class="card-center">
 
-        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-cta">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                        <div class="card card-style">
-                            <div class="content mb-0">
-                                <h1 class="text-center mb-0">La ansiedad y la depresión se pueden curar</h1>
-                                <p class="text-center color-highlight mt-n1 font-12">No olvides revisar el inicio para mas información. </p>
-                                <p class="boxed-text-xl mt-n3">
-                                    Meditación durante 10 minutos diarios puede hacer la diferencia. 
-                                </p>
-                                <a href="i-error.html" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">¡Vamos a meditar!</a>
-                            </div>
-                        </div>
+                <div class="ps-5 pe-5">
+                    <h1 class="color-white text-center text-uppercase font-900 fa-3x">INICIAR SESIÓN</h1>
+                    <p class="color-highlight text-center font-12">
+                        Inicia sesión para poder llevar tu control.
+                    </p>
+                    <div class="input-style input-transparent no-borders has-icon validate-field">
+                        <i class="fa fa-user"></i>
+                        <input type="email" class="form-control validate-name" id="form1aa" placeholder="Correo electrónico">
+                        <label for="form1a" class="color-blue-dark font-10 mt-1">Correo electrónico</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(obligatorio)</em>
                     </div>
-    <!-- **************ENCONTRÉ LOS CONTENEDORES :))))))))**************-->
-                    
-                    <div class="splide__slide">
-                        <div class="card card-style">
-                            <div class="content">
-                                <h1 class="text-center mb-0">Servicio de contacto de especialistas.</h1>
-                                <p class="text-center color-highlight mt-n1 font-12">Contacta con especialistas</p>
-                                <p class="boxed-text-xl mt-n3">
-                                    Si lo requieres por favor contacta con un especialista.
-                                </p>
-                                <p class="text-center pb-2">
-                                    <a href="#" class="icon icon-s rounded-s shadow-xl color-white bg-facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="icon icon-s rounded-s shadow-xl color-white bg-phone ms-2 me-2"><i class="fa fa-phone"></i></a>
-                                    <a href="#" class="icon icon-s rounded-s shadow-xl color-white bg-twitter"><i class="fab fa-twitter"></i></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    <!-- *****+***** Fin de los contenedores ************** :)))) -->
-                    
- <!--              <div class="splide__slide">
-                            <div class="content mb-0">
-                                <h1 class="text-center mb-0">This or That?</h1>
-                                <p class="text-center color-highlight mt-n1 font-12">Which is your Favorite?</p>
-                                <p class="boxed-text-xl mt-n3">
-                                    Multiple choices are awesome, highlighting them is even easier with our Call to Actions
-                                </p>
-                                <p class="text-center mt-n3 mb-0 pb-0">
-                                    <a href="#" class="btn btn-m bg-green-dark text-uppercase font-900 text-uppercase rounded-s shadow-xl mb-4 mt-3">Call Now</a>
-                                    <a href="#" class="icon icon-m rounded-s opacity-40 color-theme ms-3 me-3">or</a>
-                                    <a href="#" class="btn btn-m bg-red-dark text-uppercase font-900 text-uppercase rounded-s shadow-xl mb-4 mt-3">GET A QUOTE</a>
-                                </p>
-                            </div>
-                        </div>
+
+                    <div class="input-style input-transparent no-borders has-icon validate-field mt-4">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control validate-password" id="form3a" placeholder="Contraseña">
+                        <label for="form3a" class="color-blue-dark font-10 mt-1">Contraseña</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(obligatorio)</em>
                     </div>
                     
-                  
-                    <div class="splide__slide">
-                        <div class="card card-style">
-                            <div class="content mb-0">
-                                <h1 class="text-center mb-0">Direct Action</h1>
-                                <p class="text-center color-highlight mt-n1 mb-2 font-12">Invite Users to Tap Button</p>
-                                <p class="boxed-text-xl">
-                                     Make a button stand out at the top of your page so it's easily accessible as a first option.
-                                </p>
-                                <a href="#" class="btn btn-m btn-center-l bg-red-dark text-uppercase font-900 text-uppercase rounded-s shadow-xl mb-4">Purchase today for $25</a>
-                            </div>
-                        </div>
+                    <div class="d-flex mt-4 mb-4">
+                        <div class="w-50 font-11 pb-2 color-white opacity-60 text-start"><a href="i-registro.html" class="color-white">Crear una cuenta</a></div>
+                        <div class="w-50 font-11 pb-2 color-white opacity-60 text-end"><a href="i-contraseña.html" class="color-white">Olvidé mi contraseña</a></div>
                     </div>
--->
-                  
+
+                    <a href="i-inicio.php" class="back-button btn btn-full btn-m shadow-large rounded-s text-uppercase font-900 bg-highlight">Iniciar</a>
+                    <div class="divider mt-3"></div>
+                    <a href="#" class="btn btn-icon btn-m btn-full shadow-l rounded-s bg-twitter text-uppercase font-900 text-start mt-2 "><i class="fab fa-twitter text-center"></i>Inicia sesión con Twitter</a>
+                    <a href="#" class="btn btn-icon btn-m btn-full shadow-l rounded-s bg-twitter text-uppercase font-900 text-start mt-2 "><i class="fab fa-reddit text-center"></i>Inicia sesión con Reddit</a>
                 </div>
+
             </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+            <div class="card-overlay-infinite preload-img" data-src="images/pictures/_bg-infinite.jpg"></div>
         </div>
-        <!-- Contenedor de Los iconos  de 4 cosas uwuwuwuw :)))))))9-->
-        <div class="card card-style">
-            <div class="content mb-0">
-                <h1 class="text-center mb-0">No olvides que no estas solo</h1>
-                <p class="text-center color-highlight font-11 mt-n1">Absolutamente la depresión y la ansiedad pueden curarse</p>
-                <p class="boxed-text-xl mt-n3">
-                    No olvides meditar 20 minutos al día, y realizar ejercicios de respeiración.
-                </p>
-                <div class="divider"></div>
-            </div>
-            <div class="row me-2 ms-2 mb-0">
-                <div class="col-6 text-center">
-                    <i class="fa fa-trophy color-yellow-dark fa-3x"></i>
-                    <h2 class="mt-3 mb-1">Fíjate metas</h2>
-                    <p>Fija metas pero poder corregir tus estados de ánimo.</p>
-                </div>
-                <div class="col-6 text-center">
-                    <i class="fab fa-cloudscale color-highlight fa-3x"></i>
-                    <h2 class="mt-3 mb-1">Realiza ejercicios</h2>
-                    <p>Realiza ejercicios físicos o de meditación para sentirte mejor.</p>
-                </div>
-                <div class="col-6 text-center">
-                    <i class="fa fa-check color-green-dark fa-3x"></i>
-                    <h2 class="mt-3 mb-1">Cumple tus propositos</h2>
-                    <p>Lleva control de todos los propositos que te has propuesto los has cumplido, para un mejor día a día.</p>
-                </div>
-                <div class="col-6 text-center">
-                    <i class="fa fa-life-ring color-blue-dark fa-3x"></i>
-                    <h2 class="mt-3 mb-1">Si te sientes en un estado crítico y que no puedes detenerte</h2>
-                    <p>Llama al: 800 911 2000, la linea de la vida está para tí, no lo dudes, te queremos con nosotros.</p>
-                </div>
-            </div>
-        </div>
-      <!--Pruebas de desarrolador-->
-      <!-- Botones hermsosos al fin los encontré  :))))))))-->
-        <div class="content">
-            <a href="component-offline-detection.html" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Prueba de conexión</a>
-        </div>
-        <div class="content">
-            <a href="component-charts.html" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Pruebas</a>
-        </div>
-    
+    </div>
     <!-- Termina pagina de contenido--> 
     <!-- All Menus, Action Sheets, Modals, Notifications, Toasts, Snackbars get Placed outside the <div class="page-content"> -->
     <div id="menu-settings" class="menu menu-box-bottom menu-box-detached">
@@ -222,19 +110,15 @@
                     <i class="fa fa-angle-right"></i>
                 </a>
                 <a data-menu="conf-cuenta" href="i-conf-cuenta.html">
-                    <i class="fa font-14 fa-user color-blue-dark"></i>
-                    <span>Configuración de la cuenta</span>
-                    <strong>Configura y actualiza tus datos</strong>
-                    <span class="badge bg-highlight color-white"></span>
-                    <i class="fa fa-angle-right"></i>
+                      <i class="fa font-14 fa-user color-blue-dark"></i>
+                      <span>Configuración de la cuenta</span>
+                      <strong>Configura y actualiza tus datos</strong>
+                      <span class="badge bg-highlight color-white"></span>
+                      <i class="fa fa-angle-right"></i>
                 </a>
             </div>
         </div>
     </div>
-
-
-
-    
     <!-- Menu de configuracion de idioma-->
     <div id="menu-language" class="menu menu-box-bottom menu-box-detached rounded-m"
          data-menu-height="200"
@@ -245,8 +129,8 @@
                 Selecciona el idioma de tu preferencia.
             </p>
             <div class="list-group list-custom-small">
-                <a href="en/i-inicio.html"><img class="me-3 mt-n1" width="20" src="images/flags/United-States.png"><span>Inglés</span><i class="fa fa-angle-right"></i></a>
-                <a href="#"><img class="me-3 mt-n1" width="20" src="images/flags/Spain.png"><span>Español</span><i class="fa fa-angle-right"></i></a>
+                <a href="#"><img class="me-3 mt-n1" width="20" src="images/flags/United-States.png"><span>Inglés</span><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="border-0"><img class="me-3 mt-n1" width="20"  src="images/flags/Spain.png"><span>Español</span><i class="fa fa-angle-right"></i></a>
             </div>
             <div class="clear"></div>
         </div>
@@ -300,6 +184,41 @@
             <a href="#" data-menu="menu-settings" class="mb-3 btn btn-full btn-m rounded-sm bg-highlight shadow-xl text-uppercase font-900 mt-4">Regresar a las configuraciones</a>
         </div>
     </div>
+  
+    <!-- Menu Share -->
+    <!--<div id="menu-share" class="menu menu-box-bottom menu-box-detached">
+        <div class="menu-title mt-n1"><h1>Comparte la aplicacion.</h1><p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="content mb-0">
+            <div class="divider mb-0"></div>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="auto_generated" class="shareToFacebook external-link">
+                    <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                    <span class="font-13">Facebook</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToTwitter external-link">
+                    <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                    <span class="font-13">Twitter</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="auto_generated" class="shareToLinkedIn external-link">
+                    <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                    <span class="font-13">LinkedIn</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="auto_generated" class="shareToWhatsApp external-link">
+                    <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                    <span class="font-13">WhatsApp</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>   
+                <a href="auto_generated" class="shareToMail external-link border-0">
+                    <i class="font-18 fa fa-envelope-square color-mail"></i>
+                    <span class="font-13">Email</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div> -->
 
     <!-- Be sure this is on your main visiting page, for example, the index.html page-->
     <!-- Instalar App en Android -->
@@ -310,8 +229,8 @@
             <p>
                 Instale nuestra App en su pantalla de inicio y acceda a él como una aplicación normal. ¡Es simple!
             </p>
-            <a href="en/i-inicio.html" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Agregar a la pantalla de inicio</a><br>
-            <a href="i-inicio.html" class="pwa-dismiss close-menu color-gray-dark text-uppercase font-900 opacity-60 font-10 pt-2">Tal vez después</a>
+            <a href="#" class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Agregar a la pantalla de inicio</a><br>
+            <a href="#" class="pwa-dismiss close-menu color-gray-dark text-uppercase font-900 opacity-60 font-10 pt-2">Tal vez después</a>
             <div class="clear"></div>
         </div>
     </div>   
@@ -331,16 +250,8 @@
     </div>
     
 </div>
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Iknelia"
-  agent-id="21aa12e4-4574-4f67-acaf-745f86cc65a5"
-  language-code="es"
-></df-messenger>
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-
 </body>
 </html>
