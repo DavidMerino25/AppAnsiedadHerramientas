@@ -24,6 +24,8 @@ require_once("classes/Engages.php");
 # basicIntents
              #To make user intents Create User Intent, connect Webhook and test your Request/Response
 require_once("intents/test.php");                   # Basic Intents
-require_once("intents/ansiedad/ansiedad.php")
+require_once("intents/ansiedad/ansiedad.php");
+require_once("intents/generales.php");
+require_once("intents/depresion/depresion.php");
 
 ?>
