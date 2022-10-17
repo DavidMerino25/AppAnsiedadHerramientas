@@ -1,6 +1,4 @@
 # App Para Combatir la Ansiedad y la Depresión
 
-Proyecto de Residencias Profesionales
-
-Pretende ser una apilicación con herramientas para ayudar ante la ansiedad y depresión de los usuarios además de un chatbot con Google DialogFlow.
+Proyecto que muestra herramientas para combatir la ansiedad y la depresión
 
