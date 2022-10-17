@@ -22,6 +22,33 @@ function webDescription(array $dTitleArray, array $dTextArray){
 
         $result = rtrim($raw1, ",");
         echo $result;
+
+        /*
+{
+  "richContent": [
+    [
+      {
+        "type": "image",
+        "rawUrl": "https://cdn-icons-png.flaticon.com/512/4515/4515221.png",
+        "accessibilityText": "Example logo"
+      }
+    ],
+    [
+      {
+        "type": "description",
+        "title": "Los síntomas de la ansiedad más comunes son",
+        "text": [
+          "⚠ Una repentina sensación de pánico y miedo.",
+          "⚠ Dificultad para respirar.",
+          "⚠ Agustia",
+          "⚠ Trastorno obsesivo compulsivo",
+          "⚠ Trastornos de adaptación"
+        ]
+      }
+    ]
+  ]
+}
+        */
     }
 
 

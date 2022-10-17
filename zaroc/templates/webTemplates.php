@@ -1,4 +1,5 @@
 <?php
+// Carga las templates de dialogflow
 function webStructureTemplate($context,$contextBody, array $webTitle,array $structure, array $components){
       dfOpen();
         structureOpen($webTitle);
