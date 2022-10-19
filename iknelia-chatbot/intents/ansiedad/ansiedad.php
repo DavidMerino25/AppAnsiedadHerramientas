@@ -13,7 +13,7 @@ $pSubtitleArray = array("La ansiedad es una reacción normal que se experimenta 
 
 $bTitleArray = array("Sintomas de la ansiedad", "Más información");
 $bCustomArray = array("sintomasAnsiedad","https://medlineplus.gov/spanish/anxiety.html");
-$bIconArray = array("home","arrow_forward");
+$bIconArray = array("help","arrow_forward");
 $bColorArray = array("$red","$blue");
 
 
@@ -32,3 +32,5 @@ $components = array(
 
 webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
+
+?>

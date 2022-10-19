@@ -21,6 +21,17 @@
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     
 <div id="page">
+<style>
+  df-messenger {
+   --chat-icon: 'https://appansidep.42web.io/iknelia-chatbot/core/images/logo.png';
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #df9b56;
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
+  }
+</style>
     
     <div id="footer-bar" class="footer-bar-1">
         <a href="index.php" class="active-nav"><i class="fa fa-home"></i><span>Inicio</span></a>
@@ -41,6 +52,8 @@
                         <div class="card rounded-m shadow-l mx-3">
                             <div class="card-bottom text-center mb-0">
                                 <h1 class="color-white font-700 mb-n1">Revisa tus estados de ánimo</h1>
+                                <!-- <span> <a href="tel:2727833554">Contacto: 2727833554</a></span> -->
+                               
                                 <p class="color-white opacity-80 mb-4">Escanea con tus publicaciones para darte un pronóstico.</p>
                             </div>
                             <div class="card-overlay bg-gradient"></div>
