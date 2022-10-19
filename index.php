@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
 <title>Inicio</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="iknelia-chatbot/styles/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
 <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
@@ -21,17 +22,7 @@
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     
 <div id="page">
-<style>
-  df-messenger {
-   --chat-icon: 'https://appansidep.42web.io/iknelia-chatbot/core/images/logo.png';
-   --df-messenger-bot-message: #878fac;
-   --df-messenger-button-titlebar-color: #df9b56;
-   --df-messenger-chat-background-color: #fafafa;
-   --df-messenger-font-color: white;
-   --df-messenger-send-icon: #878fac;
-   --df-messenger-user-message: #479b3d;
-  }
-</style>
+
     
     <div id="footer-bar" class="footer-bar-1">
         <a href="index.php" class="active-nav"><i class="fa fa-home"></i><span>Inicio</span></a>
@@ -350,6 +341,7 @@
   chat-title="Iknelia"
   agent-id="21aa12e4-4574-4f67-acaf-745f86cc65a5"
   language-code="es"
+  chat-icon="https://appansidep.42web.io/iknelia-chatbot/core/images/logo.png"
 ></df-messenger>
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>

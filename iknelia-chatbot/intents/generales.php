@@ -7,7 +7,7 @@ if (intent('Default Welcome Intent')) {
 
     if ($hour >= 7 && $hour < 12)
     {
-        $es_welcome = "¡Hola! Buenos días, espero que descansaras  ¿Cómo puedo ayudarte?";
+        $es_welcome = "¡Hola! Buenos días, ¿Cómo puedo ayudarte?";
     }
     else if ($hour >= 12 && $hour < 20)
     {
@@ -146,7 +146,10 @@ if (intent('peligro')) {
             );
             
             webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
-    }
+    } 
+
+ 
+
 
 ?>
 
