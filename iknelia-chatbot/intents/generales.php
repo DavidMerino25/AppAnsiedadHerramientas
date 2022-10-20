@@ -23,7 +23,8 @@ if (intent('Default Welcome Intent')) {
     }
 
  $webTitle = array("Default Welcome Intent");
- $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/intent-saludar.gif");
+//  $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/intent-saludar.gif");
+    $imageArray = array("https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.gif");
  
  $pTitleArray = array("$es_welcome");
  $pSubtitleArray = array("");
@@ -40,7 +41,7 @@ if (intent('Default Welcome Intent')) {
 
 if (intent('despedida')) {
  $webTitle = array("despedida");
- $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/despedida.png");
+ $imageArray = array("https://cdn-icons-png.flaticon.com/512/3798/3798302.png");
  
  $pTitleArray = array("¡Nos vemos pronto!");
  $pSubtitleArray = array("Recuerda que puedes volver a contactarme cuando quieras.");
@@ -82,13 +83,13 @@ webStructureTemplate($context, $contextBody, $webTitle, $structure, $components)
 if (intent('musica')) {
    
     $webTitle = array("musica");
-    $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/musica.png");
+    $imageArray = array("https://cdn-icons-png.flaticon.com/512/2829/2829076.png");
     
     $pTitleArray = array("");
     $pSubtitleArray = array("Los sonidos y música de relajación pueden ayudarte a mejorar tu  concentración y relajarte, te muestro las  recomendaciones que tenemos para ti.");
     
     $bTitleArray = array("Música y sonidos de relajación");
-    $bCustomArray = array("https://appansidep.42web.io/i-sonidos.html");
+    $bCustomArray = array("https://5505-177-232-83-107.ngrok.io/xampp/app-chatbot/htdocs/i-sonidos.html");
     $bIconArray = array("music_note");
     $bColorArray = array("$red");
    
@@ -109,12 +110,10 @@ if (intent('peligro')) {
    
     $webTitle = array("peligro");
     
-    $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/peligro.png");
+    $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
     
     $pTitleArray = array("Primero recuerda mantener la calma");
     $pSubtitleArray = array("Cuando sientas que no vale la pena seguir, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
-    
- 
     
     $structure = array('image','comma','paragraph','superDivider');
     $components = array(
@@ -128,25 +127,37 @@ if (intent('peligro')) {
 
     if(intent('grupos-comunidades')){
         
-            $webTitle = array("grupos-comunidades");
+        $webTitle = array("grupos-comunidades");
+        $pTitleArray = array("Comunidades de apoyo");
+        $pSubtitleArray = array("Pertenecer a una comunidad es un gran paso. Con el siguiente botón podrás encontrar grupos de ayuda y comunidades que podrían ser interesantes para ti.");
+           
+        $cTitleArray = array("Comunidades de apoyo");
+        $cImageArray = array("https://cdn-icons-png.flaticon.com/512/745/745154.png");
+        $cCustomArray = array("https://medlineplus.gov/spanish/anxiety.html");
             
-            $pTitleArray = array("Comunidades de apoyo");
-            $pSubtitleArray = array("Pertenecer a una comunidad es un gran paso. Con el siguiente botón podrás encontrar grupos de ayuda y comunidades que podrían ser interesantes para ti.");
-              
-            
-            $cTitleArray = array("Comunidades de apoyo");
-            $cImageArray = array("https://cdn-icons-png.flaticon.com/512/745/745154.png");
-            $cCustomArray = array("https://medlineplus.gov/spanish/anxiety.html");
-            
-            $structure = array('paragraph','superDivider','chips');
-            $components = array(
+        $structure = array('paragraph','superDivider','chips');
+        $components = array(
                 array($pTitleArray, $pSubtitleArray),
                 array(),
                 array($cTitleArray,  $cImageArray, $cCustomArray)
             );
-            
-            webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
+        webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
     } 
+
+    if(intent('agradecer')){
+        $webTitle = array("agradecer");
+        $imageArray = array("https://cdn-icons-png.flaticon.com/512/4587/4587595.png");
+        
+        $pTitleArray = array("Para mí siempre es un placer ayudarte");
+        $pSubtitleArray = array("");
+        $structure = array('image','comma','paragraph','superDivider');
+        $components = array(
+            array($imageArray,$webTitle),
+            array(),
+            array($pTitleArray, $pSubtitleArray)
+        );
+        webStructureTemplate($context, $contextBody, $webTitle, $structure, $components); 
+} 
 
  
 

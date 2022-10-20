@@ -6,7 +6,7 @@ $context = false;
 $contextBody = array();
 $webTitle = array("informacion-ansiedad");
 
-$imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/informacion-ansiedad.png");
+$imageArray = array("https://cdn-icons-png.flaticon.com/512/3997/3997910.png");
 
 $pTitleArray = array("¿Qué es la ansiedad?");
 $pSubtitleArray = array("La ansiedad es una reacción normal que se experimenta en situaciones en las que el sujeto se siente amenazado por un peligro externo o interno.");
