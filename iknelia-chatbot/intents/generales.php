@@ -213,27 +213,23 @@ if (intent('lecturas-apoyo')) {
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 
 }
- if (intent('detectar-ayuda')){
-    
- }
-
 if (intent('peligro')) {
    
-    $webTitle = array("peligro");
+        $webTitle = array("peligro");
     
-    $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
+        $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
     
-    $pTitleArray = array("Primero recuerda mantener la calma");
-    $pSubtitleArray = array("Cuando sientas que no vale la pena seguir, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
+        $pTitleArray = array("Primero recuerda mantener la calma");
+        $pSubtitleArray = array("Cuando sientas que no vale la pena seguir, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
     
-    $structure = array('image','comma','paragraph','superDivider');
-    $components = array(
+        $structure = array('image','comma','paragraph','superDivider');
+        $components = array(
         array($imageArray,$webTitle),
         array(),
         array($pTitleArray, $pSubtitleArray)
     );
     
-    webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
+        webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
     }
 
     if(intent('grupos-comunidades')){
@@ -316,6 +312,25 @@ if (intent('peligro')) {
             );
         webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
     } 
+    if(intent('detectar-ayuda')){
+        
+        $webTitle = array("detectar-ayuda");
+        $imageArray = array("https://cdn-icons-png.flaticon.com/512/3208/3208264.png");
+       
+
+        $pTitleArray = array("Estoy para ayudarte");
+        $pSubtitleArray = array("¿Puedes contarme un poco más de lo que está pasando? ");
+
+
+        $structure = array('image','comma','paragraph');
+        $components = array(
+                array($imageArray,$webTitle),
+                array(),
+                array($pTitleArray, $pSubtitleArray)
+            );
+        webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
+    } 
+
 
     if(intent('agradecer')){
         $webTitle = array("agradecer");
