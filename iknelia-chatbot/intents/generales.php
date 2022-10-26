@@ -264,7 +264,7 @@ if (intent('peligro')) {
 
         $bTitleArray = array("Tips para la ansiedad","Tips para la depresión");
         $bCustomArray = array("tips-ansiedad","tips-depresion");
-        $bIconArray = array("air","spa");
+        $bIconArray = array("sentiment_dissatisfied","sentiment_very_dissatisfied");
         $bColorArray = array("$blue",$red);
 
         $structure = array('image','comma','description','superDivider','button');
@@ -274,6 +274,42 @@ if (intent('peligro')) {
                 array($dTitleArray, $dTextArray),
                 array(),
                 array($bTitleArray, $bCustomArray, $bIconArray, $bColorArray)
+            );
+        webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
+    } 
+    if(intent('tips-ansiedad')){
+        
+        $webTitle = array("tips-ansiedad");
+        $imageArray = array("https://cdn-icons-png.flaticon.com/512/7493/7493127.png");
+       
+
+        $dTitleArray = ["Tips para la ansiedad que te recomiendo:"];
+        $dTextArray = [["Mantén el control de tus emociones","Practica técnicas de relajación o meditación.","Cuida el sueño.","Socializa, la compañía siempre es lo mejor."]];
+
+
+        $structure = array('image','comma','description');
+        $components = array(
+                array($imageArray,$webTitle),
+                array(),
+                array($dTitleArray, $dTextArray),
+            );
+        webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
+    } 
+    if(intent('tips-depresion')){
+        
+        $webTitle = array("tips-depresion");
+        $imageArray = array("https://cdn-icons-png.flaticon.com/512/4412/4412794.png");
+       
+
+        $dTitleArray = ["Tips para la depresión que te recomiendo:"];
+        $dTextArray = [["Habla y desahógate.","No tomes decisiones precipitadas, relájate.","Cuida el sueño.","Socializa, la compañía siempre es lo mejor.","Realiza ejercicio","Piensa siempre en positivo."]];
+
+
+        $structure = array('image','comma','description');
+        $components = array(
+                array($imageArray,$webTitle),
+                array(),
+                array($dTitleArray, $dTextArray),
             );
         webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);          
     } 
