@@ -213,6 +213,9 @@ if (intent('lecturas-apoyo')) {
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 
 }
+ if (intent('detectar-ayuda')){
+    
+ }
 
 if (intent('peligro')) {
    
