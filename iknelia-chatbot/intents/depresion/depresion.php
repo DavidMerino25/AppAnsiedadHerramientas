@@ -38,7 +38,6 @@ $imageArray = array("https://cdn-icons-png.flaticon.com/512/3590/3590076.png");
 $pTitleArray = array("");
 $pSubtitleArray = array("Manten la calma, puedes afrontar la depresión realizando ejercicios de meditación o de respiración, son ejercicios muy eficaces, pero es necesario trabajar en la parte mental con un psicólogo profesional. Si lo deseas aquí te dejo estas opciones para ayudarte.");
 
-
 $bTitleArray = array("Ejercicios de Respiración", "Ejercicios de Meditación", "Consultar Expertos");
 $bCustomArray = array("https://appansidep.42web.io/i-respiracion.html","https://appansidep.42web.io/i-meditacion.html","https://www.google.com/maps/search/psicologos/");
 $bIconArray = array("air","spa","psychology");
