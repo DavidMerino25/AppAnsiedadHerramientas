@@ -89,7 +89,7 @@ if (intent('musica')) {
     $pSubtitleArray = array("Los sonidos y música de relajación pueden ayudarte a mejorar tu  concentración y relajarte, te muestro las  recomendaciones que tenemos para ti.");
     
     $bTitleArray = array("Música y sonidos de relajación");
-    $bCustomArray = array("https://5505-177-232-83-107.ngrok.io/xampp/app-chatbot/htdocs/i-sonidos.html");
+    $bCustomArray = array("https://appansidep.42web.io/i-sonidos.html");
     $bIconArray = array("music_note");
     $bColorArray = array("$red");
    

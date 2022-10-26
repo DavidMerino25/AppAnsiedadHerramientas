@@ -1,9 +1,8 @@
 <?php
-
-if (intent('informacion-ansiedad')) {
-   
 $context = false;
 $contextBody = array();
+if (intent('informacion-ansiedad')) {
+
 $webTitle = array("informacion-ansiedad");
 
 $imageArray = array("https://cdn-icons-png.flaticon.com/512/3997/3997910.png");
@@ -33,4 +32,27 @@ $components = array(
 webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
 
-?>
+if (intent('sentimiento-ansiedad')) {
+
+$webTitle = array("sentimiento-ansiedad");
+$imageArray = array("https://cdn-icons-png.flaticon.com/512/3220/3220618.png");
+
+$pTitleArray = array("");
+$pSubtitleArray = array("Recuerda primero que todo mantener la calma, puedes afrontar la ansiedad realizando ejercicios de meditación o de respiración, son ejercicios muy eficaces, pero es necesario trabajar en la parte mental con un psicólogo profesional. Si lo deseas aquí te dejo estas opciones para ayudarte.");
+
+$bTitleArray = array("Ejercicios de Respiración", "Ejercicios de Meditación", "Consultar Expertos");
+$bCustomArray = array("https://appansidep.42web.io/i-respiracion.html","https://appansidep.42web.io/i-meditacion.html","https://www.google.com/maps/search/psicologos/");
+$bIconArray = array("air","spa","psychology");
+$bColorArray = array("$red","$blue","$green");
+
+$structure = array('image','comma','paragraph','superDivider','button');
+$components = array(
+    array($imageArray,$webTitle),
+    array(),
+    array($pTitleArray, $pSubtitleArray),
+    array(),
+    array($bTitleArray, $bCustomArray, $bIconArray, $bColorArray)
+);
+
+webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
+}
