@@ -341,7 +341,7 @@
   chat-title="Iknelia"
   agent-id="21aa12e4-4574-4f67-acaf-745f86cc65a5"
   language-code="es"
-  chat-icon="https://5505-177-232-83-107.ngrok.io/xampp/app-chatbot/htdocs/iknelia-chatbot/core/images/logo.png"
+  chat-icon="https://appansidep.42web.io/iknelia-chatbot/core/images/logo.png"
 ></df-messenger>
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>

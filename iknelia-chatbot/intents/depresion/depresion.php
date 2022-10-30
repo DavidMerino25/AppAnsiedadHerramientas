@@ -6,7 +6,7 @@ if (intent('informacion-depresion')) {
    
 $webTitle = array("informacion-depresion");
 
-$imageArray = array("https://cdn-icons-png.flaticon.com/512/3288/3288941.png");
+$imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/informacion-depresion.png");
 
 $pTitleArray = array("¿Qué es la depresión?");
 $pSubtitleArray = array("La depresión es un trastorno caracterizado fundamentalmente por un bajo estado de ánimo y puede provocar el estado de sentirse triste, melancólico, infeliz, abatido o culpable.");
