@@ -14,7 +14,7 @@ $pSubtitleArray = array("La depresión es un trastorno caracterizado fundamental
 $bTitleArray = array("Sintomas de la Depresión", "Más información");
 $bCustomArray = array("sintomasDepresion","https://medlineplus.gov/spanish/ency/article/003213.htm");
 $bIconArray = array("help","arrow_forward");
-$bColorArray = array("$red","$blue");
+$bColorArray = array("$green","$blue");
 
 
 $structure = array('image','comma','paragraph','superDivider','button');
