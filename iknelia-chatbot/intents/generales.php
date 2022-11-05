@@ -51,21 +51,19 @@ if (intent('presentacion')) {
     $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/bot-logo.png");
 
     $aTitleArray = array("Mi nombre es Ikenlia.");
-    $aSubtitleArray = array("Soy un chatbot creado para ayudarte a resolver tus dudas  sobre la ansiedad y la depresión.");
-    $aTextArray = array("Mi misión es ayudarte a superar tus problemas y a mejorar tu calidad de vida, ¿Cómo puedo ayudarte?, ¿Qué te gustaría saber?");
+    $aSubtitleArray = array("Soy un chatbot creado para ayudarte a disminuir tus niveles de ansiedad y la depresión.");
+    $aTextArray = array("Mi misión es ayudarte a mejorar tu calidad de vida, para ello te propondré actividades que te ayudarán a reducir tus niveles de ansiedad y depresión. En caso de requerirlo te recomendaré a expertos en la materia.");
 
-    // webCard($aTitleArray, $aSubtitleArray, $aTextArray);
-    $pTitleArray = array("¡Nos vemos pronto!");
-    $pSubtitleArray = array("Recuerda que puedes volver a contactarme cuando quieras.");
+    // $aTitleArray = array("¿Qué puedo hacer por ti?");
+    // $aSubtitleArray = array("¿Cómo interactuar conmigo?");
+    // $aTextArray = array("Puedes realizar preguntas sobre la ansiedad y la depresión, escribir como te sientes, o simplemente decirme que quieres hacer.");
 
     
-    $structure = array('image', 'comma', 'card', 'superDivider','paragraph');
+    $structure = array('image', 'comma', 'card');
     $components = array(
         array($imageArray, $webTitle),
         array(),
         array($aTitleArray, $aSubtitleArray, $aTextArray),
-        array(),
-        array($pTitleArray, $pSubtitleArray)
     );
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
@@ -228,7 +226,7 @@ if (intent('peligro')) {
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
 
     $pTitleArray = array("Primero recuerda mantener la calma");
-    $pSubtitleArray = array("Cuando sientas que no vale la pena seguir, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
+    $pSubtitleArray = array("Cuando sientas que puedes más, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
 
     $structure = array('image', 'comma', 'paragraph', 'superDivider');
     $components = array(
@@ -250,7 +248,7 @@ if (intent('grupos-comunidades')) {
     $cImageArray = array("https://cdn-icons-png.flaticon.com/512/745/745154.png");
     $cCustomArray = array("https://medlineplus.gov/spanish/anxiety.html");
 
-    $structure = array('paragraph', 'superDivider', 'chips');
+    $structure = array('paragraph', 'superDivider','reply');
     $components = array(
         array($pTitleArray, $pSubtitleArray),
         array(),
@@ -326,15 +324,20 @@ if (intent('detectar-ayuda')) {
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/3208/3208264.png");
 
 
-    $pTitleArray = array("Estoy para ayudarte");
-    $pSubtitleArray = array("¿Puedes contarme un poco más de lo que está pasando? ");
+    $pTitleArray = array("");
+    $pSubtitleArray = array("Lamento esta situación, pero no te preocupes, puedes obtener tranquilidad si meditas, haces ejercicios de respiración o escuchas música relajante, recibir ayuda. Si no te sientes mejor debes de comunicarte con un profesional para recibir ayuda.");
+    $bTitleArray = array("Ejercicios de Respiración", "Ejercicios de Meditación","Música de Relajación","Consultar Expertos");
+    $bCustomArray = array("https://appansidep.42web.io/i-respiracion.html","https://appansidep.42web.io/i-meditacion.html","https://appansidep.42web.io/i-musica.html","https://www.google.com/maps/search/psicologos/");
+    $bIconArray = array("air","spa","music_note","psychology");
+    $bColorArray = array("$red","$blue","$green","$yellow");
 
-
-    $structure = array('image', 'comma', 'paragraph');
+    $structure = array('image', 'comma', 'paragraph', 'superDivider', 'button');
     $components = array(
         array($imageArray, $webTitle),
         array(),
-        array($pTitleArray, $pSubtitleArray)
+        array($pTitleArray, $pSubtitleArray),
+        array(),
+        array($bTitleArray, $bCustomArray, $bIconArray, $bColorArray)
     );
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
