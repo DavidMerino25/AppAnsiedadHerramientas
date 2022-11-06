@@ -8,7 +8,7 @@
 <title>Inicio</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="iknelia-chatbot/styles/styles.css">
+<link rel="stylesheet" href="iknelia-chatbot/iknelia/styles/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
 <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
@@ -341,7 +341,7 @@
   chat-title="Iknelia"
   agent-id="21aa12e4-4574-4f67-acaf-745f86cc65a5"
   language-code="es"
-  chat-icon="https://appansidep.42web.io/iknelia-chatbot/iknelia/core/images/logo.png"
+  chat-icon="https://ikneliabot.42web.io/iknelia-chatbot/iknelia/core/images/logo.png"
 ></df-messenger>
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>

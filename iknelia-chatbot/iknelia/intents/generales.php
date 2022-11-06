@@ -12,7 +12,7 @@ if (intent('Default Welcome Intent')) {
     } else if ($hour >= 20 && $hour < 24) {
         $es_welcome = "¡Hola!. Buenas noches,  ¿Cómo puedo ayudarte?";
     } else if ($hour >= 0 && $hour < 7) {
-        $es_welcome = "¡Hola! ¿Que haces a estas horas?, ¿Cómo puedo ayudarte?";
+        $es_welcome = "¡Hola! ¿Qué haces a estas horas?, ¿Cómo puedo ayudarte?";
     }
 
     $webTitle = array("Default Welcome Intent");
@@ -48,7 +48,7 @@ if (intent('despedida')) {
 }
 if (intent('presentacion')) {
     $webTitle = array("presentacion");
-    $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/iknelia/core/images/bot-logo.png");
+    $imageArray = array("https://ikneliabot.42web.io/iknelia-chatbot/iknelia/core/images/bot-logo.png");
 
     $aTitleArray = array("Mi nombre es Ikenlia.");
     $aSubtitleArray = array("Soy un chatbot creado para ayudarte a disminuir tus niveles de ansiedad y la depresión.");
@@ -94,7 +94,7 @@ if (intent('musica')) {
     $pSubtitleArray = array("Los sonidos y música de relajación pueden ayudarte a mejorar tu  concentración y relajarte, te muestro las  recomendaciones que tenemos para ti.");
 
     $bTitleArray = array("Música y sonidos de relajación");
-    $bCustomArray = array("https://appansidep.42web.io/i-sonidos.html");
+    $bCustomArray = array("https://ikneliabot.42web.io/i-sonidos.html");
     $bIconArray = array("music_note");
     $bColorArray = array("$red");
 
@@ -120,7 +120,7 @@ if (intent('ejercicios-respiracion')) {
     $pSubtitleArray = array("Una correcta respiración es muy importante para combatir la ansiedad y la depresión, realiza estos ejercicios y podrás sentir un cambio.");
 
     $bTitleArray = array("Ejercicios de respiración");
-    $bCustomArray = array("https://appansidep.42web.io/i-respiracion.html");
+    $bCustomArray = array("https://ikneliabot.42web.io/i-respiracion.html");
     $bIconArray = array("air");
     $bColorArray = array("$blue");
 
@@ -172,7 +172,7 @@ if (intent('ejercicios-meditacion')) {
     $pSubtitleArray = array("Excelente, te proporcionaré ejercicios de meditación que sin duda alguna te ayudaran. ");
 
     $bTitleArray = array("Ejercicios de meditación");
-    $bCustomArray = array("https://appansidep.42web.io/i-meditacion.html");
+    $bCustomArray = array("https://ikneliabot.42web.io/i-meditacion.html");
     $bIconArray = array("spa");
     $bColorArray = array("$red");
 
@@ -197,7 +197,7 @@ if (intent('lecturas-apoyo')) {
     $pSubtitleArray = array("Una forma de relajarte es con la lectura, permíteme mostrarte algunas lecturas de ayuda que pueden interesarte.");
 
     $bTitleArray = array("Lecturas de apoyo");
-    $bCustomArray = array("https://appansidep.42web.io/i-lecturas.html");
+    $bCustomArray = array("https://ikneliabot.42web.io/i-lecturas.html");
     $bIconArray = array("book");
     $bColorArray = array("$blue");
 
@@ -321,7 +321,7 @@ if (intent('detectar-ayuda')) {
     $pTitleArray = array("");
     $pSubtitleArray = array("Lamento esta situación, pero no te preocupes, puedes obtener tranquilidad si meditas, haces ejercicios de respiración o escuchas música relajante, recibir ayuda. Si no te sientes mejor debes de comunicarte con un profesional para recibir ayuda.");
     $bTitleArray = array("Ejercicios de Respiración", "Ejercicios de Meditación","Música de Relajación","Consultar Expertos");
-    $bCustomArray = array("https://appansidep.42web.io/i-respiracion.html","https://appansidep.42web.io/i-meditacion.html","https://appansidep.42web.io/i-musica.html","https://www.google.com/maps/search/psicologos/");
+    $bCustomArray = array("https://ikneliabot.42web.io/i-respiracion.html","https://ikneliabot.42web.io/i-meditacion.html","https://ikneliabot.42web.io/i-musica.html","https://www.google.com/maps/search/psicologos/");
     $bIconArray = array("air","spa","music_note","psychology");
     $bColorArray = array("$red","$blue","$green","$yellow");
 
