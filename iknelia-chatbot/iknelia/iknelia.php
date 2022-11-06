@@ -12,7 +12,7 @@ require_once("core/variables.php");                         # Informational Vari
 require_once("core/images.php");                            # Specific Images for your bot
 
 ##----------------------Authorization------------------------##
-// Makes Authorization Functionality
+// Makes Authorization Functionality //contraseñas
 auth($chatbotName,$chatbotPassword);                        # Remember to put $chatbotName and $chatbotPassword in your bot variables
 
 ##---------------------------Classes----------------------------------##
