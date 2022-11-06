@@ -143,7 +143,7 @@ if (intent('contactar-profesionales')) {
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/3587/3587301.png");
 
     $pTitleArray = array("");
-    $pSubtitleArray = array("Existen expertos en la salud que puedes consultar de acuerdo a tus posibilidades, te recomiendo hacer clic en el siguiente enlace: ");
+    $pSubtitleArray = array("Existen expertos en la salud que puedes consultar de acuerdo a tus posibilidades. Haz clic en el siguiente enlace para consultarlos: ");
 
     $bTitleArray = array("Contactar a Expertos");
     $bCustomArray = array("https://www.google.com/maps/search/psicologos/");
@@ -215,8 +215,8 @@ if (intent('peligro')) {
     $webTitle = array("peligro");
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
     $pTitleArray = array("Primero recuerda mantener la calma");
-    $pSubtitleArray = array("Cuando sientas que puedes más, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
-    $structure = array('image', 'comma', 'paragraph', 'superDivider');
+    $pSubtitleArray = array("Cuando sientas que puedes más, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda. 800 911 2000");
+    $structure = array('image', 'comma', 'paragraph');
     $components = array(
         array($imageArray, $webTitle),
         array(),
@@ -268,7 +268,7 @@ if (intent('detectar-ayuda')) {
 
 
     $pTitleArray = array("");
-    $pSubtitleArray = array("Lamento esta situación, pero no te preocupes, puedes obtener tranquilidad si meditas, haces ejercicios de respiración o escuchas música relajante, recibir ayuda. Si no te sientes mejor debes de comunicarte con un profesional para recibir ayuda.");
+    $pSubtitleArray = array("Lamento esta situación, pero no te preocupes, puedes obtener tranquilidad si meditas, haces ejercicios de respiración o escuchas música relajante. Si no te sientes mejor debes de comunicarte con un profesional para recibir ayuda.");
     $bTitleArray = array("Ejercicios de Respiración", "Ejercicios de Meditación","Música de Relajación","Consultar Expertos");
     $bCustomArray = array("https://ikneliabot.42web.io/i-respiracion.html","https://ikneliabot.42web.io/i-meditacion.html","https://ikneliabot.42web.io/i-musica.html","https://www.google.com/maps/search/psicologos/");
     $bIconArray = array("air","spa","music_note","psychology");

@@ -61,7 +61,7 @@ if (intent('tips-ansiedad')) {
     $webTitle = array("tips-ansiedad");
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/7493/7493127.png");
     $dTitleArray = ["Tips para la ansiedad que te recomiendo:"];
-    $dTextArray = [["Mantén el control de tus emociones", "Practica técnicas de relajación o meditación.", "Cuida el sueño.", "Socializa, la compañía siempre es lo mejor."]];
+    $dTextArray = [[" 💡 Mantén el control de tus emociones", " 💡 Practica técnicas de relajación o meditación.", "💡 Cuida el sueño.", "💡 Socializa, la compañía siempre es lo mejor."]];
     $structure = array('image', 'comma', 'description');
     $components = array(
         array($imageArray, $webTitle),

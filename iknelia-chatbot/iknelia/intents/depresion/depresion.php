@@ -47,7 +47,7 @@ if (intent('tips-depresion')) {
     $webTitle = array("tips-depresion");
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/4412/4412794.png");
     $dTitleArray = ["Tips para la depresión que te recomiendo:"];
-    $dTextArray = [["Habla y desahógate.", "No tomes decisiones precipitadas, relájate.", "Cuida el sueño.", "Socializa, la compañía siempre es lo mejor.", "Realiza ejercicio", "Piensa siempre en positivo."]];
+    $dTextArray = [["💡 Habla y desahógate.", "💡 No tomes decisiones precipitadas, relájate.", "💡 Cuida el sueño.", "💡 Socializa, la compañía siempre es lo mejor.", "💡 Realiza ejercicio", "💡 Piensa siempre en positivo."]];
     $structure = array('image', 'comma', 'description');
     $components = array(
         array($imageArray, $webTitle),
