@@ -8,13 +8,12 @@ if (intent('Default Welcome Intent')) {
     if ($hour >= 7 && $hour < 12) {
         $es_welcome = "¡Hola! Buenos días, ¿Cómo puedo ayudarte?";
     } else if ($hour >= 12 && $hour < 20) {
-        $es_welcome = "¡Hola!. Buenas tardes, espero que tu día vaya muy bien  ¿Cómo puedo ayudarte?";
+        $es_welcome = "¡Hola! Buenas tardes, espero que tu día vaya muy bien ¿Cómo puedo ayudarte?";
     } else if ($hour >= 20 && $hour < 24) {
-        $es_welcome = "¡Hola!. Buenas noches,  ¿Cómo puedo ayudarte?";
+        $es_welcome = "¡Hola! Buenas noches, ¿Cómo puedo ayudarte?";
     } else if ($hour >= 0 && $hour < 7) {
         $es_welcome = "¡Hola! ¿Qué haces a estas horas?, ¿Cómo puedo ayudarte?";
     }
-
     $webTitle = array("Default Welcome Intent");
    
     $imageArray = array("https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.gif");
@@ -30,6 +29,7 @@ if (intent('Default Welcome Intent')) {
     );
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
+
 
 if (intent('despedida')) {
     $webTitle = array("despedida");
@@ -85,7 +85,7 @@ if (intent('seleccion-sintomas')) {
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
 
-if (intent('musica')) {
+if (intent('musica-relajacion')) {
 
     $webTitle = array("musica");
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/2829/2829076.png");
@@ -200,8 +200,6 @@ if (intent('lecturas-apoyo')) {
     $bCustomArray = array("https://ikneliabot.42web.io/i-lecturas.html");
     $bIconArray = array("book");
     $bColorArray = array("$blue");
-
-
     $structure = array('image', 'comma', 'paragraph', 'superDivider', 'button');
     $components = array(
         array($imageArray, $webTitle),
@@ -210,38 +208,30 @@ if (intent('lecturas-apoyo')) {
         array(),
         array($bTitleArray, $bCustomArray, $bIconArray, $bColorArray)
     );
-
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
+
 if (intent('peligro')) {
-
     $webTitle = array("peligro");
-
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
-
     $pTitleArray = array("Primero recuerda mantener la calma");
     $pSubtitleArray = array("Cuando sientas que puedes más, puede que sea difícil de creer, pero tienes razones para seguir en tu camino. Comunícate a la línea de la vida para recibir ayuda.");
-
     $structure = array('image', 'comma', 'paragraph', 'superDivider');
     $components = array(
         array($imageArray, $webTitle),
         array(),
         array($pTitleArray, $pSubtitleArray)
     );
-
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
 
 if (intent('grupos-comunidades')) {
-
     $webTitle = array("grupos-comunidades");
     $pTitleArray = array("Comunidades de apoyo");
     $pSubtitleArray = array("Pertenecer a una comunidad es un gran paso. Con el siguiente botón podrás encontrar grupos de ayuda y comunidades que podrían ser interesantes para ti.");
-
     $cTitleArray = array("Comunidades de apoyo");
     $cImageArray = array("https://cdn-icons-png.flaticon.com/512/745/745154.png");
     $cCustomArray = array("https://medlineplus.gov/spanish/anxiety.html");
-
     $structure = array('paragraph', 'superDivider','reply');
     $components = array(
         array($pTitleArray, $pSubtitleArray),
@@ -251,21 +241,15 @@ if (intent('grupos-comunidades')) {
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
 
-
 if (intent('detectar-tips')) {
-
     $webTitle = array("grupos-comunidades");
     $imageArray = array("https://cdn-icons-png.flaticon.com/512/6186/6186621.png");
-
-
     $dTitleArray = ["Tips que te recomiendo:"];
     $dTextArray = [["Controla tus emociones.", "Mantén tu mente ocupada.", "Realiza ejercicio y prácticas de meditación.", "Socializa.", "Puedes conocer más tips sobre ansiedad o depresión si lo deseas."]];
-
     $bTitleArray = array("Tips para la ansiedad", "Tips para la depresión");
     $bCustomArray = array("tips-ansiedad", "tips-depresion");
     $bIconArray = array("sentiment_dissatisfied", "sentiment_very_dissatisfied");
     $bColorArray = array("$blue", $red);
-
     $structure = array('image', 'comma', 'description', 'superDivider', 'button');
     $components = array(
         array($imageArray, $webTitle),
@@ -276,42 +260,7 @@ if (intent('detectar-tips')) {
     );
     webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
 }
-if (intent('tips-ansiedad')) {
 
-    $webTitle = array("tips-ansiedad");
-    $imageArray = array("https://cdn-icons-png.flaticon.com/512/7493/7493127.png");
-
-
-    $dTitleArray = ["Tips para la ansiedad que te recomiendo:"];
-    $dTextArray = [["Mantén el control de tus emociones", "Practica técnicas de relajación o meditación.", "Cuida el sueño.", "Socializa, la compañía siempre es lo mejor."]];
-
-
-    $structure = array('image', 'comma', 'description');
-    $components = array(
-        array($imageArray, $webTitle),
-        array(),
-        array($dTitleArray, $dTextArray),
-    );
-    webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
-}
-if (intent('tips-depresion')) {
-
-    $webTitle = array("tips-depresion");
-    $imageArray = array("https://cdn-icons-png.flaticon.com/512/4412/4412794.png");
-
-
-    $dTitleArray = ["Tips para la depresión que te recomiendo:"];
-    $dTextArray = [["Habla y desahógate.", "No tomes decisiones precipitadas, relájate.", "Cuida el sueño.", "Socializa, la compañía siempre es lo mejor.", "Realiza ejercicio", "Piensa siempre en positivo."]];
-
-
-    $structure = array('image', 'comma', 'description');
-    $components = array(
-        array($imageArray, $webTitle),
-        array(),
-        array($dTitleArray, $dTextArray),
-    );
-    webStructureTemplate($context, $contextBody, $webTitle, $structure, $components);
-}
 if (intent('detectar-ayuda')) {
 
     $webTitle = array("detectar-ayuda");
