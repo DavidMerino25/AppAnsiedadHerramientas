@@ -16,7 +16,7 @@ if (intent('Default Welcome Intent')) {
     }
 
     $webTitle = array("Default Welcome Intent");
-    //  $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/intent-saludar.gif");
+   
     $imageArray = array("https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.gif");
 
     $pTitleArray = array("$es_welcome");
@@ -48,17 +48,11 @@ if (intent('despedida')) {
 }
 if (intent('presentacion')) {
     $webTitle = array("presentacion");
-    $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/core/images/bot-logo.png");
+    $imageArray = array("https://appansidep.42web.io/iknelia-chatbot/iknelia/core/images/bot-logo.png");
 
     $aTitleArray = array("Mi nombre es Ikenlia.");
     $aSubtitleArray = array("Soy un chatbot creado para ayudarte a disminuir tus niveles de ansiedad y la depresión.");
     $aTextArray = array("Mi misión es ayudarte a mejorar tu calidad de vida, para ello te propondré actividades que te ayudarán a reducir tus niveles de ansiedad y depresión. En caso de requerirlo te recomendaré a expertos en la materia.");
-
-    // $aTitleArray = array("¿Qué puedo hacer por ti?");
-    // $aSubtitleArray = array("¿Cómo interactuar conmigo?");
-    // $aTextArray = array("Puedes realizar preguntas sobre la ansiedad y la depresión, escribir como te sientes, o simplemente decirme que quieres hacer.");
-
-    
     $structure = array('image', 'comma', 'card');
     $components = array(
         array($imageArray, $webTitle),
